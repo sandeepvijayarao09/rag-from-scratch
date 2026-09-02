@@ -1,32 +1,39 @@
 # RAG From Scratch
 
-**I implemented ten recommended RAG techniques and measured each one on a public
-benchmark. Eight of them made retrieval worse.**
+I implemented ten recommended RAG techniques and measured each one against the
+same benchmark. Eight of them made retrieval worse.
 
-This repo is the evidence, the code, and the reasoning for why.
+This repo is the code, the numbers, and the reasoning for why.
 
-Corpus: BEIR SciFact (5,183 abstracts, 300 labelled queries). Metric: nDCG@10.
-Baseline: `bge-base-en-v1.5`, **0.759** — validated against a published ~0.741,
-so the pipeline is known-correct before anything is built on it.
+## The results
+
+Corpus is BEIR SciFact: 5,183 scientific abstracts, 300 labelled queries. Metric
+is nDCG@10. Baseline is `bge-base-en-v1.5` at 0.759, which I validated against a
+published figure of roughly 0.741 before building anything on top of it.
 
 | Technique | Δ nDCG@10 |
 |---|---|
-| Chunking *(6 configs, all of them)* | −0.010 to −0.020 |
-| RRF fusion *(4 variants, all of them)* | −0.009 to −0.024 |
+| Chunking (6 configs, every one) | −0.010 to −0.020 |
+| RRF fusion (4 variants, every one) | −0.009 to −0.024 |
 | Cross-encoder reranking on dense | −0.033 |
 | HyDE | −0.048 |
 | Step-back prompting | −0.066 |
 | Query decomposition | −0.095 |
-| **Weighted hybrid 0.7/0.3** | **+0.010** |
-| **Cross-encoder reranking on BM25** | **+0.041** |
+| Weighted hybrid 0.7/0.3 | +0.010 |
+| Cross-encoder reranking on BM25 | +0.041 |
 
-The two that won are the two where I diagnosed the gap *before* applying the
-technique. Everything else was a correlated addition to an already-strong
-baseline.
+The two that worked are the two where I measured the gap before applying the
+technique. For hybrid I checked how many queries BM25 found that dense missed
+(nine, out of 300) before writing any fusion code. For reranking I only got a
+gain after working out that the first stage has to be weaker than the reranker.
 
-No LangChain, no LlamaIndex, no vector database. BM25, cosine search, RRF,
-MaxSim, label propagation and the metrics are implemented directly, because the
-point is to understand the mechanisms rather than configure them.
+I want to be careful about what this does and does not show. It is not evidence
+that these techniques are bad. It is evidence that they are conditional, and
+that the condition is usually whether your current pipeline is already good at
+the thing the technique fixes. `bge-base` on SciFact is a strong, well-matched
+baseline. Reranking already flipped sign once in this repo, from −0.033 on dense
+to +0.041 on BM25, so the same technique can be worth having or worth skipping
+depending on what it sits behind.
 
 ## Setup
 
@@ -36,100 +43,91 @@ pip install -r requirements.txt
 python concepts/01_naive_rag/naive_rag.py
 ```
 
-Requires [Ollama](https://ollama.com) with `bge-base-en-v1.5` and `gemma4:e4b`.
+Needs [Ollama](https://ollama.com) with `bge-base-en-v1.5` and `gemma4:e4b`
+pulled. Stages 7 and 10 also pull cross-encoder weights from HuggingFace on
+first run.
 
-## Start here
+Everything runs locally. Embeddings, LLM outputs and cross-encoder scores are
+cached to disk, so re-running a stage costs nothing and only new work is
+computed.
 
-| | |
-|---|---|
-| **[concepts/](concepts/)** | The ladder: 15 stages, code + findings |
-| [SYSTEMS.md](SYSTEMS.md) | The taxonomy, organised by the problem each system solves |
-| [DECISIONS.md](DECISIONS.md) | Every design decision, alternatives rejected, evidence |
+## Layout
 
-```bash
-./myenv/bin/python concepts/01_naive_rag/naive_rag.py
+```
+concepts/     15 stages, beginner to pro. Code plus a README per stage.
+rag/          shared library: retrieval, metrics, chunking, fusion, graph
+results/      measured outputs, version controlled
+NOTES.md      lab notebook: what broke, what I got wrong
+SYSTEMS.md    taxonomy of RAG systems by the problem each solves
+DECISIONS.md  design decisions with alternatives rejected
 ```
 
-## The ladder
+Start at [`concepts/`](concepts/) for the ladder, or read
+[`concepts/07_reranking/`](concepts/07_reranking/) if you want the most
+interesting single stage.
 
-| Tier | Stages | |
-|---|---|---|
-| **Beginner** | 01 naive_rag · 02 measure_first · 03 real_benchmark | make it work, then make it measurable |
-| **Core** | 04 chunking · 05 keyword_search · 06 hybrid_search | the retrieval fundamentals |
-| **Intermediate** | 07 reranking · 08 query_rewriting | two-stage and query-side |
-| **Advanced** | 09 context_enrichment · 10 multi_vector · 11 grounded_generation | representation and grounding |
-| **Pro** | 12 self_correction · 13 agentic_retrieval · 14 graph_rag · 15 production_scale | control flow and structure |
+## No frameworks
 
-## The setup
+No LangChain, no LlamaIndex, no vector database. BM25, cosine search, RRF,
+MaxSim, label propagation and all the metrics are written directly. Partly
+because I wanted to understand the mechanisms rather than configure them, and
+partly because a framework would have hidden most of the findings above. The
+`bge` query prefix and the RRF `k` parameter are both defaults you would never
+question if a library set them for you.
 
-- **Corpus** — BEIR SciFact: 5,183 scientific abstracts, 300 labelled queries
-- **Models** — `bge-base-en-v1.5` (embed), `gemma4:e4b` (generate), `bge-reranker-base` (rerank)
-- **Metric** — nDCG@10 (BEIR standard), plus recall@k and MRR
-- **All local**, via Ollama and MPS
+Exact numpy brute-force search handles this corpus in well under a millisecond
+and scales to a few hundred thousand vectors in tens of milliseconds. A vector
+database would have added an approximate index and a recall loss to measure, for
+a corpus that fits in 16MB of RAM.
 
-SciFact was chosen because `bge-base-en-v1.5` has *published* scores on it. That
-turns the eval from "is this technique better?" into "is my pipeline correct?"
-We measured **nDCG@10 = 0.745** against a published **~0.741**, so everything
-built on top inherits that confidence.
+## Method
 
-## Results
+Seven rules, arrived at mostly by violating them first.
 
-Dense baseline: **nDCG@10 = 0.759** (title, no query prefix).
-
-| Stage | Technique | Result |
-|---|---|---|
-| 03 | BGE query prefix *(convention)* | **−0.014** |
-| 04 | Chunking, all 6 configs | **−0.010 to −0.020** |
-| 06 | RRF fusion, all 4 variants | **−0.009 to −0.024** |
-| 06 | Weighted hybrid 0.7/0.3 | **+0.010** ✅ |
-| 07 | Reranking on dense | **−0.033** |
-| 07 | Reranking on **BM25** | **+0.041** ✅ |
-| 08 | HyDE | **−0.048** |
-| 08 | Step-back | **−0.066** |
-| 08 | Decomposition | **−0.095** |
-| 08 | Multi-query | flat nDCG, **+0.040 recall** |
-
-**Almost every recommended upgrade lost.** The two that won are the two where
-the gap was diagnosed *before* the technique was applied — hybrid after measuring
-a 9-query complementarity headroom, reranking only after establishing the first
-stage was weak.
-
-This is **not** "these techniques don't work." They are conditional, and the
-condition is nearly always *"is my current stage already good at the thing this
-fixes?"* `bge-base` on SciFact is a strong, well-matched baseline, so most
-additions are correlated noise. Reranking already flipped sign once, from −0.033
-on dense to +0.041 on BM25.
-
-## The three findings worth stealing
-
-**1. Synthetic evals leak vocabulary.** LLM-generated questions inherit rare
-words from their source chunk. Direct questions scored recall@1 = 0.927;
-paraphrased ones stripped of those words scored 0.680. A quarter of the apparent
-accuracy was leakage. *(Stage 2)*
-
-**2. Reranking overwrites your ordering.** Three first stages spanning 0.050
-nDCG collapsed to a 0.017 spread after reranking. You get the reranker's ranking
-quality, bounded by candidate-set recall — so rerank only if the reranker beats
-your first stage, and optimise that first stage for **recall**, not ordering.
-*(Stage 7, after two falsified hypotheses)*
-
-**3. Chunking is a response to a diagnosed problem, not a default step.** Only
-2.8% of SciFact abstracts exceed the encoder window, so chunking had nothing to
-rescue — and all six configs lost. The strategy choice mattered 4× less than the
-choice not to chunk. *(Stage 4)*
-
-## Method rules
-
-1. Never claim an improvement without a number.
-2. Measure retrieval and generation separately. They fail differently.
-3. Distrust any single metric, especially from synthetic data.
-4. Ablate conventions instead of inheriting them.
-5. Run the cheap diagnostic that predicts the result before the expensive experiment.
+1. No claimed improvement without a number.
+2. Measure retrieval and generation separately. They fail differently and get
+   fixed differently.
+3. Distrust any single metric, especially on synthetic data. Report the gap
+   between an easy variant and a hard one.
+4. Ablate conventions rather than inheriting them.
+5. Run the cheap diagnostic that predicts the result before running the
+   expensive experiment.
 6. State the noise floor. A delta smaller than sampling error is not a finding.
-7. A confirmed negative result is a real result.
+7. A confirmed negative result is a result.
 
-## Running
+Rule 3 came out of Stage 2, where LLM-generated eval questions inherited rare
+vocabulary from their source chunks and inflated recall@1 from 0.680 to 0.927.
+Rule 5 came out of Stage 4, where a two-second check on token lengths predicted
+seventeen minutes of chunking experiments.
 
-Scripts run from the repo root and add it to `sys.path` themselves. Embeddings,
-LLM transformations and cross-encoder scores are cached under `cache/`, so
-re-running costs nothing and only new work is computed.
+## Limitations
+
+Worth saying plainly, because most of the negative results above are weaker than
+they look:
+
+- **One corpus.** SciFact abstracts are short, single-topic, and written in the
+  same register as the queries. That is close to the best case for a dense
+  bi-encoder and close to the worst case for chunking and query rewriting. I
+  expect several of these results to flip on long multi-topic documents. Not
+  tested.
+- **Small deltas, no significance testing.** At n=300 anything under about 0.02
+  nDCG is inside the noise. The hybrid win (+0.010) and the prefix loss (−0.014)
+  both fall there. A paired bootstrap over per-query scores is the right next
+  step and I have not done it. The larger results (reranking, HyDE, decomposition)
+  are outside that band.
+- **Subsampled where noted.** Stage 8 runs on a fixed 50-query subsample because
+  each technique costs an LLM call per query. The baseline is scored on the same
+  50, so deltas are paired, but absolute values are not comparable to the
+  full-300 tables.
+- **Stages 9 to 15** have working code and documentation, and measurements are
+  in progress. Their READMEs state the expected result before the run so the
+  predictions stay falsifiable.
+
+## Attribution
+
+Stage 1 is adapted from a public "RAG from scratch" tutorial (the cat-facts
+corpus with Ollama and `bge-base`). Everything from Stage 2 onward is my own:
+the eval harness, the BEIR integration, BM25, the fusion and reranking analysis,
+and every measurement in this repo.
+
+Built with AI assistance, which is recorded in the commit trailers.
