@@ -1,9 +1,10 @@
-# Stage 7 — Cross-encoder reranking
+# Stage 7, Cross-encoder reranking
 
 **Tier: Intermediate** · prerequisite: Stage 6
 
 Reranking is the second-most-recommended upgrade in RAG. On SciFact it made
-things worse, and chasing down why produced the most useful rule in this repo.
+things worse. Chasing down why took two wrong guesses and produced the most
+useful rule in this repo.
 
 ## The architecture
 
@@ -17,7 +18,7 @@ seen the query. A cross-encoder lets self-attention compare individual terms
 across both. Strictly more expressive, and strictly not precomputable, which is
 why it can only ever be a *second* stage over a shortlist.
 
-## 7a — Both rerankers hurt
+## 7a, Both rerankers hurt
 
 ```
 config                        nDCG@10   vs dense    R@10     ms/q
@@ -61,7 +62,7 @@ nothing left to repair, and both models are BGE trained on similar data, so the
 reranker's judgement is *correlated with* the bi-encoder's rather than superior
 to it. A second correlated opinion adds variance, not accuracy.
 
-## 7b — The prediction, and the rule
+## 7b, The prediction, and the rule
 
 That explanation is falsifiable: give the reranker a *weak* first stage and it
 should help. BM25 scores 0.665, fails on different queries (Stage 6), and its
@@ -127,7 +128,7 @@ Both earlier hypotheses were proxies for this. BM25's ordering was weak, so
 overwriting it helped. Dense's was strong, so overwriting it hurt. Correlation
 was a red herring.
 
-## What transfers
+## Two rules I would actually use
 
 **Two rules, both actionable:**
 

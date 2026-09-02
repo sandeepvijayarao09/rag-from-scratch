@@ -1,4 +1,4 @@
-# The Ladder — beginner to pro
+# The Ladder, beginner to pro
 
 Fifteen stages. Each one is a distinct kind of RAG system, ordered so that every
 stage only needs what came before it.
@@ -8,7 +8,7 @@ library lives in [`../rag/`](../rag/) and grows as stages need it.
 
 ---
 
-## Tier 1 — Beginner: make it work, then make it measurable
+## Tier 1, Beginner: make it work, then make it measurable
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|
@@ -22,7 +22,7 @@ of our apparent accuracy was vocabulary leakage.
 
 ---
 
-## Tier 2 — Core retrieval: the fundamentals
+## Tier 2, Core retrieval: the fundamentals
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|
@@ -41,7 +41,7 @@ of our apparent accuracy was vocabulary leakage.
 
 ---
 
-## Tier 4 — Advanced: representation and grounding
+## Tier 4, Advanced: representation and grounding
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|
@@ -51,7 +51,7 @@ of our apparent accuracy was vocabulary leakage.
 
 ---
 
-## Tier 5 — Pro: control flow and knowledge structure
+## Tier 5, Pro: control flow and knowledge structure
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|

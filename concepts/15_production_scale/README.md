@@ -1,4 +1,4 @@
-# Stage 15 — Production scale
+# Stage 15, Production scale
 
 **Tier: Pro** · prerequisite: Stage 14 · status: planned
 
@@ -21,15 +21,15 @@ for a vector database one to two orders of magnitude before they need one.
 
 ## Topics
 
-- **ANN indexing** — HNSW vs IVF-PQ. Every ANN index trades exact recall for
+- **ANN indexing**, HNSW vs IVF-PQ. Every ANN index trades exact recall for
   latency, and the first thing to measure is *what you lost*, not how fast it got
-- **Quantization** — int8, binary, Matryoshka. 4-32× memory reduction for a
+- **Quantization**, int8, binary, Matryoshka. 4-32× memory reduction for a
   measurable recall cost. Relevant immediately if you took Stage 10 seriously
 - **Incremental ingestion** — corpora change. Index builds, freshness lag,
   deletes, reindex cost
-- **Caching** — query, embedding, generation. Stage 2's embedding cache is the
+- **Caching**, query, embedding, generation. Stage 2's embedding cache is the
   cheapest version of this and it already saved hours
-- **Observability** — per-query retrieval traces. Without them, production
+- **Observability**, per-query retrieval traces. Without them, production
   failures are unfixable, because you cannot tell a retrieval miss from a
   generation failure after the fact
-- **Guardrails** — Stage 11's citation and abstention machinery, wired to alerts
+- **Guardrails**, Stage 11's citation and abstention machinery, wired to alerts

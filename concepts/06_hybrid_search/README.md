@@ -1,11 +1,11 @@
-# Stage 6 — Hybrid retrieval
+# Stage 6, Hybrid retrieval
 
 **Tier: Core retrieval** · prerequisite: Stage 5
 
-Hybrid is the most-recommended upgrade in RAG. This stage measures whether it
-earns that on SciFact, and the answer is more interesting than yes.
+Hybrid is the most-recommended upgrade in RAG, so I wanted to know whether it
+earns that on SciFact. The answer turned out more interesting than yes.
 
-## 6a — Measure the ceiling first
+## 6a, Measure the ceiling first
 
 Hybrid only pays if dense and sparse fail on *different* queries. So decompose
 the 300 queries by which retriever found the gold document in its top 10:
@@ -37,7 +37,7 @@ exactly what idf is built to exploit. The theory and the data agree.
 hybrid was worth at most +0.03 here. That is the difference between an
 informed build and a hopeful one.
 
-## 6b — What fusion actually captured
+## 6b, What fusion actually captured
 
 ```
 config                 nDCG@10   vs dense     R@10      MRR
@@ -71,7 +71,7 @@ about a third of the available headroom.
 single comparison. The RRF *deficit* is larger and consistent across four
 variants, so that finding is stronger than the weighted-fusion win.
 
-## The transferable lesson
+## So when should you use RRF
 
 "Use RRF, it needs no tuning" is good advice when your retrievers are close in
 strength. When one clearly dominates, unweighted RRF drags it down. Neither

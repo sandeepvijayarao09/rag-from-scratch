@@ -1,4 +1,4 @@
-# Stage 9 — Context enrichment
+# Stage 9, Context enrichment
 
 **Tier: Advanced** · prerequisite: Stage 8 · status: code written, not yet run
 
@@ -11,7 +11,7 @@ Split a document and each piece stops being self-describing:
 > "The company's revenue grew by 3% over the previous quarter."
 
 Which company? Which quarter? Unfindable by any query naming either, because
-neither appears in the chunk. **No retrieval technique can fix this** — the
+neither appears in the chunk. **No retrieval technique can fix this**, the
 information is not in the indexed text.
 
 The fix: before embedding, ask an LLM to write a short situating blurb using the
@@ -40,7 +40,7 @@ see [`../../rag/retrieve.py`](../../rag/retrieve.py).
 
 ## Code
 
-[`../../rag/contextual.py`](../../rag/contextual.py) — disk-cached and resumable,
+[`../../rag/contextual.py`](../../rag/contextual.py), disk-cached and resumable,
 because you will not want to pay for it twice.
 
 **Expectation, stated before running:** Stage 4 showed SciFact abstracts are

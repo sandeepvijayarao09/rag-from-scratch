@@ -1,4 +1,4 @@
-# Stage 5 — Keyword search (BM25)
+# Stage 5, Keyword search (BM25)
 
 **Tier: Core retrieval** · prerequisite: Stage 4
 
@@ -33,11 +33,11 @@ tradeoff, and it is worth knowing before you provision a GPU.
              tf(t,d) + k1 * (1 - b + b * len(d) / avg_doc_len)
 ```
 
-- **idf** — a term in 5 of 5,000 documents is far more informative than one in
+- **idf**, a term in 5 of 5,000 documents is far more informative than one in
   4,000. This is precisely what dense embeddings are worst at. A rare gene name,
   error code, or identifier carries enormous signal, and a 768-dim vector
   trained on general text has no particular reason to preserve it.
-- **k1 = 1.2** — saturation. `tf/(tf + k1)` is concave, so the 10th occurrence
+- **k1 = 1.2**, saturation. `tf/(tf + k1)` is concave, so the 10th occurrence
   of a term adds much less than the 2nd. Without it, keyword spam wins.
 - **b = 0.75** — partial length normalisation. Long documents contain more of
   everything. `b=1` normalises fully, `b=0` not at all.

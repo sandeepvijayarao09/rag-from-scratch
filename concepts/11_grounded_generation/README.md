@@ -1,16 +1,16 @@
-# Stage 11 — Grounded generation
+# Stage 11, Grounded generation
 
 **Tier: Advanced** · prerequisite: Stage 10 · status: code written, not yet run
 
 Every stage so far measured **retrieval**. This measures what the model does
-with what retrieval handed it — and it needs its own scoreboard, because the two
+with what retrieval handed it, and it needs its own scoreboard, because the two
 fail independently. An answer can be perfectly faithful to the wrong documents.
 
 ## The two guardrails Stage 1 lacked
 
 **Citations.** Number the context, require `[1]`, `[2]` per claim. Not
 decoration: an uncited sentence is one you cannot check, and citations make
-hallucination *mechanically* detectable — you can verify a span against its
+hallucination *mechanically* detectable, you can verify a span against its
 cited source without a human reading everything.
 
 **Abstention.** Give the model an explicit, blessed way to say the context does
@@ -38,5 +38,5 @@ every retrieval metric in this repo.
 ## Faithfulness
 
 For each claim, is it supported by its cited source? LLM-as-judge, which is
-cheap and useful — but it is a model grading a model. Report it *alongside*
+cheap and useful, but it is a model grading a model. Report it *alongside*
 retrieval metrics, never instead of them.

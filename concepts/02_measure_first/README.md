@@ -1,4 +1,4 @@
-# Stage 2 — Measure first
+# Stage 2, Measure first
 
 **Tier: Beginner** · prerequisite: Stage 1
 
@@ -10,24 +10,24 @@ it was too slow to experiment in, and it produced no number you could argue with
 | File | Concept |
 |---|---|
 | `01_fast_loop.py` | Batching, caching, and vectorized similarity |
-| `02_generate_evalset.py` | Building labelled eval data — and its bias |
+| `02_generate_evalset.py` | Building labelled eval data, and its bias |
 | `03_measure_baseline.py` | recall@k / MRR, and the leakage gap |
 
-## 2a — The loop
+## 2a, The loop
 
 | | Stage 1 | Stage 2a | Why |
 |---|---|---|---|
 | Index, cold | 2.631s | 1.144s | Batched embedding — one HTTP round-trip per 32 chunks, not per chunk |
-| Index, re-run | 2.631s | 0.000s | Content-hash cache — embeddings are a pure function of (model, text) |
+| Index, re-run | 2.631s | 0.000s | Content-hash cache, embeddings are a pure function of (model, text) |
 | 100 queries | 0.565s | 0.003s | Normalize once at index time; cosine collapses to one matmul |
 
-Stage 1 recomputed every chunk's vector norm on every query — work whose
+Stage 1 recomputed every chunk's vector norm on every query, work whose
 answer can never change. At 150 chunks none of these absolute numbers matter.
 The **ratios** are what survive to 10⁶, and the 0.000s re-index is what makes
 Stages 5-8 possible: you'll re-run the pipeline dozens of times comparing
 retrieval techniques, and re-embedding the corpus each time would stop you.
 
-Exact brute-force search stays viable much further than people assume — a few
+Exact brute-force search stays viable much further than people assume, a few
 hundred thousand vectors is still tens of milliseconds. Stage 15 measures
 exactly where it breaks, rather than guessing.
 
@@ -35,7 +35,7 @@ exactly where it breaks, rather than guessing.
 
 For each fact, gemma4 writes two questions: a `direct` one phrased as someone
 who just read the fact would, and a `paraphrased` one that deliberately avoids
-the fact's distinctive vocabulary. The gold label is free — the question was
+the fact's distinctive vocabulary. The gold label is free, the question was
 generated *from* chunk `i`, so chunk `i` is the correct retrieval.
 
 Same retriever, same corpus, both question sets:
@@ -48,7 +48,7 @@ paraphrased  n=150  r@1=0.680  r@3=0.947  r@5=0.960  MRR@10=0.809  nDCG@10=0.853
 ```
 
 **A quarter of the "accuracy" was vocabulary leakage.** The direct questions
-inherit rare words from their source chunk — "bezoar", "clowder" — so cosine
+inherit rare words from their source chunk, "bezoar", "clowder", so cosine
 similarity is handed the answer. Strip those words and top-1 retrieval falls
 off a cliff.
 

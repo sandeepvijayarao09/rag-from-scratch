@@ -1,4 +1,4 @@
-# Stage 10 — Multi-vector / late interaction
+# Stage 10, Multi-vector / late interaction
 
 **Tier: Advanced** · prerequisite: Stage 9 · status: code written, not yet run
 
@@ -7,7 +7,7 @@ The third point on a spectrum you have now seen both ends of.
 | | interaction | precompute | index size / doc |
 |---|---|---|---|
 | **Bi-encoder** (Stages 2-6) | after encoding, one dot product | whole corpus | ~3 KB |
-| **Cross-encoder** (Stage 7) | query+doc through the transformer together | impossible | — |
+| **Cross-encoder** (Stage 7) | query+doc through the transformer together | impossible |, |
 | **Late interaction** (here) | deferred, but over *stored* vectors | whole corpus | ~768 KB |
 
 ```
@@ -16,7 +16,7 @@ MaxSim(q, d) = SUM over query tokens qi:  MAX over doc tokens dj: qi · dj
 
 Each query token finds its single best match anywhere in the document, and those
 maxima are summed. A rare term appearing once in a long abstract still
-contributes fully — exactly what mean-pooling destroys.
+contributes fully, exactly what mean-pooling destroys.
 
 ## The cost is the lesson
 

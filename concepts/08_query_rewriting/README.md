@@ -1,4 +1,4 @@
-# Stage 8 — Query rewriting
+# Stage 8, Query rewriting
 
 **Tier: Intermediate** · prerequisite: Stage 7
 
@@ -34,7 +34,7 @@ decompose     -0.0948   replaces with fragments
 **Multi-query is the only survivor, and the interesting part is not its nDCG.**
 recall@10 rose 0.8433 → 0.8833 while MRR *dipped*. It finds four more gold
 documents per hundred and ranks them no better, because RRF fuses by rank alone
-and flattens the ordering. Recall and precision moved independently — which is
+and flattens the ordering. Recall and precision moved independently, which is
 exactly why this repo tracks both.
 
 **HyDE (−0.048).** Its premise is that queries and documents occupy different
@@ -42,7 +42,7 @@ embedding regions, so you write a fake answer to bridge the gap. But SciFact
 queries are declarative claims *already written in document-space*. There is no
 gap, so all HyDE contributes is fabrication. For the claim *"1/2000 in UK have
 abnormal PrP positivity"* it generated *"…estimated prevalence at 4 ± 1 per
-m[illion]"* — numbers contradicting the claim, plus stray LaTeX.
+m[illion]"*, numbers contradicting the claim, plus stray LaTeX.
 
 **Step-back (−0.066).** The broader question retrieves general background. But
 SciFact is claim *verification*: you need the one specific study, not context
@@ -66,16 +66,16 @@ multi-query      alone         0.7018   0.8833   0.6618
 ```
 
 **Wrong.** Still negative. That falsification is what drove Stage 7c/7d and the
-correct rule — reranking *overwrites* the ordering, so the outcome is the
+correct rule, reranking *overwrites* the ordering, so the outcome is the
 reranker's quality, not a blend.
 
-## What transfers
+## When this is worth the latency
 
 **Query rewriting targets a mismatch between how queries are phrased and how
 documents are written.** Measure that mismatch before reaching for it. If your
 users type keywords and your corpus is prose, or your queries are conversational
 and your documents are formal, there is a real gap. If your queries already
-resemble your documents, rewriting is pure cost — and every technique here costs
+resemble your documents, rewriting is pure cost, and every technique here costs
 an LLM call per query, forever, on the latency path.
 
 **And prefer additive over replacing.** Keeping the original ranking in the fuse

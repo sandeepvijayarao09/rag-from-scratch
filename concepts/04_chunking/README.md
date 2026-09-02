@@ -1,11 +1,11 @@
-# Stage 4 — Chunking
+# Stage 4, Chunking
 
 **Tier: Core retrieval** · prerequisite: Stage 3
 
 Chunking is the most cargo-culted step in RAG. This stage measures whether it
-earns its place, and the answer here is a clean no — predicted in advance.
+earns its place, and the answer here is a clean no, predicted in advance.
 
-## 4a — Run the cheap diagnostic first
+## 4a, Run the cheap diagnostic first
 
 ```
 SciFact: 5183 documents
@@ -25,10 +25,10 @@ abstracts are being quietly cut off.
 documents overflow and 1.4% of tokens are lost. On this corpus chunking has
 almost nothing to rescue.
 
-**Prediction, made from data before running 4b:** chunking will do nothing here,
-or hurt by fragmenting the context that made an abstract matchable.
+So before running 4b I wrote down the prediction: chunking does nothing here,
+or hurts by fragmenting the context that made an abstract matchable.
 
-## 4b — The sweep, and the prediction confirmed
+## 4b, The sweep, and the prediction confirmed
 
 ```
 strategy                 chunks   nDCG@10   vs whole     R@10      MRR
@@ -63,8 +63,8 @@ The moment you chunk, your index returns **chunks** while your relevance
 judgements score **documents**. Something must pool one into the other, and that
 choice changes your score. See [`../../rag/retrieve.py`](../../rag/retrieve.py).
 
-- `max` — a doc scores as its best chunk. The right default.
-- `sum` — systematically favours long documents; they have more chunks and more
+- `max`, a doc scores as its best chunk. The right default.
+- `sum`, systematically favours long documents; they have more chunks and more
   chances to accumulate score.
 - `mean` — dilutes one perfect passage with the rest of the document.
 
@@ -72,7 +72,7 @@ choice changes your score. See [`../../rag/retrieve.py`](../../rag/retrieve.py).
 because several top chunks routinely come from the same document. Fetch exactly
 k and you silently return fewer than k docs, capping recall@k.
 
-## What transfers
+## When chunking is actually worth it
 
 Chunking is not a technique you apply, it is a **response to a diagnosed
 problem**. The diagnostic is cheap: measure your document length distribution
@@ -80,7 +80,7 @@ against your encoder's window, and ask whether your documents mix unrelated
 topics. If both answers are no, chunking is pure cost.
 
 Where it genuinely pays: legal contracts, technical manuals, long reports,
-transcripts — long, multi-topic, answer-in-one-section documents. SciFact
+transcripts, long, multi-topic, answer-in-one-section documents. SciFact
 abstracts are the opposite of all three.
 
 **The habit:** run the cheap diagnostic that predicts the result before running

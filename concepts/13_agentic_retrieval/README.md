@@ -1,4 +1,4 @@
-# Stage 13 — Agentic / multi-hop retrieval
+# Stage 13, Agentic / multi-hop retrieval
 
 **Tier: Pro** · prerequisite: Stage 12 · status: code written, not yet run
 
@@ -16,7 +16,7 @@ loop:
 ## What to actually look at
 
 The **trace** is the output worth studying, more than the metric. It shows the
-query the system *invented* at each hop — which is where you see whether it is
+query the system *invented* at each hop, which is where you see whether it is
 reasoning or drifting. A common failure is hop 2 restating hop 1 in different
 words, burning a call to retrieve the same documents.
 
@@ -26,7 +26,7 @@ SciFact claims are single-hop by construction: one abstract supports or refutes
 one claim. **Multi-hop should not help here**, and if it appears to, be
 suspicious of the eval rather than pleased with the technique.
 
-The right corpora for this are HotpotQA, MuSiQue, or 2WikiMultiHopQA — built
+The right corpora for this are HotpotQA, MuSiQue, or 2WikiMultiHopQA, built
 specifically so that no single document contains the answer. Running it here
 demonstrates the mechanism and its cost, not its benefit.
 

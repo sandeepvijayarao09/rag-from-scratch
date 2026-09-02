@@ -1,4 +1,4 @@
-# Stage 14 — GraphRAG
+# Stage 14, GraphRAG
 
 **Tier: Pro** · prerequisite: Stage 13 · status: code written, not yet run
 
@@ -16,15 +16,15 @@ it. The answer is a property of the *collection*, not of any member of it.
 
 ## Pipeline
 
-1. **Extract** — LLM pulls (entity, relation, entity) triples per document
-2. **Build** — entities become nodes, relations edges. Entities appearing across
+1. **Extract**, LLM pulls (entity, relation, entity) triples per document
+2. **Build**, entities become nodes, relations edges. Entities appearing across
    many documents become hubs, encoding cross-document structure a flat chunk
    list throws away
 3. **Cluster** — detect communities of densely connected entities. Topics get
    *discovered*, not declared
-4. **Summarise** — LLM writes a summary per community. **These** are what get
+4. **Summarise**, LLM writes a summary per community. **These** are what get
    retrieved for global questions
-5. **Query** — local: match entities, walk the neighbourhood. Global: retrieve
+5. **Query**, local: match entities, walk the neighbourhood. Global: retrieve
    community summaries
 
 Community detection here is **label propagation**, implemented directly (~20
@@ -43,7 +43,7 @@ the README says so rather than implying a full-corpus run.
 SciFact's eval is claim→abstract, a purely local task with document-level
 qrels. **GraphRAG's strength does not show up in nDCG@10 at all.** The
 demonstration is the graph statistics and the community summaries, not a
-retrieval score — which is itself worth knowing: some techniques are not
+retrieval score, which is itself worth knowing: some techniques are not
 comparable on your benchmark, and pretending otherwise produces meaningless
 numbers.
 
