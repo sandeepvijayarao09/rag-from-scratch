@@ -1,0 +1,9 @@
+# Core — every stage needs these
+numpy>=2.0
+ollama>=0.6            # local embedding + generation
+pydantic>=2.0          # structured LLM output
+
+# Stage 7 (reranking) and Stage 10 (late interaction)
+sentence-transformers>=6.0
+torch>=2.0
+transformers>=4.40
