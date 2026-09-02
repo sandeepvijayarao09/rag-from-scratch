@@ -1,0 +1,602 @@
+{
+  "0": {
+    "direct": "If a cat sleeps 2/3 of every day, how long has a nine-year-old cat been awake?",
+    "paraphrased": "How much time do cats actually spend awake during their lifetime?"
+  },
+  "1": {
+    "direct": "Why do cats not have a sweet tooth like dogs?",
+    "paraphrased": "What causes certain animals to lose the ability to taste sugary foods?"
+  },
+  "2": {
+    "direct": "Why do cats keep their head level when chasing prey, but dogs and humans bob theirs?",
+    "paraphrased": "What difference is there in how a cat moves its head compared to how people or dogs move their heads while running?"
+  },
+  "3": {
+    "direct": "What is the technical term for a cat's hairball?",
+    "paraphrased": "What do you call those clumps of fur that cats throw up?"
+  },
+  "4": {
+    "direct": "What is a group of cats called?",
+    "paraphrased": "What word describes when many domestic cats gather?"
+  },
+  "5": {
+    "direct": "Does an animal's gender predict its preferred direction of pawing, and is there a similar pattern linking human handedness to sex?",
+    "paraphrased": "Is it true that cats prefer using certain paws based on whether they are male or female, and does left-handedness also correlate with gender in people?"
+  },
+  "6": {
+    "direct": "Why can't cats climb down a tree head first?",
+    "paraphrased": "What is the easiest way for a cat to get from a tall tree back to the ground?"
+  },
+  "7": {
+    "direct": "How many sounds can cats make compared to dogs?",
+    "paraphrased": "Which common pet species has a greater variety of noises it can make?"
+  },
+  "8": {
+    "direct": "Does a cat's brain structure resemble a human's more than a dog's?",
+    "paraphrased": "What parts of a cat and human brain are responsible for feelings?"
+  },
+  "9": {
+    "direct": "How many domestic cats are there in the world?",
+    "paraphrased": "What is the estimated total number of household cat pets, and how many types exist?"
+  },
+  "10": {
+    "direct": "What evidence shows that ancient Egyptians were not the first to keep cats as pets?",
+    "paraphrased": "When did people first domesticate cats, and was it in Egypt?"
+  },
+  "11": {
+    "direct": "How did persecution of cats contribute to the spread or worsening effects of the Black Death?",
+    "paraphrased": "Did killing pets cause rats to increase, leading to a worse plague?"
+  },
+  "12": {
+    "direct": "Why did people burn cats in bonfires or toss them from towers during the Middle Ages?",
+    "paraphrased": "What was the historical belief about keeping cats and magic, and what rituals were performed with them?"
+  },
+  "13": {
+    "direct": "How many cats and dogs are there in North America, and which is more popular?",
+    "paraphrased": "What percentage of families in the US/Canada own a cat versus owning a dog?"
+  },
+  "14": {
+    "direct": "Who was the first cat in space and what year did she travel?",
+    "paraphrased": "Is there any history of cats traveling into outer space?"
+  },
+  "15": {
+    "direct": "What is the difference between the root words used for domestic cats versus wild cats?",
+    "paraphrased": "Where do the different language origins of pet cat words come from compared to jungle cat words?"
+  },
+  "16": {
+    "direct": "How is the word 'puss' connected to the root words for 'cat' in Romanian and other languages?",
+    "paraphrased": "What are the possible origins of the slang term for a cat, such as if it comes from sounds or descriptions of soft things?"
+  },
+  "17": {
+    "direct": "How many people get cat bites in the United States every year?",
+    "paraphrased": "What is the yearly statistic for humans injured by cats in America?"
+  },
+  "18": {
+    "direct": "Why did a lion sneeze out a cat, according to Hebrew legend?",
+    "paraphrased": "What is the origin story or mythology behind house cats?"
+  },
+  "19": {
+    "direct": "How do a cat's hearing capabilities compare to those of dogs or humans?",
+    "paraphrased": "What kinds of sounds can cats hear that people cannot?"
+  },
+  "20": {
+    "direct": "What is the maximum running speed for a cat?",
+    "paraphrased": "How fast do cats run when covering short distances?"
+  },
+  "21": {
+    "direct": "What is the maximum jump distance a cat can achieve relative to its own body height?",
+    "paraphrased": "How far does an animal like a cat leap when it jumps?"
+  },
+  "22": {
+    "direct": "How do cats manage to land on their feet after falling from extreme heights?",
+    "paraphrased": "Why do some cats survive big falls even if they don't have a tail?"
+  },
+  "23": {
+    "direct": "Does a cat rubbing on me mean it is just being affectionate, or is there another reason?",
+    "paraphrased": "What does it mean when my pet keeps smelling the furniture and me?"
+  },
+  "24": {
+    "direct": "What specific actions cause a cat to purr, according to veterinarians?",
+    "paraphrased": "How often does a cat's throat open and close when it makes a purring sound?"
+  },
+  "25": {
+    "direct": "How did ancient Egyptians treat and bury their dead family cats?",
+    "paraphrased": "What kinds of rituals or burial customs were used when a pet cat passed away long ago?"
+  },
+  "26": {
+    "direct": "Why were those mummified cats removed from the cemetery?",
+    "paraphrased": "What did people in England and America use the ancient Egyptian cat bodies as?"
+  },
+  "27": {
+    "direct": "What is the maximum number of kittens ever recorded in a single litter?",
+    "paraphrased": "How many cat babies are generally born, and what is the largest group of newborns reported?"
+  },
+  "28": {
+    "direct": "What was the penalty for smuggling a cat out of ancient Egypt?",
+    "paraphrased": "How were cats sold in Greek cities if taking them from Egypt was forbidden?"
+  },
+  "29": {
+    "direct": "What were the approximate timeframes for the emergence of the first cat ancestors and the group that includes pet cats?",
+    "paraphrased": "When did the evolutionary line leading to cats first appear, and when did they become a recognizable animal type?"
+  },
+  "30": {
+    "direct": "What is the biggest wildcat, and how big can it get?",
+    "paraphrased": "How large are the largest cats in the world?"
+  },
+  "31": {
+    "direct": "What is the typical weight range for a female Black-footed cat?",
+    "paraphrased": "How much do tiny wild cats weigh?"
+  },
+  "32": {
+    "direct": "What was the physical description of the goddess Bast worshipped by Egyptians?",
+    "paraphrased": "What did the cat-headed figure revered in ancient Egypt look like?"
+  },
+  "33": {
+    "direct": "Why do some cat patterns supposedly have an 'M'?",
+    "paraphrased": "Where did the idea come from that certain markings on cats represent a specific initial?"
+  },
+  "34": {
+    "direct": "Do black cats mean good or bad fortune depending on where you live?",
+    "paraphrased": "What are common beliefs about owning a black cat in different parts of the world?"
+  },
+  "35": {
+    "direct": "What are the top three most popular pedigreed cats?",
+    "paraphrased": "Which purebred type of housecat is the most common?"
+  },
+  "36": {
+    "direct": "What is the weight difference between the smallest and largest pedigreed cat breeds?",
+    "paraphrased": "How much can different kinds of fancy house cats weigh?"
+  },
+  "37": {
+    "direct": "Why do some Siamese cats appear cross-eyed because of their brain nerves?",
+    "paraphrased": "What causes a cat to look like it has crossed eyes?"
+  },
+  "38": {
+    "direct": "What is the origin of the name 'tabby'?",
+    "paraphrased": "Where did people get the name for patterned household cats?"
+  },
+  "39": {
+    "direct": "Why is the Turkish Van able to swim when other cats apparently dislike water?",
+    "paraphrased": "What makes a cat's coat resistant enough that it doesn't get cold in the water?"
+  },
+  "40": {
+    "direct": "What does 'Egyptian Mau' mean?",
+    "paraphrased": "Why is this specific pet named after that region?"
+  },
+  "41": {
+    "direct": "How much did Little Nicky cost?",
+    "paraphrased": "What is the record price for a cat?"
+  },
+  "42": {
+    "direct": "How many whiskers does a cat usually have on each side of its face?",
+    "paraphrased": "What is the typical count of facial hairs found on a cat?"
+  },
+  "43": {
+    "direct": "Is a cat\u2019s vision better or worse than ours, and why?",
+    "paraphrased": "Do cats see colors the way people do, and what are the limits of their sight in dim light?"
+  },
+  "44": {
+    "direct": "What is the origin of the superstition that cats might smother or drain a sleeping baby?",
+    "paraphrased": "Why do some people believe black cats are dangerous to babies?"
+  },
+  "45": {
+    "direct": "What comic cat character is famous for its disappearing act, linking it to historical associations with magic?",
+    "paraphrased": "Which fictional animal's ability to vanish has historically related it to beliefs about witchcraft or enchantment?"
+  },
+  "46": {
+    "direct": "Who was Cinderella's fairy godmother in the Italian version?",
+    "paraphrased": "Does the cat help out in the original story of Cinderella?"
+  },
+  "47": {
+    "direct": "What did the owners actually discover when they finally investigated why the two Siamese cats were scratching at the walls of the embassy?",
+    "paraphrased": "Why were certain cats making noise in a foreign diplomatic building, leading to the discovery of hidden listening devices?"
+  },
+  "48": {
+    "direct": "What are cat ear furnishings?",
+    "paraphrased": "Why do cats have hair inside their ears?"
+  },
+  "49": {
+    "direct": "What is 'psi-traveling'?",
+    "paraphrased": "How do cats know which direction home is?"
+  },
+  "50": {
+    "direct": "Why did Isaac Newton invent the cat flap?",
+    "paraphrased": "What caused people to start making specialized pet doors for cats?"
+  },
+  "51": {
+    "direct": "How are Kopi Luwak coffee beans harvested?",
+    "paraphrased": "What makes certain types of exotic coffee so expensive?"
+  },
+  "52": {
+    "direct": "How does a cat's jaw structure limit its ability to process large pieces of food?",
+    "paraphrased": "Why can't cats chew up big mouthfuls of food?"
+  },
+  "53": {
+    "direct": "Why do cats usually only meow at people and not other cats?",
+    "paraphrased": "What different sounds or behaviors do cats use when communicating with other felines versus humans?"
+  },
+  "54": {
+    "direct": "Why do cats have much greater spinal flexibility than humans?",
+    "paraphrased": "How many bones make up a cat's spine compared to a human's?"
+  },
+  "55": {
+    "direct": "What fraction of cat owners believe their cats can read their minds?",
+    "paraphrased": "How many people think their cat knows what they are thinking?"
+  },
+  "56": {
+    "direct": "Why do other cats retract their claws when they are resting, but cheetahs do not?",
+    "paraphrased": "Do all large wild cats pull their nails back into their paws like house cats do?"
+  },
+  "57": {
+    "direct": "What are the unique characteristics of the clouded leopard and cheetah compared to other cat species?",
+    "paraphrased": "Are there specific wild felines that hunt or behave differently than most other large cats?"
+  },
+  "58": {
+    "direct": "What is the technical term for a person who loves cats?",
+    "paraphrased": "What word describes someone with a passion for felines?"
+  },
+  "59": {
+    "direct": "Why do Japanese people believe cats can become super spirits after death?",
+    "paraphrased": "What does Japan's spiritual belief system say about what happens to a cat's body when it dies?"
+  },
+  "60": {
+    "direct": "When did cats start having long hair?",
+    "paraphrased": "Why do some cat breeds have long coats now that they didn't used to?"
+  },
+  "61": {
+    "direct": "How many muscles control a cat's outer ear compared to a human's, and what is its maximum rotation?",
+    "paraphrased": "Why are cats able to move their ears so much more than people can?"
+  },
+  "62": {
+    "direct": "Why do kittens need to nap so much?",
+    "paraphrased": "Do baby cats require deep sleep for their body to develop?"
+  },
+  "63": {
+    "direct": "What is the hair density of a cat?",
+    "paraphrased": "How many hairs do cats have covering their skin?"
+  },
+  "64": {
+    "direct": "Who is the heaviest cat ever recorded and how much did he weigh?",
+    "paraphrased": "What is the maximum weight a domestic feline can achieve?"
+  },
+  "65": {
+    "direct": "What is the record for the oldest cat?",
+    "paraphrased": "How long can a typical housecat live and what does that lifespan equate to in human years?"
+  },
+  "66": {
+    "direct": "What are the dimensions and weight of Tinker Toy, the lightest recorded cat?",
+    "paraphrased": "Which specific pet cat holds the title for being the smallest or most lightweight?"
+  },
+  "67": {
+    "direct": "What were the recorded weight and height measurements of Mr. Pebbles?",
+    "paraphrased": "How big was the smallest cat ever documented?"
+  },
+  "68": {
+    "direct": "What notable structures were built in Scotland honoring a cat?",
+    "paraphrased": "Which famous pet caught a huge number of mice?"
+  },
+  "69": {
+    "direct": "What was the reason Europeans brought cats to the Americas in the 1750s?",
+    "paraphrased": "Why did people from Europe start bringing domestic animals across the ocean centuries ago?"
+  },
+  "70": {
+    "direct": "When and where was the first cat show held?",
+    "paraphrased": "What is the origin story for public competitions involving domestic cats?"
+  },
+  "71": {
+    "direct": "What are some historical examples of cats in popular culture, including cartoons and musicals?",
+    "paraphrased": "When did famous cat characters first appear in movies or on stage?"
+  },
+  "72": {
+    "direct": "What are the healthy and dangerous temperature ranges for a cat?",
+    "paraphrased": "At what temperatures should I worry about my cat's fever or low heat?"
+  },
+  "73": {
+    "direct": "Why can cats fit through places that seem too small for them?",
+    "paraphrased": "What physical feature allows a cat to squeeze into tight spaces?"
+  },
+  "74": {
+    "direct": "Do cat nose pads have unique patterns like human fingerprints?",
+    "paraphrased": "Is there anything special about a cat's nose that could be used for identification?"
+  },
+  "75": {
+    "direct": "What is the maximum temperature cats can handle with plenty of water?",
+    "paraphrased": "If my cat stays hydrated, what is a safe heat limit for it?"
+  },
+  "76": {
+    "direct": "What household items or foods are toxic to cats?",
+    "paraphrased": "What common ingredients or medicines should I keep away from my cat?"
+  },
+  "77": {
+    "direct": "Was cat ownership equally distributed between men and women, according to the 2007 Gallup poll?",
+    "paraphrased": "Do men and women own cats about the same amount?"
+  },
+  "78": {
+    "direct": "What is the normal resting heart rate of a cat?",
+    "paraphrased": "How fast does a feline's ticker beat compared to ours?"
+  },
+  "79": {
+    "direct": "If cats don't sweat over their bodies, what part of their body can they actually use to cool off?",
+    "paraphrased": "What parts of a cat's body are used for moisture release?"
+  },
+  "80": {
+    "direct": "How many kittens could a pair of cats produce in seven years?",
+    "paraphrased": "Maximum number of feline babies born from two parents over a week period?"
+  },
+  "81": {
+    "direct": "Which animal has the largest canines compared to its body size?",
+    "paraphrased": "How long are a clouded leopard's teeth when measured against the rest of its anatomy?"
+  },
+  "82": {
+    "direct": "What fraction of a cat's day is spent grooming?",
+    "paraphrased": "How much time do cats spend licking themselves?"
+  },
+  "83": {
+    "direct": "How many teeth do kittens have compared to how many grown cats have, and at what age do they lose their initial set?",
+    "paraphrased": "What is the expected change in a cat's dental count from when it is a baby until it reaches full maturity?"
+  },
+  "84": {
+    "direct": "How many kittens did Dusty have in her lifetime?",
+    "paraphrased": "What is the highest number of babies born to a single cat?"
+  },
+  "85": {
+    "direct": "What is the average weight range for male and female Ragdoll cats?",
+    "paraphrased": "How much do big fluffy cat types weigh?"
+  },
+  "86": {
+    "direct": "Do cats detect earthquake tremors sooner than humans?",
+    "paraphrased": "Can animals feel changes in the ground that people cannot?"
+  },
+  "87": {
+    "direct": "What major changes did cats undergo during domestication compared to dogs?",
+    "paraphrased": "Did being kept as house pets change what cats are naturally like compared to how it changed dogs?"
+  },
+  "88": {
+    "direct": "What are other names for a female cat?",
+    "paraphrased": "What do you call a girl cat?"
+  },
+  "89": {
+    "direct": "What factors determine if a Siamese cat's points will darken?",
+    "paraphrased": "Does temperature affect how dark a kitten's markings are?"
+  },
+  "90": {
+    "direct": "What is the estimated population of feral cats in the United States?",
+    "paraphrased": "How many stray or outdoor cats live across America?"
+  },
+  "91": {
+    "direct": "How many kittens did Kitty give birth to during her life?",
+    "paraphrased": "What is the world record for the highest number of offspring born by a cat?"
+  },
+  "92": {
+    "direct": "Which cat holds the record for the most miles traveled after an escape?",
+    "paraphrased": "What is the maximum distance a pet has covered while running away from its owner?"
+  },
+  "93": {
+    "direct": "How much is Zeus, the Asian Leopard cat hybrid?",
+    "paraphrased": "What is the price tag on extremely rare mixed breed cats?"
+  },
+  "94": {
+    "direct": "Which cat holds the record for surviving a major fall?",
+    "paraphrased": "What is the story of a pet that survived falling from many stories high?"
+  },
+  "95": {
+    "direct": "How much money did Blackie inherit from Ben Rea?",
+    "paraphrased": "What is the record for a cat's inheritance amount?"
+  },
+  "96": {
+    "direct": "Why are a cat's back paw claws less sharp than its front paw claws?",
+    "paraphrased": "What causes the rear paw nails on cats to wear down more quickly than the front ones?"
+  },
+  "97": {
+    "direct": "How many toes do a cat's front and back paws have?",
+    "paraphrased": "What is the difference in digits between a cat's forelegs and hindlegs?"
+  },
+  "98": {
+    "direct": "Do cats with extra toes still need their claws trimmed?",
+    "paraphrased": "Should I trim the nails on a pet that has too many digits?"
+  },
+  "99": {
+    "direct": "What is meant by cats having an undercoat and outer coat?",
+    "paraphrased": "Do cat coats have multiple layers of fur?"
+  },
+  "100": {
+    "direct": "How long until a newborn kitten's ear canals start to open?",
+    "paraphrased": "What color are kittens' eyes right when they wake up, and how do those colors change?"
+  },
+  "101": {
+    "direct": "Do most cat species naturally possess visible eyelashes?",
+    "paraphrased": "Why do cats usually not have any hair growing on their eyelids?"
+  },
+  "102": {
+    "direct": "Why does my cat's eye look partially closed when he is sick?",
+    "paraphrased": "What does it mean if a cat's eyelid seems to be covering its eye sometimes?"
+  },
+  "103": {
+    "direct": "Why can't cats see right under their nose?",
+    "paraphrased": "Do cats have trouble finding small things on the ground?"
+  },
+  "104": {
+    "direct": "Does pupil size indicate a cat's emotional state?",
+    "paraphrased": "What does a cat's eye appearance mean regarding its feelings?"
+  },
+  "105": {
+    "direct": "Are cats truly color blind?",
+    "paraphrased": "Do cats actually see colors?"
+  },
+  "106": {
+    "direct": "Why are white cats with blue eyes often deaf, and does having only one blue eye change that risk?",
+    "paraphrased": "What causes hearing loss in light-colored cats based on their eye color?"
+  },
+  "107": {
+    "direct": "What are the risks for white cats whose ears are exposed to sun?",
+    "paraphrased": "Should I keep my pale cat indoors because of skin issues?"
+  },
+  "108": {
+    "direct": "What height can a cat jump relative to its own standing height?",
+    "paraphrased": "How many times greater is a cat's leap compared to how tall it is?"
+  },
+  "109": {
+    "direct": "What part of a cat's body absorbs impact when it lands from a jump?",
+    "paraphrased": "How do cats cushion their landing when they fall from height?"
+  },
+  "110": {
+    "direct": "Why can cats squeeze into such small places?",
+    "paraphrased": "How do cats get through tight openings?"
+  },
+  "111": {
+    "direct": "If female cats can have that many kittens so quickly, why is population control using spaying and neutering so important?",
+    "paraphrased": "How fast do pet animals reproduce, and why does controlling their number matter?"
+  },
+  "112": {
+    "direct": "How long are cats pregnant?",
+    "paraphrased": "What is the typical length of time before a cat delivers kittens?"
+  },
+  "113": {
+    "direct": "Do mother cats actually teach their kittens how to use the litter box?",
+    "paraphrased": "How do new baby cats learn where they are supposed to go when they need to poop or pee?"
+  },
+  "114": {
+    "direct": "Does how you treat a kitten when it is young determine its personality later on?",
+    "paraphrased": "What factors influence whether a cat will be outgoing or shy as an adult?"
+  },
+  "115": {
+    "direct": "Are cats really social animals, or do they actually respond to human speech and enjoy being with people?",
+    "paraphrased": "Do pets like being around us, or are cats just independent creatures that don't care about humans?"
+  },
+  "116": {
+    "direct": "What is the typical life expectancy of a cat compared to its maximum possible lifespan?",
+    "paraphrased": "How old do pet cats usually live, and how long can they potentially live?"
+  },
+  "117": {
+    "direct": "How many years does neutering a cat increase its life span?",
+    "paraphrased": "What is the general lifespan benefit for a sterilized house cat?"
+  },
+  "118": {
+    "direct": "Can older cats get cancer and is it curable?",
+    "paraphrased": "How often can sick pets be successfully treated?"
+  },
+  "119": {
+    "direct": "Can cats actually detect sweetness?",
+    "paraphrased": "Are felines sensitive to sugary flavors?"
+  },
+  "120": {
+    "direct": "Why do cats need to eat fat since they can't make it themselves?",
+    "paraphrased": "What nutrients does a cat have to get from its food that it cannot create inside its body?"
+  },
+  "121": {
+    "direct": "Which common houseplants are toxic or poisonous to cats?",
+    "paraphrased": "What indoor plants should I keep away from my pet cat?"
+  },
+  "122": {
+    "direct": "Are Tylenol and chocolate poisonous to cats?",
+    "paraphrased": "What common household products or treats are dangerous for cats?"
+  },
+  "123": {
+    "direct": "Why do cats get diarrhea from cow's milk?",
+    "paraphrased": "Is it bad for my cat to drink regular dairy products?"
+  },
+  "124": {
+    "direct": "How many mice does one average serving of cat food equal?",
+    "paraphrased": "If I feed my cat a normal portion, how much sustenance is that enough for?"
+  },
+  "125": {
+    "direct": "How do cats get tapeworms from fleas?",
+    "paraphrased": "What kind of worms can pets catch if they eat infected fleas?"
+  },
+  "126": {
+    "direct": "Why is it dangerous for cats to eat mice?",
+    "paraphrased": "Should I let my pet cat hunt rodents?"
+  },
+  "127": {
+    "direct": "Can cats get worms that usually affect dogs?",
+    "paraphrased": "Are there any parasites found in dog hearts that can infect a cat?"
+  },
+  "128": {
+    "direct": "Does being female versus male affect whether a cat can display both orange and black coat colors?",
+    "paraphrased": "Why do some cats have more color options than others, based on their gender?"
+  },
+  "129": {
+    "direct": "Why would a male cat with both orange and black fur be sterile?",
+    "paraphrased": "What makes it impossible for a pet that has orange and black markings to have kittens?"
+  },
+  "130": {
+    "direct": "Do cats really have AB blood types?",
+    "paraphrased": "Is there a connection between pet blood types and human blood types?"
+  },
+  "131": {
+    "direct": "Do cats get AIDS?",
+    "paraphrased": "Is there any kind of HIV or immune deficiency illness that affects felines?"
+  },
+  "132": {
+    "direct": "Does temperature affect the color or darkness of Siamese cat points?",
+    "paraphrased": "Why are some cats darker in certain areas when it is cold outside?"
+  },
+  "133": {
+    "direct": "Why are Siamese kittens born with white fur on their points?",
+    "paraphrased": "What causes newborn siamese cats to have lighter colored paws and ears?"
+  },
+  "134": {
+    "direct": "Is being allergic to cats caused by saliva or dander, and how does bathing the cat help?",
+    "paraphrased": "What is the best way for someone who has bad reactions to living with a cat?"
+  },
+  "135": {
+    "direct": "If the cat allergen comes from its scent glands, is it true that spayed female cats are less allergenic than male cats?",
+    "paraphrased": "What type of cat is recommended for someone who has severe pet allergies?"
+  },
+  "136": {
+    "direct": "What is the basis of a cat's perception of its owner?",
+    "paraphrased": "Why do cats act like they don't see humans as equals?"
+  },
+  "137": {
+    "direct": "When should I take my cat in for a professional dental cleaning?",
+    "paraphrased": "How often do cats need their teeth checked and cleaned?"
+  },
+  "138": {
+    "direct": "What precautions should pregnant women take regarding cats?",
+    "paraphrased": "Are cats safe for expecting mothers or people with weak immune systems?"
+  },
+  "139": {
+    "direct": "What species is the ancestor of all domestic cats?",
+    "paraphrased": "Where did house cats get their beginnings?"
+  },
+  "140": {
+    "direct": "What was the penalty for harming a cat in ancient Egypt?",
+    "paraphrased": "Did killing a pet cat result in execution during Egyptian civilization?"
+  },
+  "141": {
+    "direct": "What types of animals were preserved and buried with cat mummies in ancient Egypt?",
+    "paraphrased": "How many deceased feline pets were discovered at historical burial sites, and what small creatures were included with them?"
+  },
+  "142": {
+    "direct": "Did people burn cats in town squares during the Festival of Saint John in the Middle Ages?",
+    "paraphrased": "Why were feline animals executed by fire in public areas back when?"
+  },
+  "143": {
+    "direct": "Where and when was the first cat show held?",
+    "paraphrased": "When did people start putting on displays for domestic cats in London?"
+  },
+  "144": {
+    "direct": "How many distinct breeds of the domestic cat are there?",
+    "paraphrased": "What is the current total number of different varieties of pet cats?"
+  },
+  "145": {
+    "direct": "If a cat can use sun and magnetism to find its home, why can't it find its owners if they move away?",
+    "paraphrased": "Why do cats have trouble finding their human family if we go far away from where the cat lives?"
+  },
+  "146": {
+    "direct": "Why do cats bury their poop?",
+    "paraphrased": "Do cats cover up their waste to hide from other animals?"
+  },
+  "147": {
+    "direct": "If a cat is asleep, does that mean it cannot respond if I touch it?",
+    "paraphrased": "Are cats aware of things happening around them when they are taking a nap?"
+  },
+  "148": {
+    "direct": "What is Jacobson\u2019s organ and where is it located in a cat?",
+    "paraphrased": "Do cats have another way of smelling besides using their noses?"
+  },
+  "149": {
+    "direct": "How long should I leave tap water out before giving it to my cat?",
+    "paraphrased": "Is it safe for cats to drink straight from the faucet?"
+  }
+}
