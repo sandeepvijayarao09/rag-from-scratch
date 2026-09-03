@@ -26,7 +26,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from rag import Embedder, VectorStore, load_corpus, load_queries  # noqa: E402
 from rag.generate import NO_ANSWER, answer, check_faithfulness  # noqa: E402
 
-SAMPLE_N, SEED, K = 40, 0, 3
+SAMPLE_N = int(sys.argv[1]) if len(sys.argv) > 1 else 30
+SEED, K = 0, 3
 
 if __name__ == "__main__":
     docs = load_corpus(with_title=True)
