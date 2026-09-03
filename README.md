@@ -35,6 +35,30 @@ baseline. Reranking already flipped sign once in this repo, from −0.033 on den
 to +0.041 on BM25, so the same technique can be worth having or worth skipping
 depending on what it sits behind.
 
+### The generation half is a separate problem
+
+Stage 11 measures what the model does with the documents, and it does not
+behave the way the guides warn about.
+
+```
+context         gave verdict   NOT_ENOUGH
+gold                      12           18    0.40  (want a verdict)
+distractor                 5           25    0.83  (want NOT_ENOUGH)
+empty                      0           30    1.00  (want NOT_ENOUGH)
+```
+
+Handed the correct document, `gemma4:e4b` declines to commit 60% of the time.
+Handed irrelevant documents it correctly refuses 83% of the time. It is too
+conservative, not reckless, which is the opposite of the failure everyone
+writes about.
+
+Reframing the task and relaxing the prompt each bought 0.07 and then stopped,
+so the generator is the ceiling for this stage rather than the retrieval or the
+wording. A system with perfect retrieval and this model would still fail on more
+than half of SciFact. That is the argument for Method Rule 2: had I only
+measured end-to-end accuracy I would have gone off tuning retrieval, which was
+never the problem.
+
 ## Setup
 
 ```bash
