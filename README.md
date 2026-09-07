@@ -75,9 +75,16 @@ Everything runs locally. Embeddings, LLM outputs and cross-encoder scores are
 cached to disk, so re-running a stage costs nothing and only new work is
 computed.
 
+## Where to start
+
+[**FLOW.md**](FLOW.md) is the useful entry point. It turns everything below into
+a build order with a diagnostic gate before each technique, so you can decide
+what applies to your corpus instead of trying all of it.
+
 ## Layout
 
 ```
+FLOW.md       0-to-1 decision procedure. Start here.
 concepts/     15 stages, beginner to pro. Code plus a README per stage.
 rag/          shared library: retrieval, metrics, chunking, fusion, graph
 results/      measured outputs, version controlled
