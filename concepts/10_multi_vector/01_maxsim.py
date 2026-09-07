@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from rag import Embedder, VectorStore, evaluate, load_corpus, load_queries  # noqa: E402
 from rag.late_interaction import LateInteractionIndex  # noqa: E402
 
-SUBSET, SEED = 800, 0
+SUBSET = int(sys.argv[1]) if len(sys.argv) > 1 else 800
+SEED = 0
 
 if __name__ == "__main__":
     docs = load_corpus(with_title=True)
