@@ -138,6 +138,27 @@ are not.
 
 ---
 
+**Piped a long job through `tail` and blinded myself.**
+
+Ran the CRAG eval as `python ... | tail -24`. tail holds everything until stdin
+closes, so a twelve-minute job shows nothing at all until it finishes. Ten
+minutes in I assumed it had hung.
+
+Then made it worse. Checked for the worker with `ps aux | grep myenv/bin/python`
+and got one hit at 0% CPU and 1MB RSS, concluded the process had died, and
+killed it. That hit was the **zsh wrapper**, whose command line happens to
+contain the string "myenv/bin/python". The real worker was almost certainly
+running fine underneath. Exit code 144 was SIGTERM, from me.
+
+Two rules out of one mistake. Do not pipe a job you intend to watch through
+`tail` or `head`; write to a file and tail the file. And do not grep process
+lists by script path, because the shell wrapper carries the same string as the
+process you are looking for. `pgrep -f` has the identical problem.
+
+Cost: ten minutes and a job I had to rerun from scratch.
+
+---
+
 ## Open questions
 
 - The prefix and hybrid deltas (0.010 to 0.014) are inside the noise floor at
