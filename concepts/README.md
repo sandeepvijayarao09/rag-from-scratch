@@ -55,7 +55,7 @@ of our apparent accuracy was vocabulary leakage.
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|
-| 12 | [`12_self_correction`](12_self_correction/) | CRAG grading, Self-RAG retrieve-or-not | code written |
+| 12 | [`12_self_correction`](12_self_correction/) | Routing works (1.00), grading is chance (0.50) | ✅ |
 | 13 | [`13_agentic_retrieval`](13_agentic_retrieval/) | Multi-hop loops: retrieve, reason, retrieve again | code written |
 | 14 | [`14_graph_rag`](14_graph_rag/) | Entity graphs, communities, global questions | code written |
 | 15 | [`15_production_scale`](15_production_scale/) | ANN, quantization, ingestion, observability | planned |
