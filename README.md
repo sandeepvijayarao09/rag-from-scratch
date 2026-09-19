@@ -77,14 +77,22 @@ computed.
 
 ## Where to start
 
-[**FLOW.md**](FLOW.md) is the useful entry point. It turns everything below into
-a build order with a diagnostic gate before each technique, so you can decide
-what applies to your corpus instead of trying all of it.
+Two entry points, depending on why you are here.
+
+**Learning RAG?** [**LEARN.md**](LEARN.md) is a guided path from "what is an
+embedding" to late interaction and self-correction. Eight parts, each with
+something to run and a result to check against. It explains the mechanisms
+rather than just reporting the numbers.
+
+**Already know the techniques and deciding which to use?**
+[**FLOW.md**](FLOW.md) is a build order with a diagnostic gate before each step,
+so you can work out what applies to your corpus instead of trying all of it.
 
 ## Layout
 
 ```
-FLOW.md       0-to-1 decision procedure. Start here.
+LEARN.md      guided path, basic to advanced. Start here if learning.
+FLOW.md       0-to-1 decision procedure. Start here if building.
 concepts/     15 stages, beginner to pro. Code plus a README per stage.
 rag/          shared library: retrieval, metrics, chunking, fusion, graph
 results/      measured outputs, version controlled

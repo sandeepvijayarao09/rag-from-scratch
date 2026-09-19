@@ -1,5 +1,9 @@
 # The Ladder, beginner to pro
 
+New to this? Read [`../LEARN.md`](../LEARN.md) instead. It walks the same
+fifteen stages as a guided path, explaining each mechanism before showing the
+result. This page is the index.
+
 Fifteen stages. Each one is a distinct kind of RAG system, ordered so that every
 stage only needs what came before it.
 
