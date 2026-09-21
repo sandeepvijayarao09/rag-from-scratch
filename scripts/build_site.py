@@ -21,7 +21,7 @@ import markdown
 
 REPO = Path(__file__).resolve().parents[1]
 BASE = "https://sandeepvijayarao09.github.io"
-HUE = "llm"
+HUE = "agent"
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "codehilite", "toc"],
                        extension_configs={"codehilite": {"noclasses": False,
                                                          "guess_lang": False}})
@@ -376,6 +376,7 @@ CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not alr
 .rag-card span { color: var(--muted); font-size: .84rem; line-height: 1.55; }
 
 .codehilite .k, .codehilite .kn { color: #a78bfa; }
+.codehilite .nc, .codehilite .nn { color: var(--accent); }
 .codehilite .s, .codehilite .s1, .codehilite .s2 { color: var(--accent); }
 .codehilite .c, .codehilite .c1 { color: #5b6470; font-style: italic; }
 .codehilite .nf { color: #38bdf8; }

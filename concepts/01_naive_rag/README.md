@@ -15,14 +15,11 @@ ahead of most people who "know RAG" from blog posts.
 
 ## Attribution
 
-This stage is adapted from a widely-circulated "RAG from scratch" tutorial —
+This stage is adapted from a widely-circulated "RAG from scratch" tutorial:
 the cat-facts corpus, Ollama, `bge-base` embeddings, and pure-Python cosine
-similarity. It is the starting point, not original work.
-
-> **TODO before publishing:** replace this with the exact source URL you worked
-> from. Someone senior will recognise the cat-facts corpus on sight;
-> unattributed it costs more credibility than it gains, and attributed it costs
-> nothing — every stage after this one is original.
+similarity. It is the starting point, not original work, and I have not been
+able to pin down the single canonical source since the same 150-line example
+circulates in several places.
 
 Everything from Stage 2 onward is original: the eval harness, the BEIR
 integration, BM25, the fusion and reranking analysis, and every measurement.
