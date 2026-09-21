@@ -217,79 +217,59 @@ def build(out: Path) -> None:
 
 def build_index(meta) -> str:
     titles = {n: t for n, t, _ in meta}
-    tiers = ""
-    for name, sub, nums in TIERS:
-        cards = "".join(
-            f'<a class="rag-lv{" is-wip" if n not in DONE else ""}" href="/RAG/level-{n}/" data-reveal>'
-            f'<span class="rag-lv-n">{int(n)}</span>'
-            f'<span class="rag-lv-t">{html.escape(titles[n])}</span>'
-            f'<span class="rag-lv-s">{"measured" if n in DONE else "in progress"}</span></a>'
-            for n in nums if n in titles)
-        tiers += (f'<div class="rag-tier"><h3>{name}<span>{sub}</span></h3>'
-                  f'<div class="rag-tier-grid">{cards}</div></div>')
 
-    res = "".join(
-        f'<tr class="rag-{k}"><td>{html.escape(t)}'
-        + (f' <em>{html.escape(s)}</em>' if s else '') + f'</td><td>{d}</td></tr>'
-        for t, s, d, k in RESULTS)
+    levels = "".join(
+        f'<a class="rag-row{"" if n in DONE else " is-wip"}" href="/RAG/level-{n}/">'
+        f'<span class="rag-row-n">{int(n)}</span>'
+        f'<span class="rag-row-t">{html.escape(titles[n])}</span></a>'
+        for n, _, _ in meta)
+
+    lost = [(t, d) for t, _, d, k in RESULTS if k == "bad"]
+    won = [(t, d) for t, _, d, k in RESULTS if k == "good"]
+    lost_rows = "".join(f'<li><span>{html.escape(t)}</span><em>{d}</em></li>' for t, d in lost)
+    won_rows = "".join(f'<li><span>{html.escape(t)}</span><em>{d}</em></li>' for t, d in won)
 
     body = f"""    <header class="page-header container">
       <h1>Building RAG from scratch</h1>
-      <p class="lede">I implemented ten recommended RAG techniques and measured each one
-      against the same benchmark. Eight made retrieval worse. This is the code, the numbers,
-      and the reasoning for why.</p>
+      <p class="lede">I built fifteen kinds of RAG system and measured each one on the same
+      benchmark. Eight of the ten techniques I tested made retrieval worse.</p>
+      <div class="case-actions">
+        <a class="btn btn-primary" href="/RAG/learn/">Read the guide</a>
+        <a class="btn btn-ghost" href="https://github.com/sandeepvijayarao09/rag-from-scratch" target="_blank" rel="noopener">Code</a>
+      </div>
     </header>
 
-    <section class="case-strip">
-      <div class="container case-strip-grid">
-        <div class="stat"><span class="stat-num">5,183</span><span class="stat-label">abstracts, BEIR SciFact</span></div>
-        <div class="stat"><span class="stat-num">300</span><span class="stat-label">labelled queries</span></div>
-        <div class="stat"><span class="stat-num">15</span><span class="stat-label">levels, naive to production</span></div>
-      </div>
-    </section>
-
     <article class="case-body rag-prose container">
-      <div class="case-actions">
-        <a class="btn btn-primary" href="/RAG/learn/">Start the guide</a>
-        <a class="btn btn-ghost" href="https://github.com/sandeepvijayarao09/rag-from-scratch" target="_blank" rel="noopener">View the code</a>
+      <div class="rag-split">
+        <div>
+          <h3 class="rag-h">Made it worse</h3>
+          <ul class="rag-scores rag-lost">{lost_rows}</ul>
+        </div>
+        <div>
+          <h3 class="rag-h">Helped</h3>
+          <ul class="rag-scores rag-won">{won_rows}</ul>
+        </div>
       </div>
 
-      <h2>What I measured</h2>
-      <table class="rag-results"><tbody>{res}</tbody></table>
-      <p>The two clear wins are the two where I measured the gap before applying the technique.
-      None of this means these techniques are bad. It means they are conditional, and the
-      condition is almost always whether your pipeline is already good at the thing the
-      technique fixes. Reranking flipped sign inside this repo: -0.033 on a strong first stage,
-      +0.041 on a weak one.</p>
-      <p class="case-note">Baseline validated against a published bge-base-en-v1.5 score of
-      roughly 0.741 before anything was built on top of it. At n=300, deltas under about 0.02
-      sit inside the noise floor, and the write-ups say so.</p>
+      <p>Change in nDCG@10 against a 0.759 baseline on BEIR SciFact, 5,183 abstracts and
+      300 labelled queries. The two that helped are the two where I measured the gap before
+      applying the technique. None of these are bad techniques. They are conditional, and
+      the condition is whether your pipeline is already good at the thing they fix.
+      Reranking flipped sign inside this repo: -0.033 on a strong first stage, +0.041 on a
+      weak one.</p>
 
-      <h2>The levels</h2>
-      <p>Each level is a distinct kind of RAG system, ordered so every level only needs what
-      came before it. Code and a written finding for each.</p>
-      {tiers}
+      <h2>The fifteen levels</h2>
+      <div class="rag-rows">{levels}</div>
 
-      <h2>Read it a different way</h2>
-      <div class="rag-cards">
-        <a class="rag-card" href="/RAG/learn/"><strong>Learner's guide</strong>
-          <span>Eight parts, basic to advanced. Explains each mechanism before showing the
-          result, with something to run at every step.</span></a>
-        <a class="rag-card" href="/RAG/flow/"><strong>Decision procedure</strong>
-          <span>The same material as a build order, with a diagnostic gate before each
-          technique. For when you already know the techniques.</span></a>
-        <a class="rag-card" href="/RAG/systems/"><strong>Taxonomy</strong>
-          <span>Every kind of RAG system, organised by the problem it solves rather than by
-          how fashionable it is.</span></a>
-        <a class="rag-card" href="/RAG/notes/"><strong>Lab notebook</strong>
-          <span>What broke, what I got wrong, and the open questions. Including two
-          hypotheses I falsified before landing the reranking rule.</span></a>
-      </div>
+      <h2>More</h2>
+      <p><a href="/RAG/flow/">Decision procedure</a>, a build order with a diagnostic before
+      each technique. <a href="/RAG/systems/">Taxonomy</a> of every RAG system by the problem
+      it solves. <a href="/RAG/notes/">Lab notebook</a>, what broke and what I got wrong.</p>
     </article>
 """
     return shell("Building RAG from scratch",
-                 "A measured, level by level guide to building RAG systems. Ten techniques "
-                 "tested on BEIR SciFact; eight made retrieval worse.", "/RAG/", body)
+                 "I built fifteen kinds of RAG system and measured each one. Eight of ten "
+                 "techniques made retrieval worse.", "/RAG/", body)
 
 
 CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not already style. */
@@ -349,32 +329,30 @@ CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not alr
 .rag-good td:last-child { color: var(--accent); }
 .rag-good td:first-child { font-weight: 500; }
 
-.rag-tier { margin: 1.6rem 0; }
-.rag-tier h3 { font-size: .8rem; font-family: var(--mono); text-transform: uppercase;
-  letter-spacing: .1em; color: var(--text); margin: 0 0 .7rem; display: flex; gap: .7rem;
-  flex-wrap: wrap; align-items: baseline; }
-.rag-tier h3 span { font-family: var(--sans); text-transform: none; letter-spacing: 0;
-  color: var(--muted); font-size: .84rem; }
-.rag-tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: .6rem; }
-.rag-lv { display: flex; align-items: center; gap: .6rem; padding: .7rem .85rem;
-  border: 1px solid var(--line); border-radius: var(--r-token); background: var(--surface);
-  text-decoration: none; transition: .18s var(--ease); }
-.rag-lv:hover { border-color: rgba(var(--accent-rgb), .5); transform: translateY(-1px); }
-.rag-lv-n { font-family: var(--mono); font-size: .74rem; color: var(--muted); min-width: 1.1rem; }
-.rag-lv-t { flex: 1; font-size: .87rem; color: var(--text); line-height: 1.3; }
-.rag-lv-s { font-family: var(--mono); font-size: .6rem; text-transform: uppercase;
-  letter-spacing: .08em; padding: .18rem .4rem; border-radius: 4px;
-  background: var(--accent-dim); color: var(--accent); white-space: nowrap; }
-.rag-lv.is-wip .rag-lv-s { background: var(--bg-2); color: var(--muted); }
 
-.rag-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: .8rem; margin-top: 1.1rem; }
-.rag-card { display: block; padding: 1.1rem; border: 1px solid var(--line);
-  border-radius: var(--r-surface); background: var(--surface); text-decoration: none;
-  transition: .18s var(--ease); }
-.rag-card:hover { border-color: rgba(var(--accent-rgb), .5); transform: translateY(-2px); }
-.rag-card strong { display: block; color: var(--text); margin-bottom: .35rem; font-size: .95rem; }
-.rag-card span { color: var(--muted); font-size: .84rem; line-height: 1.55; }
+.rag-split { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin: .5rem 0 1.6rem; }
+.rag-h { font-family: var(--mono); font-size: .68rem; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--muted); margin: 0 0 .7rem; font-weight: 500; }
+.rag-scores { list-style: none; margin: 0; }
+.rag-scores li { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;
+  padding: .42rem 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.rag-scores li:last-child { border-bottom: none; }
+.rag-scores span { color: var(--text); }
+.rag-scores em { font-family: var(--mono); font-size: .8rem; font-style: normal; white-space: nowrap; }
+.rag-lost em { color: #fb7185; }
+.rag-won em { color: var(--accent); }
+.rag-won span { font-weight: 500; }
+
+.rag-rows { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; margin: 1rem 0 1.6rem; }
+.rag-row { display: flex; gap: .8rem; align-items: baseline; padding: .5rem 0;
+  border-bottom: 1px solid var(--line); text-decoration: none; transition: .15s var(--ease); }
+.rag-row:hover { padding-left: .35rem; }
+.rag-row:hover .rag-row-t { color: var(--accent); }
+.rag-row-n { font-family: var(--mono); font-size: .75rem; color: var(--muted); min-width: 1.4rem; }
+.rag-row-t { color: var(--text); font-size: .92rem; }
+.rag-row.is-wip .rag-row-t { color: var(--muted); }
+.rag-row.is-wip .rag-row-t::after { content: " in progress"; font-family: var(--mono);
+  font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; opacity: .55; }
 
 .codehilite .k, .codehilite .kn { color: #a78bfa; }
 .codehilite .nc, .codehilite .nn { color: var(--accent); }
@@ -382,6 +360,10 @@ CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not alr
 .codehilite .c, .codehilite .c1 { color: #5b6470; font-style: italic; }
 .codehilite .nf { color: #38bdf8; }
 .codehilite .mi, .codehilite .mf { color: #fbbf24; }
+
+@media (max-width: 720px) {
+  .rag-split, .rag-rows { grid-template-columns: 1fr; gap: 1.6rem 0; }
+}
 
 @media (max-width: 860px) {
   .rag-shell { grid-template-columns: 1fr; gap: 1.4rem; }
