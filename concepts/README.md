@@ -49,7 +49,7 @@ of our apparent accuracy was vocabulary leakage.
 
 | # | Stage | What you learn | Status |
 |---|---|---|---|
-| 09 | [`09_context_enrichment`](09_context_enrichment/) | Contextual retrieval, small-to-big | code written |
+| 09 | [`09_context_enrichment`](09_context_enrichment/) | Contextual retrieval hurts when chunks are already self-contained | ✅ |
 | 10 | [`10_multi_vector`](10_multi_vector/) | Late interaction MaxSim: wins, at 241x the index | ✅ |
 | 11 | [`11_grounded_generation`](11_grounded_generation/) | Citations, abstention, and a generator ceiling | ✅ |
 

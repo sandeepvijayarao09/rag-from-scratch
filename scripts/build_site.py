@@ -1,12 +1,15 @@
-"""Generate the static /RAG guide site from this repo's markdown.
+"""Generate the /RAG guide for sandeepvijayarao09.github.io.
 
-Output is plain HTML that reuses the design tokens from the personal site's
-style.css, so the guide reads as part of that site rather than a bolted-on
-docs tool. No Jekyll, no build action: GitHub Pages serves the files directly.
+Emits the same markup the rest of that site uses: dark theme, Geist, absolute
+paths, directory routing (/RAG/level-04/), .case-body prose, .case-strip stats,
+data-hue tinting, skip link, canonical + OG tags. Only additions are a small
+rag.css for the elements the site does not already style (tables, code blocks,
+lists, the level grid and the sticky level nav).
+
+House style is enforced here too: the site contains zero em dashes, so the
+markdown is normalised on the way through.
 
     python scripts/build_site.py <output-dir>
-
-Regenerate after editing any README and the site stays in sync.
 """
 
 import html
@@ -17,186 +20,18 @@ from pathlib import Path
 import markdown
 
 REPO = Path(__file__).resolve().parents[1]
+BASE = "https://sandeepvijayarao09.github.io"
+HUE = "llm"
 MD = markdown.Markdown(extensions=["tables", "fenced_code", "codehilite", "toc"],
                        extension_configs={"codehilite": {"noclasses": False,
                                                          "guess_lang": False}})
 
-NAV_ITEMS = [("Home", "index.html"), ("About", "about.html"), ("Skills", "skills.html"),
-             ("Experience", "experience.html"), ("Projects", "projects.html"),
-             ("Awards", "awards.html"), ("Contact", "contact.html")]
-
-
-def nav(depth: str = "../") -> str:
-    links = "\n".join(f'          <li><a href="{depth}{h}">{t}</a></li>'
-                      for t, h in NAV_ITEMS)
-    drawer = "\n".join(f'      <a href="{depth}{h}">{t}</a>' for t, h in NAV_ITEMS)
-    return f"""  <header class="nav" role="banner">
-    <div class="nav__inner">
-      <a class="nav__logo" href="{depth}index.html">Sandeep <span>V.</span></a>
-      <nav aria-label="Primary">
-        <ul class="nav__links">
-{links}
-        </ul>
-      </nav>
-      <a class="nav__cta" href="{depth}contact.html">Get in touch</a>
-      <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <nav class="nav__drawer" aria-label="Mobile">
-{drawer}
-      <a class="nav__cta" href="{depth}contact.html">Get in touch</a>
-    </nav>
-  </header>"""
-
-
-def footer(depth: str = "../") -> str:
-    links = "\n".join(f'          <a href="{depth}{h}">{t}</a>' for t, h in NAV_ITEMS[1:])
-    return f"""  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div>
-          <div class="footer__brand">Sandeep Vijayarao</div>
-          <div class="footer__tagline">Full-stack AI Engineer &middot; San Jose, CA</div>
-        </div>
-        <nav class="footer__links" aria-label="Footer">
-{links}
-        </nav>
-      </div>
-    </div>
-  </footer>"""
-
-
-def page(title: str, body: str, desc: str, depth: str = "../",
-         toc: str = "", subnav: str = "") -> str:
-    wide = "" if toc else " rg-doc__wrap--wide"
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{html.escape(title)}</title>
-  <meta name="description" content="{html.escape(desc)}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="{depth}style.css" />
-  <link rel="stylesheet" href="rag.css" />
-</head>
-<body>
-{nav(depth)}
-  <main class="rg-doc">
-    <div class="rg-doc__wrap{wide}">
-{toc}
-      <article class="rg-doc__body">
-{subnav}
-{body}
-      </article>
-    </div>
-  </main>
-{footer(depth)}
-  <script src="{depth}main.js"></script>
-</body>
-</html>
-"""
-
-
-def render(md_text: str) -> tuple[str, str]:
-    MD.reset()
-    body = MD.convert(md_text)
-    return body, getattr(MD, "toc", "")
-
-
-def strip_h1(html_body: str) -> tuple[str, str]:
-    m = re.search(r"<h1[^>]*>(.*?)</h1>", html_body, re.S)
-    title = re.sub(r"<.*?>", "", m.group(1)).strip() if m else ""
-    # The page already shows the level number in a badge and a breadcrumb, so
-    # "Stage 7, Cross-encoder reranking" reads as a stutter. Keep the subject.
-    title = re.sub(r"^Stage\s*\d+\s*[,\u2014\u2013-]\s*", "", title)
-    return re.sub(r"<h1[^>]*>.*?</h1>", "", html_body, count=1, flags=re.S), title
-
-
-def fix_links(body: str) -> str:
-    """Rewrite in-repo markdown links to the generated page names."""
-    body = re.sub(r'href="\.\./\.\./([A-Za-z_]+\.md)"', lambda m: f'href="{m.group(1)[:-3].lower()}.html"', body)
-    body = re.sub(r'href="([A-Z][A-Za-z_]*)\.md"', lambda m: f'href="{m.group(1).lower()}.html"', body)
-    body = re.sub(r'href="\.\./([0-9]{2})_([a-z_]+)/"', r'href="level-\1.html"', body)
-    body = re.sub(r'href="([0-9]{2})_([a-z_]+)/"', r'href="level-\1.html"', body)
-    # anything still pointing at repo internals goes to GitHub
-    body = re.sub(r'href="(\.\./)*((rag|concepts|scripts)/[^"]+)"',
-                  r'href="https://github.com/sandeepvijayarao09/rag-from-scratch/blob/main/\2"', body)
-    return body
-
-
-def stage_dirs() -> list[Path]:
-    return sorted((REPO / "concepts").glob("[0-9][0-9]_*"))
-
-
-def build(out: Path) -> None:
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "rag.css").write_text(CSS)
-
-    stages = stage_dirs()
-    meta = []
-    for d in stages:
-        num = d.name[:2]
-        readme = d / "README.md"
-        if not readme.exists():
-            continue
-        body, _ = render(readme.read_text())
-        body, title = strip_h1(body)
-        meta.append((num, d.name, title or d.name, fix_links(body)))
-
-    # per-level pages with prev/next
-    for i, (num, dirname, title, body) in enumerate(meta):
-        prev_l = f'<a class="rg-pager__prev" href="level-{meta[i-1][0]}.html">&larr; {html.escape(meta[i-1][2])}</a>' if i else '<a class="rg-pager__prev" href="index.html">&larr; Overview</a>'
-        next_l = f'<a class="rg-pager__next" href="level-{meta[i+1][0]}.html">{html.escape(meta[i+1][2])} &rarr;</a>' if i + 1 < len(meta) else ''
-        crumb = (f'<div class="rg-doc__crumb"><a href="index.html">RAG Guide</a> '
-                 f'<span>/</span> Level {int(num)}</div>')
-        sub = f'{crumb}<h1 class="rg-doc__title">{html.escape(title)}</h1>'
-        sidebar = level_sidebar(meta, num)
-        page_html = page(f"{title} — RAG Guide", body + f'<div class="rg-pager">{prev_l}{next_l}</div>',
-                         f"Level {int(num)} of a measured 0-to-N guide to building RAG systems.",
-                         toc=sidebar, subnav=sub)
-        (out / f"level-{num}.html").write_text(page_html)
-
-    # long-form docs
-    for src, name, desc in [("LEARN.md", "learn", "A guided path through building RAG systems, basic to advanced."),
-                            ("FLOW.md", "flow", "A decision procedure for building RAG from 0 to 1."),
-                            ("SYSTEMS.md", "systems", "Taxonomy of RAG systems, organised by the problem each solves."),
-                            ("NOTES.md", "notes", "Lab notebook: what broke and what I got wrong.")]:
-        p = REPO / src
-        if not p.exists():
-            continue
-        body, toc = render(p.read_text())
-        body, title = strip_h1(body)
-        body = fix_links(body)
-        sidebar = f'<aside class="rg-doc__toc"><div class="rg-doc__toc-title">On this page</div>{toc}</aside>'
-        (out / f"{name}.html").write_text(
-            page(f"{title} — RAG Guide", body, desc, toc=sidebar,
-                 subnav=f'<div class="rg-doc__crumb"><a href="index.html">RAG Guide</a> <span>/</span> {html.escape(title)}</div>'
-                        f'<h1 class="rg-doc__title">{html.escape(title)}</h1>'))
-
-    (out / "index.html").write_text(build_index(meta))
-    print(f"built {len(meta)} level pages + 5 docs -> {out}")
-
-
-def level_sidebar(meta, current) -> str:
-    items = "\n".join(
-        f'<li class="{"rg-is-current" if num == current else ""}">'
-        f'<a href="level-{num}.html"><span class="rg-lv">{int(num)}</span> {html.escape(t)}</a></li>'
-        for num, _, t, _ in meta)
-    return (f'<aside class="rg-doc__toc"><div class="rg-doc__toc-title">Levels</div>'
-            f'<ul class="rg-lvlist">{items}</ul></aside>')
-
-
+DONE = {"01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12"}
 TIERS = [("Beginner", "Make it work, then make it measurable", ["01", "02", "03"]),
          ("Core retrieval", "The fundamentals", ["04", "05", "06"]),
-         ("Intermediate", "Two-stage and query-side", ["07", "08"]),
+         ("Intermediate", "Two-stage and query side", ["07", "08"]),
          ("Advanced", "Representation and grounding", ["09", "10", "11"]),
          ("Pro", "Control flow and knowledge structure", ["12", "13", "14", "15"])]
-
 RESULTS = [("Chunking", "6 configs, every one", "-0.010 to -0.020", "bad"),
            ("RRF fusion", "4 variants, every one", "-0.009 to -0.024", "bad"),
            ("Reranking on dense", "", "-0.033", "bad"),
@@ -209,218 +44,347 @@ RESULTS = [("Chunking", "6 configs, every one", "-0.010 to -0.020", "bad"),
            ("Reranking on BM25", "", "+0.041", "good")]
 
 
-def build_index(meta) -> str:
-    titles = {num: t for num, _, t, _ in meta}
-    done = {"01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12"}
+def dedash(text: str) -> str:
+    """The site contains no em dashes. Keep it that way."""
+    text = re.sub(r"\s+—\s+", ", ", text)
+    text = re.sub(r"\s+–\s+", ", ", text)
+    return text.replace("—", "-").replace("–", "-")
 
-    tiers_html = ""
+
+def shell(title: str, desc: str, url_path: str, body: str) -> str:
+    t = html.escape(dedash(title))
+    d = html.escape(dedash(desc))
+    canon = f"{BASE}{url_path}"
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{t} | Sandeep Vijayarao</title>
+  <meta name="description" content="{d}">
+  <link rel="canonical" href="{canon}">
+  <meta property="og:title" content="{t} | Sandeep Vijayarao">
+  <meta property="og:description" content="{d}">
+  <meta property="og:url" content="{canon}">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preload" href="/assets/fonts/geist-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/geist-mono-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/RAG/rag.css">
+</head>
+<body data-hue="{HUE}">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="top-sentinel" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="nav-name" href="/">Sandeep Vijayarao</a>
+      <nav aria-label="Primary">
+        <a href="/work/">Work</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+{body}
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>&copy; 2026 Sandeep Vijayarao, San Jose, CA</span>
+      <span class="footer-links">
+        <a href="https://github.com/sandeepvijayarao09" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sandeepvijayarao/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:sandeepvijayarao09@gmail.com">Email</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
+"""
+
+
+def render(md_text: str) -> tuple[str, str]:
+    MD.reset()
+    return MD.convert(dedash(md_text)), getattr(MD, "toc", "")
+
+
+def split_h1(body: str) -> tuple[str, str]:
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", body, re.S)
+    title = re.sub(r"<.*?>", "", m.group(1)).strip() if m else ""
+    title = re.sub(r"^Stage\s*\d+\s*[,—–-]\s*", "", title)
+    return re.sub(r"<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.S), title
+
+
+def fix_links(body: str) -> str:
+    body = re.sub(r'href="\.\./\.\./([A-Za-z_]+)\.md"', lambda m: f'href="/RAG/{m.group(1).lower()}/"', body)
+    body = re.sub(r'href="([A-Z][A-Za-z_]*)\.md"', lambda m: f'href="/RAG/{m.group(1).lower()}/"', body)
+    body = re.sub(r'href="(\.\./)?([0-9]{2})_[a-z_]+/"', r'href="/RAG/level-\2/"', body)
+    body = re.sub(r'href="(\.\./)*((rag|concepts|scripts)/[^"]+)"',
+                  r'href="https://github.com/sandeepvijayarao09/rag-from-scratch/blob/main/\2"', body)
+    return body
+
+
+def level_nav(meta, current) -> str:
+    items = "".join(
+        f'<li{" class=\"is-here\"" if num == current else ""}>'
+        f'<a href="/RAG/level-{num}/"><span>{int(num)}</span>{html.escape(t)}</a></li>'
+        for num, t, _ in meta)
+    return f'<nav class="rag-levelnav" aria-label="Levels"><p>Levels</p><ul>{items}</ul></nav>'
+
+
+def build(out: Path) -> None:
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "rag.css").write_text(CSS)
+    (out / ".nojekyll").write_text("")
+
+    meta = []
+    for d in sorted((REPO / "concepts").glob("[0-9][0-9]_*")):
+        r = d / "README.md"
+        if r.exists():
+            body, _ = render(r.read_text())
+            body, title = split_h1(body)
+            meta.append((d.name[:2], title or d.name, fix_links(body)))
+
+    for i, (num, title, body) in enumerate(meta):
+        nxt = ""
+        if i + 1 < len(meta):
+            n2, t2, _ = meta[i + 1]
+            nxt = (f'<a class="next-link" href="/RAG/level-{n2}/" data-reveal><div>'
+                   f'<strong>Level {int(n2)}, {html.escape(t2)}</strong><br>'
+                   f'<span>Next in the ladder</span></div>'
+                   f'<span class="ext" aria-hidden="true">&#8594;</span></a>')
+        overview = ('<a class="next-link" href="/RAG/" data-reveal style="--d:.07s"><div>'
+                    '<strong>All levels</strong><br><span>The full ladder, fifteen levels '
+                    'from naive RAG to production scale</span></div>'
+                    '<span class="ext" aria-hidden="true">&#8594;</span></a>')
+        page_body = f"""    <header class="page-header container">
+      <p class="rag-crumb"><a href="/RAG/">RAG guide</a> / Level {int(num)}</p>
+      <h1>{html.escape(title)}</h1>
+    </header>
+
+    <div class="container rag-shell">
+{level_nav(meta, num)}
+      <article class="case-body rag-prose">
+{body}
+      </article>
+    </div>
+
+    <section class="next container">{nxt}{overview}</section>
+"""
+        d = out / f"level-{num}"
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(shell(
+            title, f"Level {int(num)} of a measured guide to building RAG systems from scratch.",
+            f"/RAG/level-{num}/", page_body))
+
+    for src, slug, desc in [("LEARN.md", "learn", "A guided path through building RAG systems, basic to advanced."),
+                            ("FLOW.md", "flow", "A decision procedure for building RAG from zero to one."),
+                            ("SYSTEMS.md", "systems", "Taxonomy of RAG systems, organised by the problem each solves."),
+                            ("NOTES.md", "notes", "Lab notebook. What broke and what I got wrong.")]:
+        p = REPO / src
+        if not p.exists():
+            continue
+        body, toc = render(p.read_text())
+        body, title = split_h1(body)
+        page_body = f"""    <header class="page-header container">
+      <p class="rag-crumb"><a href="/RAG/">RAG guide</a> / {html.escape(title)}</p>
+      <h1>{html.escape(title)}</h1>
+    </header>
+
+    <div class="container rag-shell">
+      <nav class="rag-levelnav" aria-label="Contents"><p>On this page</p>{toc}</nav>
+      <article class="case-body rag-prose">
+{fix_links(body)}
+      </article>
+    </div>
+"""
+        d = out / slug
+        d.mkdir(exist_ok=True)
+        (d / "index.html").write_text(shell(title, desc, f"/RAG/{slug}/", page_body))
+
+    (out / "index.html").write_text(build_index(meta))
+    print(f"built {len(meta)} levels + 4 docs + index -> {out}")
+
+
+def build_index(meta) -> str:
+    titles = {n: t for n, t, _ in meta}
+    tiers = ""
     for name, sub, nums in TIERS:
-        rows = ""
-        for n in nums:
-            if n not in titles:
-                continue
-            state = "done" if n in done else "wip"
-            label = "measured" if n in done else "in progress"
-            rows += (f'<a class="rg-lvcard rg-lvcard--{state}" href="level-{n}.html">'
-                     f'<span class="rg-lvcard__n">{int(n)}</span>'
-                     f'<span class="rg-lvcard__t">{html.escape(titles[n])}</span>'
-                     f'<span class="rg-lvcard__s">{label}</span></a>')
-        tiers_html += (f'<section class="rg-tier"><h3 class="rg-tier__h">{name}'
-                       f'<span>{sub}</span></h3><div class="rg-tier__grid">{rows}</div></section>')
+        cards = "".join(
+            f'<a class="rag-lv{" is-wip" if n not in DONE else ""}" href="/RAG/level-{n}/" data-reveal>'
+            f'<span class="rag-lv-n">{int(n)}</span>'
+            f'<span class="rag-lv-t">{html.escape(titles[n])}</span>'
+            f'<span class="rag-lv-s">{"measured" if n in DONE else "in progress"}</span></a>'
+            for n in nums if n in titles)
+        tiers += (f'<div class="rag-tier"><h3>{name}<span>{sub}</span></h3>'
+                  f'<div class="rag-tier-grid">{cards}</div></div>')
 
     res = "".join(
-        f'<tr class="rg-r--{k}"><td>{html.escape(t)}'
-        + (f' <span class="rg-muted">{html.escape(s)}</span>' if s else '')
-        + f'</td><td class="rg-num">{d}</td></tr>'
+        f'<tr class="rag-{k}"><td>{html.escape(t)}'
+        + (f' <em>{html.escape(s)}</em>' if s else '') + f'</td><td>{d}</td></tr>'
         for t, s, d, k in RESULTS)
 
-    body = f"""
-      <div class="rg-hero">
-        <div class="rg-hero__eyebrow">Project guide &middot; Level 0 to 15</div>
-        <h1 class="rg-hero__h">Building RAG from scratch,<br />and measuring what actually helps</h1>
-        <p class="rg-hero__p">I implemented ten recommended RAG techniques and measured each one
-        against the same benchmark. <strong>Eight made retrieval worse.</strong> This guide is
-        the code, the numbers, and the reasoning for why.</p>
-        <div class="rg-hero__meta">
-          <div><span>Corpus</span>BEIR SciFact &middot; 5,183 abstracts</div>
-          <div><span>Queries</span>300 labelled</div>
-          <div><span>Metric</span>nDCG@10</div>
-          <div><span>Baseline</span>0.759, validated vs published 0.741</div>
-        </div>
-        <div class="rg-hero__cta">
-          <a class="rg-btn rg-btn--primary" href="learn.html">Start the guide</a>
-          <a class="rg-btn" href="https://github.com/sandeepvijayarao09/rag-from-scratch">View the code</a>
-        </div>
+    body = f"""    <header class="page-header container">
+      <h1>Building RAG from scratch</h1>
+      <p class="lede">I implemented ten recommended RAG techniques and measured each one
+      against the same benchmark. Eight made retrieval worse. This is the code, the numbers,
+      and the reasoning for why.</p>
+    </header>
+
+    <section class="case-strip">
+      <div class="container case-strip-grid">
+        <div class="stat"><span class="stat-num">5,183</span><span class="stat-label">abstracts, BEIR SciFact</span></div>
+        <div class="stat"><span class="stat-num">300</span><span class="stat-label">labelled queries</span></div>
+        <div class="stat"><span class="stat-num">15</span><span class="stat-label">levels, naive to production</span></div>
+      </div>
+    </section>
+
+    <article class="case-body rag-prose container">
+      <div class="case-actions">
+        <a class="btn btn-primary" href="/RAG/learn/">Start the guide</a>
+        <a class="btn btn-ghost" href="https://github.com/sandeepvijayarao09/rag-from-scratch" target="_blank" rel="noopener">View the code</a>
       </div>
 
-      <section class="rg-panel">
-        <h2>What I measured</h2>
-        <table class="rg-restable"><tbody>{res}</tbody></table>
-        <p class="rg-note">The two clear wins are the two where I measured the gap <em>before</em>
-        applying the technique. None of this means these techniques are bad. It means they are
-        <strong>conditional</strong>, and the condition is almost always whether your pipeline is
-        already good at the thing the technique fixes. Reranking flipped sign inside this repo:
-        &minus;0.033 on a strong first stage, +0.041 on a weak one.</p>
-      </section>
+      <h2>What I measured</h2>
+      <table class="rag-results"><tbody>{res}</tbody></table>
+      <p>The two clear wins are the two where I measured the gap before applying the technique.
+      None of this means these techniques are bad. It means they are conditional, and the
+      condition is almost always whether your pipeline is already good at the thing the
+      technique fixes. Reranking flipped sign inside this repo: -0.033 on a strong first stage,
+      +0.041 on a weak one.</p>
+      <p class="case-note">Baseline validated against a published bge-base-en-v1.5 score of
+      roughly 0.741 before anything was built on top of it. At n=300, deltas under about 0.02
+      sit inside the noise floor, and the write-ups say so.</p>
 
-      <section class="rg-panel">
-        <h2>The levels</h2>
-        <p class="rg-note">Each level is a distinct kind of RAG system, ordered so every level only
-        needs what came before it. Code and a written finding for each.</p>
-        {tiers_html}
-      </section>
+      <h2>The levels</h2>
+      <p>Each level is a distinct kind of RAG system, ordered so every level only needs what
+      came before it. Code and a written finding for each.</p>
+      {tiers}
 
-      <section class="rg-panel">
-        <h2>Read it a different way</h2>
-        <div class="rg-cards">
-          <a class="rg-card" href="learn.html"><h4>Learner's guide</h4>
-            <p>Eight parts, basic to advanced. Explains each mechanism before showing the result.
-            Something to run at every step.</p></a>
-          <a class="rg-card" href="flow.html"><h4>Decision procedure</h4>
-            <p>The same material as a build order, with a diagnostic gate before each technique.
-            For when you already know the techniques.</p></a>
-          <a class="rg-card" href="systems.html"><h4>Taxonomy</h4>
-            <p>Every kind of RAG system, organised by the problem it solves rather than by
-            popularity.</p></a>
-          <a class="rg-card" href="notes.html"><h4>Lab notebook</h4>
-            <p>What broke, what I got wrong, and the open questions. Including two hypotheses I
-            falsified before landing the reranking rule.</p></a>
-        </div>
-      </section>
+      <h2>Read it a different way</h2>
+      <div class="rag-cards">
+        <a class="rag-card" href="/RAG/learn/"><strong>Learner's guide</strong>
+          <span>Eight parts, basic to advanced. Explains each mechanism before showing the
+          result, with something to run at every step.</span></a>
+        <a class="rag-card" href="/RAG/flow/"><strong>Decision procedure</strong>
+          <span>The same material as a build order, with a diagnostic gate before each
+          technique. For when you already know the techniques.</span></a>
+        <a class="rag-card" href="/RAG/systems/"><strong>Taxonomy</strong>
+          <span>Every kind of RAG system, organised by the problem it solves rather than by
+          how fashionable it is.</span></a>
+        <a class="rag-card" href="/RAG/notes/"><strong>Lab notebook</strong>
+          <span>What broke, what I got wrong, and the open questions. Including two
+          hypotheses I falsified before landing the reranking rule.</span></a>
+      </div>
+    </article>
 """
-    return page("RAG from Scratch — a measured guide, level 0 to 15", body,
-                "A measured, level-by-level guide to building RAG systems. Ten techniques "
-                "tested on BEIR SciFact; eight made retrieval worse.",
-                subnav="")
+    return shell("Building RAG from scratch",
+                 "A measured, level by level guide to building RAG systems. Ten techniques "
+                 "tested on BEIR SciFact; eight made retrieval worse.", "/RAG/", body)
 
 
-CSS = """/* RAG guide — extends the site's design tokens */
-.rg-doc { padding: calc(var(--nav-h) + 40px) 0 80px; }
-.rg-doc__wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px;
-  display: grid; grid-template-columns: 240px minmax(0,1fr); gap: 56px; align-items: start; }
-.rg-doc__wrap--wide { grid-template-columns: minmax(0,1fr); max-width: 900px; }
-.rg-doc__body { min-width: 0; font-size: 16.5px; line-height: 1.72; color: var(--text-primary); }
-.rg-doc__crumb { font-size: 13px; color: var(--text-tertiary); margin-bottom: 10px; letter-spacing: .01em; }
-.rg-doc__crumb a { color: var(--accent); }
-.rg-doc__crumb span { margin: 0 6px; opacity: .5; }
-.rg-doc__title { font-size: 40px; line-height: 1.12; letter-spacing: -0.022em; margin: 0 0 28px; font-weight: 650; }
+CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not already style. */
+.rag-shell { display: grid; grid-template-columns: 220px minmax(0,1fr); gap: 3rem;
+  align-items: start; padding-bottom: 4rem; }
+.rag-prose { max-width: none; }
+.rag-crumb { font-family: var(--mono); font-size: .78rem; color: var(--muted);
+  letter-spacing: .02em; margin-bottom: .6rem; }
+.rag-crumb a { color: var(--accent); text-decoration: none; }
 
-.rg-doc__toc { position: sticky; top: calc(var(--nav-h) + 24px); font-size: 13.5px; }
-.rg-doc__toc-title { font-weight: 600; font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
-  color: var(--text-tertiary); margin-bottom: 12px; }
-.rg-doc__toc ul { list-style: none; margin: 0; padding: 0; }
-.rg-doc__toc li { margin: 0; }
-.rg-doc__toc a { display: block; padding: 5px 10px; border-radius: 7px; color: var(--text-secondary);
-  line-height: 1.45; transition: var(--transition); }
-.rg-doc__toc a:hover { background: var(--bg-secondary); color: var(--text-primary); }
-.rg-doc__toc > ul > li > ul { margin-left: 10px; border-left: 1px solid var(--border); padding-left: 6px; }
-.rg-lvlist .rg-lv { display: inline-block; width: 20px; color: var(--text-tertiary); font-variant-numeric: tabular-nums; }
-.rg-lvlist .rg-is-current > a { background: var(--bg-secondary); color: var(--accent); font-weight: 550; }
+.rag-levelnav { position: sticky; top: 5rem; font-size: .84rem; }
+.rag-levelnav > p { font-family: var(--mono); font-size: .7rem; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--muted); margin-bottom: .7rem; }
+.rag-levelnav ul { list-style: none; }
+.rag-levelnav a { display: flex; gap: .55rem; padding: .32rem .5rem; border-radius: var(--r-token);
+  color: var(--muted); text-decoration: none; line-height: 1.35; transition: .18s var(--ease); }
+.rag-levelnav a:hover { color: var(--text); background: var(--surface); }
+.rag-levelnav a span { font-family: var(--mono); font-size: .72rem; opacity: .6; min-width: 1.1rem; }
+.rag-levelnav .is-here > a { color: var(--accent); background: var(--accent-dim); }
+.rag-levelnav > ul ul { margin-left: .7rem; border-left: 1px solid var(--line); padding-left: .4rem; }
 
-.rg-doc__body h2 { font-size: 26px; letter-spacing: -0.015em; margin: 44px 0 14px; font-weight: 640;
-  padding-top: 14px; border-top: 1px solid var(--border); }
-.rg-doc__body h3 { font-size: 19px; margin: 30px 0 10px; font-weight: 620; }
-.rg-doc__body p { margin: 0 0 16px; }
-.rg-doc__body ul, .rg-doc__body ol { margin: 0 0 18px; padding-left: 22px; }
-.rg-doc__body li { margin-bottom: 7px; }
-.rg-doc__body p a, .rg-doc__body li a, .rg-doc__body td a,
-.rg-doc__body blockquote a { color: var(--accent); }
-.rg-doc__body p a:hover, .rg-doc__body li a:hover,
-.rg-doc__body td a:hover { text-decoration: underline; }
-.rg-doc__body .rg-btn--primary { color: #fff; }
-.rg-doc__body .rg-card, .rg-doc__body .rg-lvcard { color: var(--text-primary); }
-.rg-doc__body strong { font-weight: 620; }
-.rg-doc__body blockquote { margin: 22px 0; padding: 14px 20px; border-left: 3px solid var(--accent);
-  background: var(--bg-tertiary); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; color: var(--text-secondary); }
-.rg-doc__body blockquote p:last-child { margin-bottom: 0; }
+.rag-prose h2 { margin-top: 2.6rem; }
+.rag-prose h3 { margin-top: 1.9rem; font-size: 1.05rem; }
+.rag-prose ul, .rag-prose ol { margin: 0 0 1.1rem 1.15rem; color: var(--muted); }
+.rag-prose li { margin-bottom: .4rem; }
+.rag-prose li > strong { color: var(--text); }
+.rag-prose p a, .rag-prose li a, .rag-prose td a,
+.rag-prose blockquote a { color: var(--accent); }
+.rag-prose .btn-primary { color: var(--accent-ink); }
+.rag-prose strong { color: var(--text); }
+.rag-prose blockquote { margin: 1.4rem 0; padding: .9rem 1.2rem; border-left: 2px solid var(--accent);
+  background: var(--bg-2); border-radius: 0 var(--r-token) var(--r-token) 0; color: var(--muted); }
+.rag-prose blockquote p { margin: 0; }
+.rag-prose blockquote p + p { margin-top: .7rem; }
 
-.rg-doc__body pre { background: #1d1d1f; color: #f5f5f7; padding: 18px 20px; border-radius: var(--radius-sm);
-  overflow-x: auto; margin: 0 0 20px; font-size: 13px; line-height: 1.62;
-  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
-.rg-doc__body code { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 0.875em; background: var(--bg-secondary); padding: 2px 6px; border-radius: 5px; }
-.rg-doc__body pre code { background: none; padding: 0; font-size: inherit; color: inherit; }
+.rag-prose pre { background: var(--bg-2); border: 1px solid var(--line); border-radius: var(--r-token);
+  padding: 1rem 1.1rem; overflow-x: auto; margin: 0 0 1.3rem; font-family: var(--mono);
+  font-size: .78rem; line-height: 1.6; color: var(--text); }
+.rag-prose code { font-family: var(--mono); font-size: .84em; background: var(--surface);
+  padding: .12em .38em; border-radius: 4px; color: var(--text); }
+.rag-prose pre code { background: none; padding: 0; font-size: inherit; }
 
-.rg-doc__body table { width: 100%; border-collapse: collapse; margin: 0 0 22px; font-size: 14.5px; }
-.rg-doc__body th { text-align: left; font-weight: 600; font-size: 12px; letter-spacing: .05em;
-  text-transform: uppercase; color: var(--text-tertiary); padding: 8px 12px; border-bottom: 1px solid var(--border-strong); }
-.rg-doc__body td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
-.rg-doc__body tr:last-child td { border-bottom: none; }
+.rag-prose table { width: 100%; border-collapse: collapse; margin: 0 0 1.4rem; font-size: .86rem; }
+.rag-prose th { text-align: left; font-family: var(--mono); font-size: .68rem; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+  padding: .5rem .7rem; border-bottom: 1px solid var(--line); }
+.rag-prose td { padding: .55rem .7rem; border-bottom: 1px solid var(--line);
+  color: var(--muted); vertical-align: top; }
+.rag-prose td strong { color: var(--text); }
 
-.rg-pager { display: flex; justify-content: space-between; gap: 16px; margin-top: 56px;
-  padding-top: 24px; border-top: 1px solid var(--border); font-size: 14.5px; }
-.rg-pager a { color: var(--accent); }
-.rg-pager__next { margin-left: auto; text-align: right; }
+.rag-results { width: 100%; border-collapse: collapse; font-size: .92rem; margin: 1.2rem 0 1.6rem; }
+.rag-results td { padding: .6rem .7rem; border-bottom: 1px solid var(--line); color: var(--text); }
+.rag-results td:last-child { text-align: right; font-family: var(--mono); font-size: .84rem;
+  white-space: nowrap; }
+.rag-results em { color: var(--muted); font-style: normal; font-size: .82rem; }
+.rag-bad td:last-child { color: #fb7185; }
+.rag-good td:last-child { color: var(--accent); }
+.rag-good td:first-child { font-weight: 500; }
 
-/* index */
-.rg-hero { padding: 8px 0 40px; }
-.rg-hero__eyebrow { font-size: 12px; letter-spacing: .09em; text-transform: uppercase;
-  color: var(--accent); font-weight: 600; margin-bottom: 14px; }
-.rg-hero__h { font-size: 52px; line-height: 1.08; letter-spacing: -0.028em; font-weight: 680; margin: 0 0 20px; }
-.rg-hero__p { font-size: 19px; line-height: 1.6; color: var(--text-secondary); max-width: 660px; margin: 0 0 28px; }
-.rg-hero__p strong { color: var(--text-primary); font-weight: 620; }
-.rg-hero__meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 1px;
-  background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-md);
-  overflow: hidden; margin-bottom: 30px; }
-.rg-hero__meta div { background: var(--bg); padding: 14px 16px; font-size: 14px; font-weight: 550; }
-.rg-hero__meta span { display: block; font-size: 11px; letter-spacing: .07em; text-transform: uppercase;
-  color: var(--text-tertiary); font-weight: 600; margin-bottom: 5px; }
-.rg-hero__cta { display: flex; gap: 12px; flex-wrap: wrap; }
-.rg-btn { display: inline-block; padding: 11px 22px; border-radius: 980px; font-size: 15px; font-weight: 550;
-  border: 1px solid var(--border-strong); transition: var(--transition); }
-.rg-btn:hover { background: var(--bg-secondary); }
-.rg-btn--primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-.rg-btn--primary:hover { background: var(--accent-hover); }
+.rag-tier { margin: 1.6rem 0; }
+.rag-tier h3 { font-size: .8rem; font-family: var(--mono); text-transform: uppercase;
+  letter-spacing: .1em; color: var(--text); margin: 0 0 .7rem; display: flex; gap: .7rem;
+  flex-wrap: wrap; align-items: baseline; }
+.rag-tier h3 span { font-family: var(--sans); text-transform: none; letter-spacing: 0;
+  color: var(--muted); font-size: .84rem; }
+.rag-tier-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: .6rem; }
+.rag-lv { display: flex; align-items: center; gap: .6rem; padding: .7rem .85rem;
+  border: 1px solid var(--line); border-radius: var(--r-token); background: var(--surface);
+  text-decoration: none; transition: .18s var(--ease); }
+.rag-lv:hover { border-color: rgba(var(--accent-rgb), .5); transform: translateY(-1px); }
+.rag-lv-n { font-family: var(--mono); font-size: .74rem; color: var(--muted); min-width: 1.1rem; }
+.rag-lv-t { flex: 1; font-size: .87rem; color: var(--text); line-height: 1.3; }
+.rag-lv-s { font-family: var(--mono); font-size: .6rem; text-transform: uppercase;
+  letter-spacing: .08em; padding: .18rem .4rem; border-radius: 4px;
+  background: var(--accent-dim); color: var(--accent); white-space: nowrap; }
+.rag-lv.is-wip .rag-lv-s { background: var(--bg-2); color: var(--muted); }
 
-.rg-panel { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--border); }
-.rg-panel h2 { font-size: 27px; letter-spacing: -0.018em; font-weight: 640; margin: 0 0 8px; }
-.rg-note { font-size: 15px; line-height: 1.66; color: var(--text-secondary); max-width: 700px; margin: 12px 0 22px; }
-.rg-note strong { color: var(--text-primary); }
+.rag-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: .8rem; margin-top: 1.1rem; }
+.rag-card { display: block; padding: 1.1rem; border: 1px solid var(--line);
+  border-radius: var(--r-surface); background: var(--surface); text-decoration: none;
+  transition: .18s var(--ease); }
+.rag-card:hover { border-color: rgba(var(--accent-rgb), .5); transform: translateY(-2px); }
+.rag-card strong { display: block; color: var(--text); margin-bottom: .35rem; font-size: .95rem; }
+.rag-card span { color: var(--muted); font-size: .84rem; line-height: 1.55; }
 
-.rg-restable { width: 100%; border-collapse: collapse; font-size: 15px; margin: 18px 0 4px; }
-.rg-restable td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
-.rg-restable .rg-num { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600;
-  font-family: "JetBrains Mono", monospace; font-size: 14px; white-space: nowrap; }
-.rg-r--bad .rg-num { color: #c1121f; }
-.rg-r--good .rg-num { color: #1a7f37; }
-.rg-r--good td:first-child { font-weight: 560; }
-.rg-muted { color: var(--text-tertiary); font-size: 13.5px; }
+.codehilite .k, .codehilite .kn { color: #a78bfa; }
+.codehilite .s, .codehilite .s1, .codehilite .s2 { color: var(--accent); }
+.codehilite .c, .codehilite .c1 { color: #5b6470; font-style: italic; }
+.codehilite .nf { color: #38bdf8; }
+.codehilite .mi, .codehilite .mf { color: #fbbf24; }
 
-.rg-tier { margin: 26px 0; }
-.rg-tier__h { font-size: 14px; font-weight: 640; margin: 0 0 12px; display: flex; gap: 10px;
-  align-items: baseline; flex-wrap: wrap; }
-.rg-tier__h span { font-weight: 400; color: var(--text-tertiary); font-size: 13.5px; }
-.rg-tier__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px,1fr)); gap: 10px; }
-.rg-lvcard { display: flex; align-items: center; gap: 11px; padding: 13px 15px; border-radius: var(--radius-sm);
-  border: 1px solid var(--border); background: var(--bg); transition: var(--transition); }
-.rg-lvcard:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
-.rg-lvcard__n { font-variant-numeric: tabular-nums; font-weight: 650; color: var(--text-tertiary);
-  font-size: 13px; min-width: 18px; }
-.rg-lvcard__t { flex: 1; font-size: 14px; font-weight: 530; line-height: 1.35; }
-.rg-lvcard__s { font-size: 10.5px; letter-spacing: .05em; text-transform: uppercase; font-weight: 600;
-  padding: 3px 7px; border-radius: 5px; white-space: nowrap; }
-.rg-lvcard--done .rg-lvcard__s { background: rgba(26,127,55,.1); color: #1a7f37; }
-.rg-lvcard--wip .rg-lvcard__s { background: var(--bg-secondary); color: var(--text-tertiary); }
-
-.rg-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 14px; margin-top: 18px; }
-.rg-card { display: block; padding: 20px; border: 1px solid var(--border); border-radius: var(--radius-md);
-  transition: var(--transition); }
-.rg-card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
-.rg-card h4 { font-size: 16px; font-weight: 620; margin: 0 0 7px; }
-.rg-card p { font-size: 14px; line-height: 1.6; color: var(--text-secondary); margin: 0; }
-
-.codehilite .k, .codehilite .kn { color: #ff7ab2; }
-.codehilite .s, .codehilite .s1, .codehilite .s2 { color: #a5e844; }
-.codehilite .c, .codehilite .c1 { color: #6c7986; font-style: italic; }
-.codehilite .nf { color: #78c2ff; }
-.codehilite .mi, .codehilite .mf { color: #d9c97c; }
-
-@media (max-width: 900px) {
-  .rg-doc__wrap { grid-template-columns: 1fr; gap: 24px; }
-  .rg-doc__toc { position: static; border-bottom: 1px solid var(--border); padding-bottom: 16px; }
-  .rg-doc__toc .rg-lvlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px,1fr)); }
-  .rg-hero__h { font-size: 36px; }
-  .rg-doc__title { font-size: 30px; }
+@media (max-width: 860px) {
+  .rag-shell { grid-template-columns: 1fr; gap: 1.4rem; }
+  .rag-levelnav { position: static; border-bottom: 1px solid var(--line); padding-bottom: 1rem; }
+  .rag-levelnav ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px,1fr)); }
 }
 """
 
