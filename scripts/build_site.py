@@ -26,7 +26,7 @@ MD = markdown.Markdown(extensions=["tables", "fenced_code", "codehilite", "toc"]
                        extension_configs={"codehilite": {"noclasses": False,
                                                          "guess_lang": False}})
 
-DONE = {"01", "02", "03", "04", "05", "06", "07", "08", "10", "11", "12"}
+DONE = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"}
 TIERS = [("Beginner", "Make it work, then make it measurable", ["01", "02", "03"]),
          ("Core retrieval", "The fundamentals", ["04", "05", "06"]),
          ("Intermediate", "Two-stage and query side", ["07", "08"]),
@@ -39,6 +39,7 @@ RESULTS = [("Chunking", "6 configs, every one", "-0.010 to -0.020", "bad"),
            ("Step-back prompting", "", "-0.066", "bad"),
            ("Query decomposition", "", "-0.095", "bad"),
            ("CRAG relevance grading", "balanced accuracy 0.500", "chance", "bad"),
+           ("Contextual retrieval", "on self-contained chunks", "-0.006", "bad"),
            ("Weighted hybrid 0.7/0.3", "", "+0.010", "good"),
            ("Late interaction", "at 241x the index", "+0.011", "good"),
            ("Reranking on BM25", "", "+0.041", "good")]
