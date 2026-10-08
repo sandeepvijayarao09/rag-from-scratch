@@ -1,0 +1,19 @@
+
+Where the gold document was found, top-10, n=300
+
+  both         233   77.7%  #######################################
+  dense only    34   11.3%  ######
+  bm25 only      9    3.0%  ##
+  neither       24    8.0%  ####
+
+  dense alone recall@10: 0.890
+  perfect-fusion ceiling: 0.920  (+0.030 from the 9 bm25-only queries)
+  unreachable by fusion : 0.080
+
+Queries only BM25 found (look at the vocabulary):
+  - Arterioles have a larger lumen diameter than venules.
+  - De novo assembly of sequence data has more specific contigs than unassembled sequence data.
+  - Increased vessel density along with a reduction in fibrosis decreases the efficacy of chemothera
+  - LDL cholesterol has no involvement in the development of cardiovascular disease.
+  - Recurrent mutations occur frequently within CTCF anchor sites adjacent to oncogenes.
+  - Statins increase blood cholesterol.

@@ -1,0 +1,32 @@
+SciFact: 5183 docs, 300 test queries
+relevant docs per query: 1.13
+
+[title + prefix   (BEIR convention)]
+
+  n=300   r@1=0.598  r@3=0.746  r@5=0.821  r@10=0.871  MRR@10=0.710  nDCG@10=0.745
+  index 57.2s | eval 29.1s
+
+[title, no prefix]
+  n=300   r@1=0.614  r@3=0.762  r@5=0.827  r@10=0.880  MRR@10=0.725  nDCG@10=0.759
+  index 0.0s | eval 34.1s
+
+[no title, prefix]
+
+  n=300   r@1=0.577  r@3=0.748  r@5=0.805  r@10=0.875  MRR@10=0.696  nDCG@10=0.735
+  index 54.9s | eval 0.0s
+
+[no title, no prefix]
+  n=300   r@1=0.588  r@3=0.764  r@5=0.811  r@10=0.870  MRR@10=0.704  nDCG@10=0.742
+  index 0.0s | eval 0.1s
+
+==============================================================================
+config                                   nDCG@10     R@10      MRR
+------------------------------------------------------------------------------
+title, no prefix                          0.7588   0.8802   0.7246
+title + prefix   (BEIR convention)        0.7449   0.8709   0.7105
+no title, no prefix                       0.7416   0.8697   0.7042
+no title, prefix                          0.7346   0.8752   0.6961
+==============================================================================
+
+Compare the top row against the published bge-base-en-v1.5 SciFact
+nDCG@10 on the MTEB/BEIR leaderboard. Close => pipeline is sound.

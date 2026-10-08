@@ -1,0 +1,8 @@
+BM25 index: 5183 docs, 35,704 unique terms, 0.29s  (no GPU, no model)
+
+BM25          n=300   r@1=0.528  r@3=0.674  r@5=0.724  r@10=0.783  MRR@10=0.635  nDCG@10=0.665
+              0.9 ms/query
+
+Stage 3 dense baselines for comparison:
+  bge-base title, no prefix    nDCG@10=0.7588  R@10=0.8802  MRR=0.7246
+  bge-base title + prefix      nDCG@10=0.7449  R@10=0.8709  MRR=0.7105
