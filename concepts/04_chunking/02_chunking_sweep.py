@@ -23,7 +23,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-from rag import BGE_QUERY_PREFIX, Embedder, VectorStore, evaluate, load_corpus, load_queries  # noqa: E402
+from rag import Embedder, VectorStore, evaluate, load_corpus, load_queries  # noqa: E402
 from rag import chunking  # noqa: E402
 from rag.retrieve import doc_level_retriever  # noqa: E402
 

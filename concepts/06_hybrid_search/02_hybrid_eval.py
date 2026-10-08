@@ -70,4 +70,4 @@ if __name__ == "__main__":
         delta = "" if label == "dense only" else f"{r.ndcg[10] - base:+.4f}"
         print(f"{label:<20} {r.ndcg[10]:>9.4f} {delta:>10} {r.recall[10]:>8.4f} {r.mrr:>8.4f}")
     print("-" * 60)
-    print(f"perfect-fusion recall@10 ceiling from 6a: 0.920")
+    print("perfect-fusion recall@10 ceiling from 6a: 0.920")

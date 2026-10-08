@@ -1,0 +1,4 @@
+# Unit tests and lint. No Ollama, torch or dataset needed.
+-r requirements-core.txt
+pytest>=8.0
+ruff>=0.6

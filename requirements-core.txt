@@ -1,0 +1,4 @@
+# Core: every stage except 7 and 10 needs only these
+numpy>=2.0
+ollama>=0.6            # local embedding + generation
+pydantic>=2.0          # structured LLM output

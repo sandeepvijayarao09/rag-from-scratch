@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 110
+extend-exclude = ["myenv", "cache", "data"]
+
+[tool.ruff.lint]
+# Pyflakes and syntax errors only: the stage scripts are written to be read
+# top to bottom, so style rules would fight the teaching layout.
+select = ["E9", "F"]
