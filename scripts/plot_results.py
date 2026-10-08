@@ -17,8 +17,10 @@ ROWS = [
     ("Step-back prompting", "08", -0.066, -0.066),
     ("HyDE", "08", -0.048, -0.048),
     ("Cross-encoder rerank on dense", "07", -0.033, -0.033),
+    ("BGE query prefix", "03", -0.014, -0.014),
     ("RRF fusion (4 variants)", "06", -0.024, -0.009),
     ("Chunking (6 configs)", "04", -0.020, -0.010),
+    ("Multi-query + RRF", "08", 0.001, 0.001),
     ("Weighted hybrid 0.7/0.3", "06", 0.010, 0.010),
     ("Cross-encoder rerank on BM25", "07", 0.041, 0.041),
 ]
@@ -56,7 +58,7 @@ def main() -> None:
         y = TOP + i * ROW_H
         a, b = sorted((low, high))
         x0, x1 = x(min(a, 0.0)), x(max(b, 0.0))
-        color = POS if high > 0 else NEG
+        color = MUTED if abs(high) < 0.005 else POS if high > 0 else NEG
         if low != high:  # a range across variants: solid best-to-worst, faded to zero
             out.append(f'<rect x="{x(b):.1f}" y="{y + 7}" width="{x(0) - x(b):.1f}" '
                        f'height="{ROW_H - 14}" fill="{color}" opacity="0.35" rx="2"/>')

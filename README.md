@@ -1,7 +1,8 @@
 # RAG From Scratch
 
 I implemented ten recommended RAG techniques and measured each one against the
-same benchmark. Eight of them made retrieval worse.
+same benchmark. Seven made retrieval worse, one changed nothing, and only two
+helped.
 
 This repo is the code, the numbers, and the reasoning for why. It is a
 fifteen-stage ladder from naive RAG to production concerns; stages 1 to 12 are
@@ -11,7 +12,7 @@ planned.
 [![License: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
 [![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-![Change in nDCG@10 from each technique on BEIR SciFact: six of eight made retrieval worse](docs/results.svg)
+![Change in nDCG@10 from each of ten techniques on BEIR SciFact: seven made retrieval worse](docs/results.svg)
 
 ## The results
 
@@ -27,6 +28,8 @@ published figure of roughly 0.741 before building anything on top of it.
 | HyDE | −0.048 |
 | Step-back prompting | −0.066 |
 | Query decomposition | −0.095 |
+| BGE query instruction prefix (Stage 3) | −0.014 |
+| Multi-query (3 paraphrases + RRF) | +0.001 |
 | Weighted hybrid 0.7/0.3 | +0.010 |
 | Cross-encoder reranking on BM25 (vs BM25 alone) | +0.041 |
 

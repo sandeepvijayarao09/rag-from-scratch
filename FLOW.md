@@ -5,8 +5,8 @@ measurement in this repo, and the point of each step is to tell you whether the
 *next* step is worth taking.
 
 The short version: most RAG advice is a list of techniques. What you actually
-need is a way to decide which ones apply to you, because on my benchmark eight
-of ten recommended techniques made things worse.
+need is a way to decide which ones apply to you, because on my benchmark seven
+of ten recommended techniques made things worse and only two helped.
 
 ---
 
