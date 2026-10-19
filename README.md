@@ -1,5 +1,13 @@
 # RAG From Scratch
 
+## In 30 seconds
+- **What it is:** A study of RAG (an AI looking up documents before it answers): I built ten commonly recommended techniques and measured each on one benchmark.
+- **Why it matters:** Teams often add these techniques by default; this shows which ones help and which hurt.
+- **Key result:** From a strong 0.759 nDCG@10 baseline (a standard search-quality score, 0 to 1), seven techniques made results worse, one changed nothing, two helped; the best was cross-encoder reranking on keyword search (+0.041). One corpus only (BEIR SciFact), so results may differ elsewhere.
+- **What I did:** Solo. Stage 1 adapts a public tutorial; everything after is mine.
+- **Built with:** Python, NumPy, Ollama, bge-base embeddings, Gemma, PyTorch, pytest (no LangChain, no vector database).
+- **Try it:** [sandeepvijayarao09.github.io/RAG](https://sandeepvijayarao09.github.io/RAG/)
+
 I implemented ten recommended RAG techniques and measured each one against the
 same benchmark. Seven made retrieval worse, one changed nothing, and only two
 helped.
