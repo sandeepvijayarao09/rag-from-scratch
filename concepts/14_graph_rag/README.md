@@ -1,6 +1,10 @@
 # Stage 14, GraphRAG
 
-**Tier: Pro** · prerequisite: Stage 13 · status: code written, not yet run
+**Tier: Pro** · prerequisite: Stage 13 · status: roadmap (code written, not measured)
+
+> **Roadmap stage.** This page is a design note, not a result: nothing here has
+> been measured, and it is not counted in the repo's findings. Any expected
+> result below is written down before the run so it stays falsifiable.
 
 Genuinely different from everything else in this repo.
 

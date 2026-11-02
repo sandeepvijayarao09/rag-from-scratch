@@ -169,8 +169,8 @@ def build(out: Path) -> None:
                    f'<span>Next in the ladder</span></div>'
                    f'<span class="ext" aria-hidden="true">&#8594;</span></a>')
         overview = ('<a class="next-link" href="/RAG/" data-reveal style="--d:.07s"><div>'
-                    '<strong>All levels</strong><br><span>The full ladder, fifteen levels '
-                    'from naive RAG to production scale</span></div>'
+                    '<strong>All levels</strong><br><span>The full ladder, twelve measured levels '
+                    'plus three roadmap notes</span></div>'
                     '<span class="ext" aria-hidden="true">&#8594;</span></a>')
         page_body = f"""    <header class="page-header container">
       <p class="rag-crumb"><a href="/RAG/">RAG guide</a> / Level {int(num)}</p>
@@ -239,7 +239,7 @@ def build_index(meta) -> str:
 
     body = f"""    <header class="page-header container">
       <h1>Building RAG from scratch</h1>
-      <p class="lede">I built a fifteen-stage RAG ladder and measured each technique on the same
+      <p class="lede">I built a twelve-stage RAG ladder and measured each technique on the same
       benchmark, then re-tested every result with paired significance tests. LLM query
       rewriting made retrieval worse, a strong reranker made it better, and most of the rest
       made no detectable difference.</p>
@@ -271,7 +271,8 @@ def build_index(meta) -> str:
       techniques made things worse; the significance tests showed most of those were noise.
       <a href="https://github.com/sandeepvijayarao09/rag-from-scratch/blob/main/results/v2/RESULTS.md">Full results</a>.</p>
 
-      <h2>The fifteen levels</h2>
+      <h2>The levels</h2>
+      <p>Levels 1 to 12 are built and measured. 13 to 15 are roadmap notes.</p>
       <div class="rag-rows">{levels}</div>
 
       <h2>More</h2>
@@ -367,7 +368,7 @@ CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not alr
 .rag-row-n { font-family: var(--mono); font-size: .75rem; color: var(--muted); min-width: 1.4rem; }
 .rag-row-t { color: var(--text); font-size: .92rem; }
 .rag-row.is-wip .rag-row-t { color: var(--muted); }
-.rag-row.is-wip .rag-row-t::after { content: " in progress"; font-family: var(--mono);
+.rag-row.is-wip .rag-row-t::after { content: " roadmap"; font-family: var(--mono);
   font-size: .62rem; text-transform: uppercase; letter-spacing: .08em; opacity: .55; }
 
 .codehilite .k, .codehilite .kn { color: #a78bfa; }

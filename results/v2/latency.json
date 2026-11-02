@@ -1,0 +1,23 @@
+{
+ "depth": 50,
+ "queries": 40,
+ "first_stage": {
+  "query_embedding_ms": 16.4,
+  "dense_search_ms": 0.16
+ },
+ "bge-reranker-base": {
+  "median_ms": 977,
+  "p90_ms": 982,
+  "batch_size": 16
+ },
+ "bge-reranker-v2-m3": {
+  "median_ms": 3238,
+  "p90_ms": 3255,
+  "batch_size": 16
+ },
+ "qwen3-reranker-4b": {
+  "median_ms": 14617,
+  "p90_ms": 20362,
+  "batch_size": 8
+ }
+}

@@ -33,10 +33,20 @@ A repair that still does not beat dense is reported as exactly that.
 ## Running it
 
 ```bash
+python -m venv venv && venv/bin/pip install -r requirements-v2.txt
+python -m venv venv-colbert && venv-colbert/bin/pip install -r requirements-v2-colbert.txt
+ollama pull embeddinggemma:300m && ollama pull qwen3-embedding:4b && ollama pull gemma4:12b
+ollama pull hf.co/CompendiumLabs/bge-base-en-v1.5-gguf
+
+export PY=venv/bin/python COLBERT_PY=venv-colbert/bin/python
 ./v2/run_all.sh          # everything, about a day (the 12B steps are most of it)
-./v2/run_all.sh fast     # stages 3-7 and 10 only, no 12B generation
-python v2/report.py      # rebuild results/v2/RESULTS.md from whatever has run
+./v2/run_all.sh fast     # stages 3-7, 10 and reranker latency, no 12B generation
+$PY v2/report.py         # rebuild results/v2/RESULTS.md from whatever has run
 ```
+
+The exact versions the published results came from are pinned in
+`requirements-v2.txt`. Stage 10 needs its own environment because pylate 1.6
+requires sentence-transformers 5.x, which conflicts with the reranker stack.
 
 Every step resumes from its caches (embeddings, reranker scores and LLM outputs are all stored on disk), so an interrupted run carries on where it stopped.
 
@@ -48,3 +58,5 @@ Every step resumes from its caches (embeddings, reranker scores and LLM outputs 
 - `v2/s0N_*.py`: one script per stage
 - `results/v2/<embedding>/<stage>.json`: per-query nDCG@10, recall@10, MRR and top-10 lists
 - `results/v2/RESULTS.md`, `summary.json`: the tested comparisons
+- `v2/latency.py`, `results/v2/latency.json`: reranker cost per query at depth 50
+- `tests/test_v2_stats.py`: unit tests for the bootstrap, Holm correction, verdicts and report

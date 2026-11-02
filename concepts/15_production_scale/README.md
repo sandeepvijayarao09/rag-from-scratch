@@ -1,6 +1,10 @@
 # Stage 15, Production scale
 
-**Tier: Pro** · prerequisite: Stage 14 · status: planned
+**Tier: Pro** · prerequisite: Stage 14 · status: roadmap (planned, no code)
+
+> **Roadmap stage.** This page is a design note, not a result: nothing here has
+> been measured, and it is not counted in the repo's findings. Any expected
+> result below is written down before the run so it stays falsifiable.
 
 Orthogonal to every technique above. These do not change *what* you retrieve,
 they change whether the system survives contact with real traffic and real data.

@@ -14,10 +14,10 @@ three embedding models and three rerankers. Three techniques reliably made
 retrieval worse, reranking reliably helped once the reranker was strong enough,
 and the rest made no difference I could detect.
 
-This repo is the code, the numbers, and the reasoning for why. It is a
-fifteen-stage ladder from naive RAG to production concerns; stages 1 to 12 are
-built and measured, 13 and 14 have code but no measurements yet, and 15 is
-planned.
+This repo is the code, the numbers, and the reasoning for why: a twelve-stage
+ladder from naive RAG to self-correction, every stage built and measured.
+Stages 13 to 15 (multi-hop retrieval, GraphRAG, production scale) are roadmap
+design notes, clearly marked, and none of the findings depend on them.
 
 [![CI](https://github.com/sandeepvijayarao09/rag-from-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/sandeepvijayarao09/rag-from-scratch/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
@@ -74,6 +74,20 @@ What holds up:
   lifts BM25 from 0.665 to 0.776.
 - **The embedding model matters more than any technique.** `embeddinggemma-300m`
   alone scores 0.799, more than any technique adds on top of bge-base.
+
+What the reranker costs, measured with [`v2/latency.py`](v2/latency.py) on one
+laptop (Apple Silicon, MPS), reranking 50 dense candidates per query:
+
+| Stage | Time per query | Δ nDCG@10 on dense bge-base |
+|---|---|---|
+| Dense retrieval alone (embed query + search) | 17 ms | baseline |
+| + bge-reranker-base | 977 ms | −0.033 (n.s.) |
+| + bge-reranker-v2-m3 | 3.2 s | −0.007 (n.s.) |
+| + Qwen3-Reranker-4B | 14.6 s (p90 20.4 s) | **+0.044** |
+
+The only reranker that helps costs about 850x the first stage on a laptop. On
+a server GPU with batching it is far cheaper, but the trade is real: it fits
+offline or high-value queries, not an interactive search box on-device.
 
 What does not hold up: chunking, RRF, the query prefix, multi-query, weighted
 hybrid, contextual retrieval and late interaction all sit inside their
@@ -208,7 +222,7 @@ so you can work out what applies to your corpus instead of trying all of it.
 ```
 LEARN.md      guided path, basic to advanced. Start here if learning.
 FLOW.md       0-to-1 decision procedure. Start here if building.
-concepts/     15 stages, beginner to pro. Code plus a README per stage.
+concepts/     12 measured stages plus 3 roadmap notes. Code plus a README per stage.
 rag/          shared library: retrieval, metrics, chunking, fusion, graph
 results/      measured outputs and reproduce logs; results/v2/ holds per-query scores
 tests/        unit tests for rag/ (no Ollama needed)
@@ -275,10 +289,10 @@ they look:
 - **Subsets for the expensive stages.** Contextual retrieval (Stage 9) runs on
   a 600-document subset, and Stages 11 and 12 on 16 to 30 sampled queries, so
   those results are directional. The sample sizes are in each stage README.
-- **Stages 13 to 15 are not measured.** Agentic multi-hop retrieval
+- **Stages 13 to 15 are roadmap, not results.** Multi-hop retrieval
   (`rag/adaptive.py`) and GraphRAG (`rag/graph.py`) have code but no eval
-  runner yet; Stage 15 is a plan. Their READMEs state the expected result
-  before the run so the predictions stay falsifiable.
+  runner, because SciFact has no multi-hop or global questions to test them
+  on; Stage 15 is a plan. Their READMEs state the expected result in advance.
 
 ## Attribution
 

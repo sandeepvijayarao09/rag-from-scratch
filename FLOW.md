@@ -110,8 +110,10 @@ bounded by candidate recall. Two consequences:
 - Under reranking, optimise the first stage for **recall**, not ordering. Its
   ordering is about to be discarded.
 
-bge-reranker-base costs 1,515ms/query at depth 50; a 4B reranker costs more.
-Set depth deliberately.
+Measured cost at depth 50 on a laptop (Apple Silicon): dense retrieval 17 ms,
+bge-reranker-base +977 ms, bge-reranker-v2-m3 +3.2 s, Qwen3-Reranker-4B +14.6 s.
+The only reranker that helped is the expensive one, so budget the latency (or a
+GPU) before adopting it, and set depth deliberately.
 
 ### Cheap, but measure before keeping: weighted hybrid (Stage 6)
 Weighted 0.7/0.3 was +0.010, not significant. It is nearly free (a BM25 index
