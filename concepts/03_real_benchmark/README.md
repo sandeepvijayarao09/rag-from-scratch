@@ -2,6 +2,11 @@
 
 **Tier: Beginner** · prerequisite: Stage 2
 
+> **Re-tested (v2).** With paired bootstrap CIs and Holm correction on the same
+> 300 queries, the query-prefix loss below (−0.014) is **not significant**
+> (95% CI [−0.031, +0.003]). Dropping titles is (−0.017). The numbers on this
+> page are the original v1 record. Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Cat facts got you a working loop. It cannot tell you whether your loop is
 *correct*, because you invented the labels yourself.
 

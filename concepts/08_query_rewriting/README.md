@@ -2,6 +2,14 @@
 
 **Tier: Intermediate** · prerequisite: Stage 7
 
+> **Re-tested (v2).** Confirmed. With `gemma4:12b` (3x larger) at
+> temperature 0, on all 300 queries rather than the 50-query subsample used
+> below: decomposition −0.087, HyDE −0.040, step-back −0.039 on bge-base, all
+> **significantly worse**, and worse in 8 of 9 technique-by-embedder cases.
+> Multi-query is not significant (+0.009). Keeping the original claim and
+> blending the rewrite in at a tuned weight recovers a tie, not a gain. The
+> numbers on this page are the original v1 record. Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Every stage so far assumed the query was fine and only the matching needed work.
 This one assumes the opposite, and Stage 2 gave direct evidence that the failure
 is real: paraphrasing the questions dropped recall@1 from 0.927 to 0.680 with

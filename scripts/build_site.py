@@ -32,17 +32,23 @@ TIERS = [("Beginner", "Make it work, then make it measurable", ["01", "02", "03"
          ("Intermediate", "Two-stage and query side", ["07", "08"]),
          ("Advanced", "Representation and grounding", ["09", "10", "11"]),
          ("Pro", "Control flow and knowledge structure", ["12", "13", "14", "15"])]
-RESULTS = [("Chunking", "6 configs, every one", "-0.010 to -0.020", "bad"),
-           ("RRF fusion", "4 variants, every one", "-0.009 to -0.024", "bad"),
-           ("Reranking on dense", "", "-0.033", "bad"),
-           ("HyDE", "", "-0.048", "bad"),
-           ("Step-back prompting", "", "-0.066", "bad"),
-           ("Query decomposition", "", "-0.095", "bad"),
+# The tested results (results/v2/RESULTS.md, bge-base): paired bootstrap 95% CI,
+# Holm-corrected. "bad"/"good" are significant; "flat" is no detectable difference.
+RESULTS = [("Query decomposition", "", "-0.087", "bad"),
+           ("HyDE", "", "-0.040", "bad"),
+           ("Step-back prompting", "", "-0.039", "bad"),
            ("CRAG relevance grading", "balanced accuracy 0.500", "chance", "bad"),
-           ("Contextual retrieval", "on self-contained chunks", "-0.006", "bad"),
-           ("Weighted hybrid 0.7/0.3", "", "+0.010", "good"),
-           ("Late interaction", "at 241x the index", "+0.011", "good"),
-           ("Reranking on BM25", "", "+0.041", "good")]
+           ("Reranking on dense, Qwen3-Reranker-4B", "", "+0.044", "good"),
+           ("Reranking on BM25, bge-reranker-base", "", "+0.041", "good"),
+           ("Reranking on BM25, Qwen3-Reranker-4B", "", "+0.110", "good"),
+           ("Reranking on dense, bge-reranker-base", "", "-0.033", "flat"),
+           ("RRF fusion, 3 variants", "", "-0.024 to -0.009", "flat"),
+           ("Chunking, 6 configs", "", "-0.017 to -0.003", "flat"),
+           ("BGE query prefix", "", "-0.014", "flat"),
+           ("Contextual retrieval", "", "+0.001", "flat"),
+           ("Late interaction (ColBERT)", "", "+0.002", "flat"),
+           ("Multi-query", "", "+0.009", "flat"),
+           ("Weighted hybrid 0.7/0.3", "", "+0.010", "flat")]
 
 
 def dedash(text: str) -> str:
@@ -128,7 +134,7 @@ def fix_links(body: str) -> str:
     body = re.sub(r'href="\.\./\.\./([A-Za-z_]+)\.md"', lambda m: f'href="/RAG/{m.group(1).lower()}/"', body)
     body = re.sub(r'href="([A-Z][A-Za-z_]*)\.md"', lambda m: f'href="/RAG/{m.group(1).lower()}/"', body)
     body = re.sub(r'href="(\.\./)?([0-9]{2})_[a-z_]+/"', r'href="/RAG/level-\2/"', body)
-    body = re.sub(r'href="(\.\./)*((rag|concepts|scripts)/[^"]+)"',
+    body = re.sub(r'href="(\.\./)*((rag|concepts|scripts|results|v2)/[^"]+)"',
                   r'href="https://github.com/sandeepvijayarao09/rag-from-scratch/blob/main/\2"', body)
     return body
 
@@ -226,13 +232,17 @@ def build_index(meta) -> str:
 
     lost = [(t, d) for t, _, d, k in RESULTS if k == "bad"]
     won = [(t, d) for t, _, d, k in RESULTS if k == "good"]
+    flat = [(t, d) for t, _, d, k in RESULTS if k == "flat"]
+    flat_rows = "".join(f'<li><span>{html.escape(t)}</span><em>{d}</em></li>' for t, d in flat)
     lost_rows = "".join(f'<li><span>{html.escape(t)}</span><em>{d}</em></li>' for t, d in lost)
     won_rows = "".join(f'<li><span>{html.escape(t)}</span><em>{d}</em></li>' for t, d in won)
 
     body = f"""    <header class="page-header container">
       <h1>Building RAG from scratch</h1>
-      <p class="lede">I built fifteen kinds of RAG system and measured each one on the same
-      benchmark. Eight of the ten techniques I tested made retrieval worse.</p>
+      <p class="lede">I built a fifteen-stage RAG ladder and measured each technique on the same
+      benchmark, then re-tested every result with paired significance tests. LLM query
+      rewriting made retrieval worse, a strong reranker made it better, and most of the rest
+      made no detectable difference.</p>
       <div class="case-actions">
         <a class="btn btn-primary" href="/RAG/learn/">Read the guide</a>
         <a class="btn btn-ghost" href="https://github.com/sandeepvijayarao09/rag-from-scratch" target="_blank" rel="noopener">Code</a>
@@ -242,21 +252,24 @@ def build_index(meta) -> str:
     <article class="case-body rag-prose container">
       <div class="rag-split">
         <div>
-          <h3 class="rag-h">Made it worse</h3>
+          <h3 class="rag-h">Significantly worse</h3>
           <ul class="rag-scores rag-lost">{lost_rows}</ul>
         </div>
         <div>
-          <h3 class="rag-h">Helped</h3>
+          <h3 class="rag-h">Significantly better</h3>
           <ul class="rag-scores rag-won">{won_rows}</ul>
         </div>
       </div>
+      <h3 class="rag-h">No detectable difference</h3>
+      <ul class="rag-scores rag-flat">{flat_rows}</ul>
 
-      <p>Change in nDCG@10 against a 0.759 baseline on BEIR SciFact, 5,183 abstracts and
-      300 labelled queries. The two that helped are the two where I measured the gap before
-      applying the technique. None of these are bad techniques. They are conditional, and
-      the condition is whether your pipeline is already good at the thing they fix.
-      Reranking flipped sign inside this repo: -0.033 on a strong first stage, +0.041 on a
-      weak one.</p>
+      <p>Change in nDCG@10 against dense bge-base (0.759) on BEIR SciFact, 5,183 abstracts
+      and 300 labelled queries; the BM25 rows are against BM25 alone (0.665). Each is a paired
+      bootstrap 95% CI, Holm-corrected, with query rewriting by a 12B model. None of these
+      are bad techniques. They are conditional, and the condition is whether your pipeline is
+      already good at the thing they fix. The first version of this guide said seven of ten
+      techniques made things worse; the significance tests showed most of those were noise.
+      <a href="https://github.com/sandeepvijayarao09/rag-from-scratch/blob/main/results/v2/RESULTS.md">Full results</a>.</p>
 
       <h2>The fifteen levels</h2>
       <div class="rag-rows">{levels}</div>
@@ -268,8 +281,9 @@ def build_index(meta) -> str:
     </article>
 """
     return shell("Building RAG from scratch",
-                 "I built fifteen kinds of RAG system and measured each one. Eight of ten "
-                 "techniques made retrieval worse.", "/RAG/", body)
+                 "Ten RAG techniques measured on one benchmark with paired significance tests: "
+                 "query rewriting hurt, a strong reranker helped, most made no difference.",
+                 "/RAG/", body)
 
 
 CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not already style. */
@@ -340,6 +354,8 @@ CSS = """/* /RAG guide. Extends styles.css; adds only what the site does not alr
 .rag-scores span { color: var(--text); }
 .rag-scores em { font-family: var(--mono); font-size: .8rem; font-style: normal; white-space: nowrap; }
 .rag-lost em { color: #fb7185; }
+.rag-flat { margin-bottom: 1.6rem; }
+.rag-flat em { color: var(--muted); }
 .rag-won em { color: var(--accent); }
 .rag-won span { font-weight: 500; }
 

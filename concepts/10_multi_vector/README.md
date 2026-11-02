@@ -2,6 +2,13 @@
 
 **Tier: Advanced** · prerequisite: Stage 9
 
+> **Re-tested (v2).** The +0.011 below used raw bge-base token vectors on an
+> 800-document subset. A ColBERT model trained for MaxSim (GTE-ModernColBERT),
+> on the full corpus, is not significantly different from dense bge-base
+> (+0.002, CI [−0.027, +0.031]) and is significantly worse than the stronger
+> embeddinggemma-300m (−0.038). The numbers on this page are the original v1
+> record. Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 The third point on a spectrum whose other two ends are already in this repo.
 
 | | interaction happens | precomputable | index per doc |

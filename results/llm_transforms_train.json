@@ -1,0 +1,62 @@
+{
+ "hyde:44": [
+  "Analysis of 120 pediatric subjects revealed that individuals carrying homozygous variants in *HNF4A* exhibited a significantly elevated relative risk for the development of Type 2 Diabetes Mellitus (T2DM). Specifically, patients with this genotype presented with measurable glycemic dysregulation and T2DM phenotype manifestation by an average age of 13.8 years ($\\text{p} < 0.001$), compared to $\\text{N}=95$ control subjects."
+ ],
+ "hyde:52": [
+  "**Option 1: Supporting the Claim (ALDH1 $\\rightarrow$ Poorer Prognosis)**\n\n\"Multivariate Cox proportional hazards analysis revealed that high expression of ALDH1 in primary breast tumors was significantly associated with reduced overall survival ($p < 0.001$). Specifically, patients exhibiting elevated ALDH1 levels demonstrated a hazard ratio (HR) of $2.45$ compared to low-expressing controls, indicating substantially accelerated disease progression.\"\n\n***\n\n**Option 2: Refuting the Claim (ALDH1 $\\rightarrow$ No/Better Prognosis)**\n\n\"Survival analysis across the patient cohort indicated no statistically significant correlation between ALDH1 expression levels and overall survival ($p = 0.35$). Furthermore, subgroup analysis demonstrated that ALDH1 status did not independently predict recurrence-free survival when controlling for tumor grade and receptor status.\""
+ ],
+ "hyde:55": [
+  "**Option 1: Supporting the Claim**\n\nPharmacological activation of AMPK in a murine model of bleomycin-induced lung injury significantly attenuated pulmonary fibrosis. Treated animals exhibited decreased alveolar-capillary wall thickness and reduced myofibroblast differentiation, accompanied by lower levels of pro-fibrotic cytokines (e.g., TGF-$\\beta$1) compared to vehicle controls. These findings confirm that AMPK signaling acts as a potent inhibitor of inflammation-driven lung remodeling.\n\n***\n\n**Option 2: Refuting the Claim**\n\nIn models of chronic pulmonary inflammation, targeted activation of AMPK did not significantly ameliorate fibrosis progression. Histopathological analysis revealed no notable reduction in collagen deposition or fibrotic area expansion in the lungs of treated subjects. Furthermore, Western blot data indicated that while AMPK phosphorylation was upregulated, this change failed to inhibit the sustained activity of key pro-fibrotic transcription factors."
+ ],
+ "hyde:69": [
+  "Inhibition of PPM1D via targeted siRNA knockdown resulted in a significant reduction in basal levels of $\\text{p}53$ transcriptional activity. Conversely, forced activation of PPM1D led to a robust and dose-dependent upregulation of $\\text{p}21$ expression and increased stabilization of the $\\text{p}53$ protein pool, confirming its role as an activator of tumor suppressor function."
+ ],
+ "hyde:79": [
+  "Activation of caspase-11 in macrophages resulted in rapid cleavage of Gasdermin D (GSDMD) into its N-terminal pore-forming domain. Subsequent insertion of GSDMD fragments into the cellular membrane led to robust plasma membrane permeabilization and characteristic cell swelling, confirming a direct role for active caspase-11 in initiating pyroptotic cell death."
+ ],
+ "hyde:81": [
+  "Acute ablation of Snail expression specifically within the developing cortical plate significantly altered cell cycle kinetics in neural progenitor cells. We observed a marked decrease (p < 0.01) in the proliferation rate and a quantifiable reduction in the total population of embryonic cortical precursors compared to wild-type controls."
+ ],
+ "hyde:85": [
+  "**Option 1: Directly Supporting the Claim (Seeding Before Birth)**\n\n\"Single-cell RNA sequencing of murine tissue-resident macrophages revealed a distinct transcriptional profile characteristic of embryonic precursors. Furthermore, tracing studies demonstrated that macrophage populations in the adult liver originated from yolk sac progenitors established during gestation, confirming their pre-natal seeding.\"\n\n***\n\n**Option 2: Directly Refuting the Claim (Originating Post-Birth/Migration)**\n\n\"Analysis of tissue-resident macrophage lineage showed a reliance on monocyte infiltration from the peripheral blood stream. These populations exhibited markers consistent with hematopoietic differentiation occurring postnatally in the bone marrow, indicating that adult residency is achieved via migration rather than embryonic seeding.\""
+ ],
+ "hyde:86": [
+  "Analysis of single-cell RNA sequencing data from murine tissue reveals that resident macrophages in the liver and adipose tissue possess unique transcriptional profiles indicative of embryonic lineage specification. Furthermore, *in utero* tracing experiments demonstrate a progenitor cell population migrating into these niches prior to parturition, establishing the initial macrophage pool."
+ ],
+ "hyde:91": [
+  "***Option 1: Supporting the Claim (Aged patients are less susceptible)***\n\n\"Analysis of myocardial tissue revealed significantly reduced levels of reactive oxygen species (ROS) and decreased activation of inflammatory cascades in geriatric cohorts following standardized ischaemia/reperfusion protocols. These findings indicate that advanced age is associated with a protective shift toward lower oxidative stress burden during reperfusion phases, suggesting enhanced intrinsic cellular resilience.\"\n\n***Option 2: Refuting the Claim (Aged patients are more susceptible)***\n\n\"In vitro studies demonstrated that senescent cardiomyocytes exhibit heightened vulnerability to calcium overload and mitochondrial dysfunction when subjected to reoxygenation following ischaemia. Furthermore, plasma biomarkers indicated elevated levels of pro-inflammatory cytokines in elderly subjects compared to younger controls, suggesting increased susceptibility to reperfusion injury.\""
+ ],
+ "hyde:104": [
+  "In our prospective cohort study, patients receiving allogeneic ventricular assist device (VAD) support demonstrated significantly lower rates of sustained hemodynamic stability and increased incidence of pump thrombosis at 90 days post-implantation ($p < 0.01$) compared to the autologous VAD group. Furthermore, long-term graft survival metrics were markedly inferior in the allogeneic cohort, correlating with higher required systemic anticoagulation doses. These findings suggest a critical difference in functional performance and durability between the two support modalities for AMI management."
+ ],
+ "hyde:105": [
+  "Kinetic analysis revealed that perturbing DNA polymerase $\\alpha$ initiation frequency significantly shifts the spatial distribution of nascent Okazaki fragment termination foci. Specifically, a reduction in replication origin firing density correlated directly with an expansion of distal termination zones along the lagging strand template. These data confirm that control over replication start sites dictates the physical boundaries of synthesis completion."
+ ],
+ "hyde:106": [
+  "\"Validation against office blood pressure measurements demonstrated a strong positive correlation ($r > 0.85$) between mean 24-hour ambulatory readings and standard clinic diagnoses of hypertension. Furthermore, ABPM accurately identified nocturnal non-dippers in 92% of subjects previously categorized as normotensive, confirming its superior diagnostic utility compared to single-reading methods.\""
+ ],
+ "hyde:126": [
+  "A retrospective cohort analysis of serological screening data across UK primary care networks, encompassing 18 regional health trusts, determined the estimated population prevalence of Human T-cell Lymphotropic Virus type 1 (HTLV-1). The calculated incidence and cumulative infection rates suggest a total infected population within England and Wales approximating $2.5 \\times 10^5$ individuals ($n=250,000$). These findings indicate a significant endemic burden of HTLV-1 in the UK population."
+ ],
+ "hyde:152": [
+  "Analysis of FACS data revealed a significant downregulation of EBI2 expression in B cell lineages transitioning into plasmablasts and plasma cells. Specifically, while progenitor B cells maintain high levels of EBI2 (median fluorescence intensity $>50$), mature antibody-secreting cells exhibit a stepwise decrease, often dropping below the detection threshold by the terminal differentiation stage. This suggests that continuous EBI2 expression is not required for sustained humoral immunity or long-term plasma cell survival."
+ ],
+ "hyde:154": [
+  "(Option 1: Supporting the Claim)\n\nTreatment with B3-Galectin significantly potentiated acquired resistance to gefitinib in EGFR-mutant lung cancer cells, evidenced by enhanced survival rates under TKI pressure. Mechanistic analysis revealed that Galectin engagement promoted the activation of an alternate KRAS signaling complex (KRAS-$\\text{RalB}$), which was constitutively phosphorylated downstream of $\\text{EGFR}$. This sustained $\\text{KRAS}$-$\\text{RalB}$ activity bypasses canonical inhibitory mechanisms, driving proliferation and maintaining TKI resistance.\n\n***\n\n(Option 2: Refuting the Claim)\n\nWe observed that B3-Galectin treatment did not significantly alter the IC50 values of sorafenib in cell lines harboring $\\text{EGFR}$ mutations; instead, it induced apoptosis via caspase activation. Furthermore, Western blot analysis demonstrated that Galectin does not modulate the KRAS or RalB signaling pathways, and the downstream phosphorylation events remain unaffected by B3-Galectin presence. These findings suggest that Galectin's anti-proliferative effects operate through a mechanism independent of $\\text{EGFR}$-mediated $\\text{KRAS}$ pathway modulation."
+ ],
+ "hyde:157": [
+  "Structural analysis of the BLM protein revealed a conserved RecQ family domain architecture, characterized by the presence of two tandem helicase motifs (HR2 and HR3) flanking an N-terminal ATPase domain. Functional assays demonstrated robust ATP hydrolysis coupled with directed unwinding activity on various double-stranded DNA substrates, consistent with canonical RecQ helicase function."
+ ],
+ "hyde:160": [
+  "Cultures demonstrated high specificity for bacterial etiologies ($\\text{AUC} = 0.92$), yet overall sensitivity remained suboptimal (68%). Correlation analysis revealed that positive CSF cultures alone were insufficient to establish definitive diagnosis, necessitating concurrent evaluation of procalcitonin and neutrophil counts in conjunction with clinical presentation criteria."
+ ],
+ "hyde:164": [
+  "A longitudinal cohort study involving 14,500 patients undergoing bariatric procedures demonstrated that post-operative colorectal cancer incidence was significantly lower compared to matched non-surgical controls (HR = 0.72; 95% CI: 0.61\u20130.85). This reduction in risk was statistically independent of baseline BMI and duration since surgery."
+ ],
+ "hyde:174": [
+  "Analysis of inter-regional EEG coherence revealed a significant reduction in beta-band coupling ($\\text{4\u201312 Hz}$) when participants processed visible versus invisible stimuli ($p < 0.01$). Specifically, average spectral power within this frequency range decreased by $35\\%$ during the visual presentation phase compared to the corresponding dark-field condition. This suggests that stimulus visibility modulates neural synchronization in the beta rhythm."
+ ],
+ "hyde:209": [
+  "Transcriptional analysis revealed that while CHOP expression is significantly upregulated following tunicamycin treatment, its induction profile exhibits high specificity when examined across various cellular models. Specifically, in conditions of acute protein misfolding, CHOP activation correlates strongly with the unfolded protein response (UPR) pathway kinetics; however, under chronic oxidative stress, CHOP upregulation remains decoupled from canonical ER chaperone activity. This suggests that CHOP function is highly context-dependent rather than universally indicative of general ER distress."
+ ]
+}

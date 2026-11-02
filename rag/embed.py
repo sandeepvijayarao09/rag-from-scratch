@@ -29,7 +29,7 @@ class Embedder:
     def __init__(self, model: str = EMBEDDING_MODEL, cache_dir: str = "cache"):
         self.model = model
         self.cache_path = Path(cache_dir) / "embeddings.npz"
-        self.cache_path.parent.mkdir(exist_ok=True)
+        self.cache_path.parent.mkdir(parents=True, exist_ok=True)
         self._cache: dict[str, np.ndarray] = {}
         if self.cache_path.exists():
             with np.load(self.cache_path) as data:

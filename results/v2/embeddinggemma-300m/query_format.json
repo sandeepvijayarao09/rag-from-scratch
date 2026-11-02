@@ -1,0 +1,8 @@
+{
+  "format": "task: fact checking | query: {q}",
+  "label": "alt",
+  "train_ndcg10": {
+    "card": 0.910001833857571,
+    "alt": 0.9217860475074906
+  }
+}

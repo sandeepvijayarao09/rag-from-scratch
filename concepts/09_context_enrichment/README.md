@@ -2,6 +2,11 @@
 
 **Tier: Advanced** · prerequisite: Stage 8
 
+> **Re-tested (v2).** With `gemma4:12b` blurbs on the same 600-document
+> subset, contextual retrieval is not significantly different from whole
+> documents on any embedding model (bge-base +0.001, CI [−0.009, +0.011]).
+> The numbers on this page are the original v1 record. Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Stage 4 showed chunking costs you context. Contextual retrieval (Anthropic,
 2024) is the fix: before embedding, ask an LLM to write a short blurb situating
 each chunk inside its parent document, and prepend it.

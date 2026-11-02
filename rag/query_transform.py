@@ -32,10 +32,14 @@ milliseconds to seconds. That is the tradeoff, and it is why they belong after
 hybrid and reranking rather than before.
 """
 
+import os
+
 import ollama
 from pydantic import BaseModel
 
-GENERATOR_MODEL = "gemma4:e4b"
+# Stage 8 used gemma4:e4b. Override with RAG_GENERATOR=gemma4:12b to rerun the
+# rewrites with a larger model; caches are kept per model so runs never mix.
+GENERATOR_MODEL = os.environ.get("RAG_GENERATOR", "gemma4:e4b")
 
 
 class Paraphrases(BaseModel):

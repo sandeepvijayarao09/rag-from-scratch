@@ -62,8 +62,13 @@ Write ONLY the blurb, nothing else."""
 
 
 class ContextualIndexer:
-    def __init__(self, model: str = CONTEXT_MODEL, cache_dir: str = "cache"):
+    def __init__(self, model: str = CONTEXT_MODEL, cache_dir: str = "cache",
+                 options: dict | None = None, think: bool | None = None):
         self.model = model
+        # v2 passes temperature 0, a seed and think=False: a thinking model
+        # otherwise reasons at length before every one-sentence blurb.
+        self.options = options or {"temperature": 0.0}
+        self.think = think
         self.path = Path(cache_dir) / "contextual.json"
         self.path.parent.mkdir(exist_ok=True)
         self.cache: dict[str, str] = (
@@ -77,11 +82,12 @@ class ContextualIndexer:
         if key in self.cache:
             return self.cache[key]
         try:
+            kwargs = {} if self.think is None else {"think": self.think}
             blurb = ollama.chat(
                 model=self.model,
                 messages=[{"role": "user",
                            "content": PROMPT.format(document=document[:6000], chunk=chunk)}],
-                options={"temperature": 0.0},
+                options=self.options, **kwargs,
             )["message"]["content"].strip()
         except Exception:
             blurb = ""

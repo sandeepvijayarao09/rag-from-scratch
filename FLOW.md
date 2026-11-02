@@ -5,8 +5,10 @@ measurement in this repo, and the point of each step is to tell you whether the
 *next* step is worth taking.
 
 The short version: most RAG advice is a list of techniques. What you actually
-need is a way to decide which ones apply to you, because on my benchmark seven
-of ten recommended techniques made things worse and only two helped.
+need is a way to decide which ones apply to you, because on my benchmark, tested
+with paired significance tests, LLM query rewriting made things significantly
+worse, a strong reranker made them significantly better, and most of the other
+recommended techniques made no detectable difference at all.
 
 ---
 
@@ -85,61 +87,68 @@ worth hours will help.
 
 ## Step 4 — Retrieval techniques, in value order
 
-Measured on SciFact with `bge-base-en-v1.5` at 0.759 nDCG@10.
+Measured on SciFact (300 test queries) with paired bootstrap 95% CIs and Holm
+correction, on three embedding models. Baseline `bge-base-en-v1.5`, 0.759
+nDCG@10. Full tables: [results/v2/RESULTS.md](results/v2/RESULTS.md).
 
-### Do this first: hybrid retrieval (Stage 6)
-+0.010, and it is nearly free: a BM25 index builds in 0.21s and adds 0.7ms per
-query. Best value in the repo.
+### First: choose the embedding model
+The biggest single lever measured. `embeddinggemma-300m` alone scores 0.799,
+more than any technique adds on top of bge-base. Use each model's documented
+query and document formats, and check them on your data.
 
-**But weight it.** RRF, the "needs no tuning" default, lost in all four variants
-I tried (−0.009 to −0.024). It discards score magnitude, so it treats a weaker
-retriever's rank-1 as equally credible. Weighted 0.7/0.3 favouring the stronger
-retriever won.
+### Then: reranking (Stage 7), with a reranker stronger than your first stage
+| First stage | bge-reranker-base | Qwen3-Reranker-4B |
+|---|---|---|
+| BM25 (0.665) | **+0.041** (significant) | **+0.110** (significant) |
+| dense bge-base (0.759) | −0.033 (not significant) | **+0.044** (significant) |
 
-### Reranking (Stage 7) — only on a weak first stage
-| First stage | Δ |
-|---|---|
-| BM25 (0.665) | **+0.041** |
-| dense (0.759) | **−0.033** |
-
-Same reranker, opposite signs. Reranking *overwrites* your ordering, so you end
-up with the reranker's quality bounded by candidate recall. Two consequences:
+Reranking *replaces* your ordering, so you end up with the reranker's quality
+bounded by candidate recall. Two consequences:
 
 - Rerank only if the reranker ranks better than your first stage **on your data**.
+  A small reranker behind a strong dense model is wasted latency, or worse.
 - Under reranking, optimise the first stage for **recall**, not ordering. Its
   ordering is about to be discarded.
 
-Costs 1,515ms/query at depth 50. Set depth deliberately.
+bge-reranker-base costs 1,515ms/query at depth 50; a 4B reranker costs more.
+Set depth deliberately.
 
-### Late interaction (Stage 10) — probably not
-+0.011, same gain as hybrid, for a **241x larger index** and 28ms/query. Real
-ColBERT compresses that to roughly 20x with residual quantization, which is most
-of what makes it practical.
+### Cheap, but measure before keeping: weighted hybrid (Stage 6)
+Weighted 0.7/0.3 was +0.010, not significant. It is nearly free (a BM25 index
+builds in 0.21s and adds 0.7ms per query), so it is worth trying where your
+queries depend on rare exact terms, which SciFact's mostly do not. **Weight it.**
+Unweighted RRF, the "needs no tuning" default, was −0.009 to −0.024 across three
+variants on bge-base and significantly worse (−0.057) on the stronger
+embeddinggemma-300m, because it treats a weaker retriever's rank-1 as equally
+credible.
 
-### Chunking (Stage 4) — only if Step 3 said yes
-All six configs lost 0.010 to 0.020 on a corpus that did not need it. And the
-strategy barely matters: at size 200 fixed, sentence and recursive spanned
-0.0026 while the penalty for chunking at all was 0.011.
+### Late interaction (Stage 10): probably not
+A trained ColBERT on the full corpus was +0.002 against bge-base (not
+significant) and significantly worse than embeddinggemma-300m (−0.038), for a
+much larger index.
+
+### Chunking (Stage 4): only if Step 3 said yes
+All six configs made no detectable difference (−0.017 to −0.003) on a corpus
+where only 2.8% of documents exceed the model's window. The strategy barely
+matters either: at size 200 fixed, sentence and recursive spanned 0.0026.
 
 If you do chunk, remember your index now returns chunks while your labels judge
 documents. Pool with `max`, and overfetch `k × 5` or you silently cap recall@k.
 
-### Query rewriting (Stage 8) — mostly not
-| | Δ |
+### Query rewriting (Stage 8): avoid on claim-like queries
+With a 12B rewriter, on all 300 queries:
+
+| | Δ (bge-base) |
 |---|---|
-| multi-query | +0.001 nDCG, **+0.040 recall** |
-| HyDE | −0.048 |
-| step-back | −0.066 |
-| decomposition | −0.095 |
+| multi-query | +0.009 (not significant) |
+| HyDE | **−0.040** (significant) |
+| step-back | **−0.039** (significant) |
+| decomposition | **−0.087** (significant) |
 
-The ordering is not random. Techniques that **add to** the original query
-survive; techniques that **replace** it do not. HyDE fails when your queries are
-already written like your documents, because there is no asymmetry to bridge and
-only the hallucinated specifics remain.
-
-Multi-query is the exception worth knowing: it raises recall without improving
-ranking. Useful if something downstream can exploit extra recall. Reranking
-could not.
+Techniques that **replace** the original query lose; blending the rewrite back
+in with the original at a tuned weight only recovers a tie. HyDE fails when your
+queries are already written like your documents, because there is no asymmetry
+to bridge and only the hallucinated specifics remain.
 
 ---
 

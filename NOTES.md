@@ -159,11 +159,34 @@ Cost: ten minutes and a job I had to rerun from scratch.
 
 ---
 
+**My headline was stronger than my data.**
+
+I published "seven of ten techniques made retrieval worse" from raw mean
+differences, while this notebook's own open questions said the small deltas
+might be noise. I ran the paired bootstrap I kept deferring, Holm-corrected,
+on per-query scores, with three embedding models, three rerankers and a 12B
+rewriter (`v2/`, results in `results/v2/RESULTS.md`).
+
+The raw numbers reproduced almost exactly. The conclusions did not. Chunking,
+RRF and the query prefix were inside the noise: no detectable difference, not
+"worse." Reranking on dense (−0.033) was not significant after correction, and
+a stronger reranker, Qwen3-Reranker-4B, made it +0.044, significantly better.
+The rewriting losses (HyDE, step-back, decomposition) held up with a 3x larger
+rewriter on all 300 queries. I had also counted reranking as two of the ten
+techniques, called three RRF variants four, and put Stage 8's 50-query
+subsample numbers in a table next to full-300 ones without saying so there.
+
+Rule 6 was already in the README: state the noise floor. I stated it in the
+limitations and then wrote a headline that ignored it. The fix is to run the
+test before writing the headline, not after.
+
+---
+
 ## Open questions
 
-- The prefix and hybrid deltas (0.010 to 0.014) are inside the noise floor at
+- ~~The prefix and hybrid deltas (0.010 to 0.014) are inside the noise floor at
   n=300. Want a paired bootstrap over per-query scores before treating either as
-  real. Not done.
+  real.~~ Done (see the entry above): neither is significant.
 - Every negative result here is on one corpus with a well-matched embedding
   model. SciFact abstracts are short, single-topic and written in the same
   register as the queries. I would expect chunking and query rewriting to flip

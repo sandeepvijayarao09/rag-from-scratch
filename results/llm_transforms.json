@@ -890,5 +890,1895 @@
   "Does the microinvasive step of advanced Oral Potentially Malignant Lesions (OPMLs) exhibit an abnormal wound response?",
   "Is p16INK4A accumulation observed in samples taken from the microinvasive stage of OPMLs?",
   "Is there a correlation between the level of p16INK4A accumulation and the degree of abnormality in the wound response within microinvasive OPMLs?"
+ ],
+ "multi_query:1": [
+  "0-dimensional biomaterials show inductive properties.",
+  "Zero-dimensional bio-materials with stimulatory effects",
+  "Nanoparticle utilization in promoting cellular differentiation",
+  "Biofunctional nanomaterials for tissue engineering"
+ ],
+ "multi_query:3": [
+  "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+  "Genome-wide association studies from the 1000 Genomes Project identifying high-impact rare genetic mutations versus prevalent common polymorphisms.",
+  "Mapping of large penetrance alleles and sequence variation using data from the 1,000 Genomes initiative, specifically focusing on uncommon variants.",
+  "The role of the 1KGP in characterizing rare genomic variations that confer greater disease risk than typical single nucleotide variations."
+ ],
+ "multi_query:36": [
+  "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+  "Homocysteine elevation associated with Vitamin B12 insufficiency",
+  "Relationship between low Vitamin B12 intake and increased blood homocysteine levels",
+  "Impact of suboptimal Vitamin B12 status on circulating homocysteine concentration"
+ ],
+ "multi_query:42": [
+  "A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.",
+  "Microcytosis in alpha-thalassemia carriers and its correlation with susceptibility to profound anemia.",
+  "Alpha-thalassemia homozygosity, red blood cell size distribution, and risk factors for severe erythroid deficiency.",
+  "Relationship between elevated microerythrocyte indices and the development of critical anemia in individuals with thalassemia trait."
+ ],
+ "multi_query:48": [
+  "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+  "Prevalence of asymptomatic vCJD infection among a thousand individuals in Great Britain.",
+  "Statistics indicating that 1,000 residents in the United Kingdom carry vCJD without exhibiting clinical symptoms.",
+  "The figure of one thousand UK citizens who are undetected carriers of variant Creutzfeldt-Jakob disease."
+ ],
+ "multi_query:49": [
+  "ADAR1 binds to Dicer to cleave pre-miRNA.",
+  "ADAR1-Dicer complex function in pre-miRNA maturation",
+  "Endonucleolytic cleavage of precursor miRNAs mediated by ADAR1 and Dicer interaction",
+  "Role of ADAR1 in regulating Dicer's processing activity on miRNA precursors"
+ ],
+ "multi_query:50": [
+  "AIRE is expressed in some skin tumors.",
+  "AIRE protein presence in cutaneous malignancies",
+  "Association between AIRE gene expression and various skin neoplasms",
+  "Role of AIRE in the pathogenesis of dermal carcinomas"
+ ],
+ "multi_query:51": [
+  "ALDH1 expression is associated with better breast cancer outcomes.",
+  "Aldehyde Dehydrogenase 1 levels predict improved prognosis in breast carcinoma.",
+  "Favorable clinical outcomes linked to ALDH1 expression in breast cancer patients.",
+  "ALDH1 upregulation as a protective biomarker for survival rate improvement in mammary tumors."
+ ],
+ "multi_query:53": [
+  "ALDH1 expression is associated with poorer prognosis in breast cancer.",
+  "High ALDH1 activity predictive of poor survival in mammary carcinoma",
+  "Relationship between ALDH1 levels and unfavorable outcomes in breast cancer",
+  "ALDH1 as a prognostic biomarker for aggressive breast malignancy"
+ ],
+ "multi_query:54": [
+  "AMP-activated protein kinase (AMPK) activation increases inflammation-related fibrosis in the lungs.",
+  "AMPK signaling promotes pulmonary fibrotic responses linked to inflammatory processes.",
+  "The role of activated AMPK in exacerbating lung fibrosis associated with inflammation.",
+  "How does AMPK activation affect lung scarring and inflammatory disease progression?"
+ ],
+ "multi_query:56": [
+  "APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.",
+  "Impact of APOE4 expression in induced pluripotent stem cell neurons on elevated AlphaBeta levels and tau hyperphosphorylation leading to GABAergic neuronal death.",
+  "How does the presence of APOE4 influence the production of AlphaBeta and subsequent phosphorylation of Tau, resulting in degeneration within iPSC-derived inhibitory neurons?",
+  "GABA neuron loss linked to APOE4: investigating mechanisms involving increased AlphaBeta synthesis and tau protein modification in cultured neural cells."
+ ],
+ "multi_query:72": [
+  "Activator-inhibitor pairs are provided dorsally by Admpchordin.",
+  "Dorsal expression of Admpchordin generates activator-inhibitor combinations.",
+  "Admpchordin secretes signaling modules in the dorsal region.",
+  "The presentation of Activator-Inhibitor complexes is mediated by Admpchordin dorsally."
+ ],
+ "multi_query:75": [
+  "Active H. pylori urease has a polymeric structure that compromises two subunits, UreA and UreB.",
+  "H. pylori urease polymer architecture affecting UreA and UreB subunits",
+  "Structure-function relationship of active H. pylori urease concerning UreA and UreB composition",
+  "Polymerization state of H. pylori urease impact on UreA/UreB subunit integrity"
+ ],
+ "multi_query:94": [
+  "Albendazole is used to treat lymphatic filariasis.",
+  "Albendazole therapeutic application against lymphatic filariasis infections",
+  "Management of lymphatic filarial disease using albendazole compounds",
+  "Albendazole effectiveness in controlling LF worm parasitic infection"
+ ],
+ "multi_query:99": [
+  "Alizarin forms hydrogen bonds with residues involved in PGAM1 substrate binding.",
+  "Molecular interactions between Alizarin and amino acid sites crucial for PGAM1 substrate recognition.",
+  "Alizarin's role in stabilizing the catalytic pocket of PGAM1 via hydrogen bond donor/acceptor linkages.",
+  "Structure-activity relationship: How Alizarin associates with residues governing PGAM1 ligand binding."
+ ],
+ "multi_query:100": [
+  "All hematopoietic stem cells segregate their chromosomes randomly.",
+  "Chromosome assortment in hematopoietic stem cells is stochastic.",
+  "Random segregation of chromosomes occurs during mitosis in blood precursor cells.",
+  "Hematopoietic progenitors exhibit random chromosome separation during cell division."
+ ],
+ "multi_query:113": [
+  "Angiotensin converting enzyme inhibitors are associated with increased risk for functional renal insufficiency.",
+  "ACE inhibitors and elevated susceptibility to impaired renal function",
+  "Adverse effects of Angiotensin-converting enzyme inhibitors on kidney insufficiency risk",
+  "Correlation between ACE inhibitor use and developing functional decline in the kidneys"
+ ],
+ "multi_query:115": [
+  "Anthrax spores can be disposed of easily after they are dispersed.",
+  "Simple methods for eliminating anthrax spores following their release.",
+  "Ease of decontamination and removal procedures for dispersed bacillus anthracis.",
+  "How readily can airborne anthrax residue be gotten rid of after contamination?"
+ ],
+ "multi_query:118": [
+  "Antibiotic induced alterations in the gut microbiome reduce resistance against Clostridium difficile",
+  "Antibiotic-driven dysbiosis of the intestinal microbiota lowers susceptibility to Clostridium difficile infection",
+  "Impact of antimicrobial use on gut microbial structure and its effect on C. difficile resistance",
+  "Changes in the gut microbiome following antibiotic administration affect pathogenesis of Clostridioides difficile"
+ ],
+ "multi_query:124": [
+  "Antiretroviral therapy reduces rates of tuberculosis across a broad range of CD4 strata.",
+  "Impact of antiretroviral drugs on tuberculosis incidence across varying CD4 counts",
+  "How ART lowers Mycobacterium tuberculosis risk in diverse stages of HIV progression",
+  "Tuberculosis rates and immune status: Evidence showing reduced TB occurrence following viral suppression therapy"
+ ],
+ "multi_query:127": [
+  "Arginine 90 in p150n is important for interaction with EB1.",
+  "Functional role of Arginine 90 in p150n's association with the EB1 protein.",
+  "Molecular binding requirements between p150n and EB1: dependence on Arg residue at position 90.",
+  "Impact of Arg90 substitution on p150n-EB1 interaction interface."
+ ],
+ "multi_query:128": [
+  "Arterioles have a larger lumen diameter than venules.",
+  "The internal bore of arterioles is greater than that of venules.",
+  "Arteriolar lumina exhibit a larger cross-sectional dimension compared to venular lumens.",
+  "Venules possess smaller channel diameters relative to arterioles."
+ ],
+ "multi_query:129": [
+  "Articles published in open access format are less likely to be cited than traditional journals.",
+  "Citation metrics comparing open access publications versus proprietary journal articles",
+  "Does publication in a traditional subscription model correlate with higher article citation rates?",
+  "Analysis of scholarly impact factor differences between OA and conventional academic journals"
+ ],
+ "multi_query:130": [
+  "Articles published in open access format are more likely to be cited than traditional journals.",
+  "Comparative analysis of citation rates between open access publications and conventional scholarly journals.",
+  "Does OA publishing enhance article visibility and subsequent citation frequency compared to subscription-based literature?",
+  "Relationship between journal accessibility models and the impact factor or citation count of scientific papers."
+ ],
+ "multi_query:133": [
+  "Assembly of invadopodia is triggered by focal generation of phosphatidylinositol-3,4-biphosphate and the activation of the nonreceptor tyrosine kinase Src.",
+  "Invadopodia formation mediated by focal production of phosphatidylinositol-3,4-biphosphate and Src nonreceptor tyrosine kinase activation.",
+  "How the localized synthesis of PI(3,4)P2 and subsequent Src tyrosine kinase activity initiate invadopodia construction.",
+  "Src activation and localized accumulation of phosphatidylinositol biphosphates drive invadopodia assembly."
+ ],
+ "multi_query:137": [
+  "Asymptomatic visual impairment screening in elderly populations does not lead to improved vision.",
+  "Utility of asymptomatic vision screening among aged individuals for functional visual improvement",
+  "Effectiveness of detecting subtle sight loss in older adults: lack of benefit studies",
+  "Does early detection of undiagnosed eye impairment enhance visual acuity in senior populations?"
+ ],
+ "multi_query:141": [
+  "Auditory entrainment is strengthened when people see congruent visual and auditory information.",
+  "The impact of multisensory congruence on enhancing auditory rhythmic synchronization.",
+  "Effect of cross-modal sensory alignment on improving temporal perception and sound processing.",
+  "Investigating increased fidelity of auditory entrainment through congruent audiovisual stimuli."
+ ],
+ "multi_query:142": [
+  "Autologous transplantation of mesenchymal stem cells causes a higher rate of opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.",
+  "Risk profile comparison: Does autologous mesenchymal stem cell infusion lead to greater incidence of opportunistic infections compared to IL-2 receptor antibody induction therapy?",
+  "Comparative evaluation of infectious complications between MSC autografting and anti-IL2R immunosuppressive regimens.",
+  "Association between mesenchymal stromal cell transplantation and elevated rates of severe microbial infection versus anti-interleukin-2 blockade induction."
+ ],
+ "multi_query:143": [
+  "Autologous transplantation of mesenchymal stem cells causes fewer opportunistic infections than induction therapy with anti-interleukin-2 receptor antibodies.",
+  "Infection rates comparison: Mesenchymal stem cell autografts versus anti-IL-2R blockade induction therapy",
+  "Comparative safety profile of autologous MSC infusion versus IL-2 receptor antagonist biologics in reducing infectious morbidity",
+  "Immunomodulatory effects of self-donated mesenchymal stem cells compared to anti-cytokine agents regarding opportunistic infection risk"
+ ],
+ "multi_query:148": [
+  "Autophagy declines in aged organisms.",
+  "Autophagic flux impairment associated with biological aging",
+  "Reduced autophagosome formation in senescent cells and animals",
+  "Age-related deficits in cellular self-eating mechanisms"
+ ],
+ "multi_query:163": [
+  "Bariatric surgery has a positive impact on mental health.",
+  "Does weight-loss procedures improve psychological well-being?",
+  "Correlation between bariatric interventions and mood enhancement",
+  "How does surgical obesity treatment affect mental states?"
+ ],
+ "multi_query:171": [
+  "Basophils counteract disease development in patients with systemic lupus erythematosus (SLE).",
+  "Basophil involvement in the pathogenesis or amelioration of lupus erythematosus",
+  "The protective role of basophils against autoimmune inflammation in SLE patients",
+  "Immunomodulatory effects of basophils on disease progression in systemic lupus erythematosis (SLE)"
+ ],
+ "multi_query:179": [
+  "Birth-weight is positively associated with breast cancer.",
+  "Correlation between infant weight at birth and incidence of mammary carcinoma",
+  "Effect of higher newborn weight on risk factors for breast cancer development",
+  "Maternal birth size association with increased likelihood of developing breast malignancy"
+ ],
+ "multi_query:180": [
+  "Blocking the interaction between TDP-43 and respiratory complex I proteins ND3 and ND6 leads to increased TDP-43-induced neuronal loss.",
+  "Inhibition of TDP-43 binding to mitochondrial complex I subunits ND3 and ND6 exacerbates neuronal degeneration caused by TDP-43.",
+  "Disrupting the interaction between TDP-43 and respiratory chain component ND3/ND6 enhances neurotoxicity resulting from TDP-43 accumulation.",
+  "Targeting the association of TDP-43 with Complex I proteins (ND3, ND6) potentiates neuronal damage induced by TDP-43."
+ ],
+ "multi_query:185": [
+  "Breast cancer development is determined exclusively by genetic factors.",
+  "Are genetic mutations the sole cause of breast cancer?",
+  "The exclusive role of hereditary factors in mammary tumor onset",
+  "Is breast malignancy strictly governed by inherited characteristics?"
+ ],
+ "multi_query:198": [
+  "CCL19 is absent within dLNs.",
+  "CCL19 expression undetectable in draining lymph nodes",
+  "Lack of CCL19 presence in dLNs",
+  "Absence of CCL19 within lymphatic tissue (dLN)"
+ ],
+ "multi_query:208": [
+  "CHEK2 is not associated with breast cancer.",
+  "Evidence indicating CHEK2 lacks a functional link or correlation with breast cancer pathogenesis.",
+  "Studies demonstrating that CHEK2 is not implicated in the development of mammary malignancy.",
+  "Absence of involvement of the CHEK2 gene pathway as a predictive marker for breast carcinoma."
+ ],
+ "multi_query:212": [
+  "CR is associated with higher methylation age.",
+  "CR condition correlates with accelerated epigenetic clocks",
+  "Presence of CR linked to elevated DNA methylation burden",
+  "Methylation profiles predicting biological aging in individuals with CR"
+ ],
+ "multi_query:213": [
+  "CRP is not predictive of postoperative mortality following Coronary Artery Bypass Graft (CABG) surgery.",
+  "Prognostic utility of C-reactive protein in predicting mortality after Coronary Artery Bypass Grafting procedures.",
+  "Relationship between CRP levels and post-CABG death rates: Is there a correlation?",
+  "Does acute phase reactant status (CRP) influence survival outcomes following cardiac revascularization?"
+ ],
+ "multi_query:217": [
+  "CX3CR1 on the Th2 cells promotes T cell survival",
+  "CX3CR1 expression on Th2 cells enhances T cell longevity",
+  "Th2-mediated support for T cell viability involving CX3CR1",
+  "The role of CX3CR1 in Type 2 helper lymphocytes promoting T cell persistence"
+ ],
+ "multi_query:218": [
+  "CX3CR1 on the Th2 cells promotes airway inflammation.",
+  "CX3CR1 signaling on T helper 2 cells drives pulmonary inflammatory responses.",
+  "Th2 lymphocyte activation via CX3CR1 receptor pathway leading to airway hyperresponsiveness.",
+  "The link between CX3CR1 expression in Th2 cell populations and the pathogenesis of allergic lung inflammation."
+ ],
+ "multi_query:219": [
+  "CX3CR1 on the Th2 cells suppresses airway inflammation.",
+  "Mitigation of pulmonary inflammation by CX3CR1 expression on Th2 lymphocytes",
+  "How does Th2 cell engagement with CX3CR1 reduce airway hyperresponsiveness?",
+  "CX3CR1 signaling in type 2 helper T cells and its role in dampening bronchial inflammatory responses"
+ ],
+ "multi_query:230": [
+  "Carriers of the alcohol aldehyde dehydrogenase deficiency mutation drink less that non-carries.",
+  "Relationship between heterozygotes for ALDH deficiency and decreased ethanol consumption",
+  "Metabolic differences in alcohol intake among individuals with impaired acetaldehyde clearance",
+  "Comparison of drinking patterns across ALDH genotype carriers versus non-carriers"
+ ],
+ "multi_query:232": [
+  "Cataract and trachoma are the primary cause of blindness in Southern Sudan.",
+  "The main drivers of vision impairment in Southern Sudan are identified as cataracts and trachoma.",
+  "Southern Sudanese blindness is predominantly attributed to infection (trachoma) and ocular opacification (cataract).",
+  "Prevalence data indicates that cataract and trachoma stand as the chief etiologies for visual disability within Southern Sudan."
+ ],
+ "multi_query:233": [
+  "Cell autonomous sex determination in somatic cells does not occur in Galliformes.",
+  "Galliforme species lack autonomous sex differentiation within their somatic tissues.",
+  "Non-germline cell sex determination mechanism absence in Galliformes",
+  "Investigating the cellular autonomy of sexual fate specification in avian somatic cells (Galliformes)"
+ ],
+ "multi_query:236": [
+  "Cell autonomous sex determination in somatic cells occurs in Passeriformes.",
+  "Autonomy of sex differentiation in non-germline somatic cells within Passeriformes.",
+  "Mechanisms for sex determination independent of germline tissue in avian passerines.",
+  "Somatic cell driven sexual identity establishment characteristics observed among members of the order Passeriformes."
+ ],
+ "multi_query:238": [
+  "Cells undergoing methionine restriction may activate miRNAs.",
+  "Methionine deprivation response in cells leading to miRNA expression",
+  "Impact of amino acid limitation on cellular small non-coding RNA regulation",
+  "How methionine scarcity triggers microRNA activity within eukaryotic cells"
+ ],
+ "multi_query:239": [
+  "Cellular aging closely links to an older appearance.",
+  "Relationship between cellular senescence and visible signs of chronological aging",
+  "How intrinsic aging mechanisms influence external appearance",
+  "Correlation between telomere shortening and facial aging phenotypes"
+ ],
+ "multi_query:249": [
+  "Chenodeosycholic acid treatment reduces whole-body energy expenditure.",
+  "Chenodeosycholic acid administration and its effect on basal metabolic rate",
+  "Reduction in total energy utilization following Chenodeosycholic acid treatment",
+  "Impact of chenodeosycholic acid therapy on whole-body caloric consumption"
+ ],
+ "multi_query:261": [
+  "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO.",
+  "The effects of sustained endurance training on vasodilation capabilities, specifically how Nitric Oxide facilitates improved endothelial function.",
+  "How regular cardiovascular activity enhances vascular health by upregulating nitric oxide pathways and promoting arterial dilation.",
+  "Long-term aerobic physical conditioning modifies the endothelium to boost vasodilatory mechanisms dependent on NO signaling."
+ ],
+ "multi_query:268": [
+  "Cold exposure increases BAT recruitment.",
+  "Activation of brown adipose tissue by acute cold challenge",
+  "How low temperatures stimulate non-shivering thermogenesis",
+  "Effect of thermal stress on BAT metabolic capacity"
+ ],
+ "multi_query:269": [
+  "Cold exposure reduces BAT recruitment.",
+  "Hypothermia effects on brown adipose tissue activation",
+  "Thermal challenge and suppression of BAT function",
+  "Ambient cold temperature impact on energy expenditure via brown fat"
+ ],
+ "multi_query:274": [
+  "Combination nicotine replacement therapies with varenicline or bupropion lead to significantly higher long-term abstinence rates at 52 weeks than varenicline monotherapy.",
+  "Clinical effectiveness of combining nicotine replacement products with varenicline or bupropion compared to varenicline alone for sustained cessation at one year.",
+  "Assessment of enhanced long-term quit rates (52 weeks) achieved by adding NRT to varenicline therapy, versus varenicline as a sole treatment modality.",
+  "Does the integration of nicotine replacement therapies with pharmacological agents like bupropion or varenicline yield superior sustained non-smoking outcomes beyond 50 weeks?"
+ ],
+ "multi_query:279": [
+  "Commelina yellow mottle virus' (ComYMV) genome consists of 7489 baise pairs.",
+  "The genetic material of Commelina yellow mottle virus (ComYMV) measures 7,489 nucleobases.",
+  "Nucleotide count for ComYMV genome: specifically searching for a length of 7489 base pairs.",
+  "Information detailing the size of the Commelina yellow mottle virus nucleic acid sequence is 7489 bp."
+ ],
+ "multi_query:294": [
+  "Crossover hot spots are not found within gene promoters in Saccharomyces cerevisiae.",
+  "Absence of recombination hotspots within regulatory regions of gene promoters in S. cerevisiae.",
+  "Gene promoter sequences in Saccharomyces cerevisiae do not harbor frequent crossover loci.",
+  "Analysis shows that meiotic crossover activity is absent from yeast gene promoter domains."
+ ],
+ "multi_query:295": [
+  "Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.",
+  "Interplay between dendritic cells and innate lymphoid cells is essential for maintaining intestinal equilibrium.",
+  "Functional dialogue of DCs and ILCs governs mucosal integrity and steady-state conditions in the gut.",
+  "The regulatory influence of communication between innate lymphoid cells and dendritic cells impacts gastrointestinal homeostasis."
+ ],
+ "multi_query:298": [
+  "Cytochrome c is released from the mitochondrial intermembrane space to cytosol during apoptosis.",
+  "Translocation of Cytochrome c from mitochondrial intermembrane space into cytosol during programmed cell death",
+  "Cytochrome c movement from IMS to cytoplasm in apoptotic pathways",
+  "Mitochondrial efflux of Cytochrome c into the cytosol leading to apoptosis"
+ ],
+ "multi_query:303": [
+  "DMRT1 is a sex-determining gene that is epigenetically regulated by the MHM region.",
+  "Epigenetic control of DMRT1 expression by the MHM genomic locus in sex differentiation.",
+  "How does the MHM region modulate the function of the sex-determining factor DMRT1?",
+  "DMRT1's role in gender determination is influenced epigenetically through interaction with the MHM area."
+ ],
+ "multi_query:312": [
+  "De novo assembly of sequence data has more specific contigs than unassembled sequence data.",
+  "Assembly pipelines produce higher resolution contigs compared to raw, fragmented sequence reads.",
+  "In silico reconstruction yields more cohesive and accurate genomic fragments than unprocessed sequencing input.",
+  "Contig lengths are greater when utilizing de novo assembly methods versus analyzing isolated sequence data."
+ ],
+ "multi_query:314": [
+  "Deamination of cytidine to uridine on the minus strand of viral DNA results in catastrophic G-to-A mutations in the viral genome.",
+  "C to U deamination on viral minus strand DNA leading to severe G:A transitions in viral genome",
+  "Cytidine modification resulting in uridine incorporation during reverse transcription and subsequent catastrophic G-to-A mutations in viruses",
+  "Molecular consequences of cytosine degradation to uracil on the negative DNA strand; link between mutation frequency and viral genomic instability"
+ ],
+ "multi_query:324": [
+  "Deleting Raptor reduces G-CSF levels.",
+  "Inhibition of Raptor affects G-CSF concentration",
+  "Loss of Raptor function correlates with diminished G-CSF levels",
+  "Raptor ablation results in decreased Granulocyte Colony-Stimulating Factor abundance"
+ ],
+ "multi_query:327": [
+  "Deletion of \u03b1v\u03b28 does not result in a spontaneous inflammatory phenotype.",
+  "Absence of $\text{\u03b1v\u03b28}$ leads to lack of basal inflammatory state",
+  "Is the loss-of-function mutation in $\text{\u03b1v\u03b28}$ associated with spontaneous immune pathology?",
+  "$\text{\u03b1v\u03b28}$ gene knockout does not induce constitutive inflammation or inflammatory phenotype"
+ ],
+ "multi_query:338": [
+  "Dexamethasone decreases risk of postoperative bleeding.",
+  "Dexamethasone mitigation of surgical hemorrhage incidence",
+  "Corticosteroids preventing bleeding post-operation",
+  "Impact of dexamethasone administration on postoperative hematoma risk"
+ ],
+ "multi_query:343": [
+  "Diabetic patients with acute coronary syndrome experience increased short-term and long-term risk for bleeding events.",
+  "Diabetic individuals with acute myocardial infarction exhibit heightened susceptibility to hemorrhage, both acutely and chronically.",
+  "Risk factors for bleeding complications in patients presenting with cardiovascular disease and diabetes mellitus.",
+  "Association between diabetes and coronary syndrome severity and the long-term/short-term development of hemorrhagic events."
+ ],
+ "multi_query:350": [
+  "Discrimination between the initiator and elongation tRNAs depends on the translation initiation factor IF3.",
+  "The differentiation of initiator vs. elongator tRNAs is regulated by the translation initiation factor IF3.",
+  "IF3 protein mediates the selective recognition between start-codon tRNA and elongating aminoacyl-tRNA during translation initiation.",
+  "Distinguishing between initiating and elongation tRNAs requires the presence of the translational component IF3."
+ ],
+ "multi_query:354": [
+  "Downregulation and mislocalization of Scribble prevents cell transformation and mammary tumorigenesis.",
+  "Reduced expression or aberrant subcellular placement of Scribble inhibits epithelial-to-mesenchymal transition and breast cancer formation.",
+  "Scribble's role as a tumor suppressor: loss of function and spatial misplacement prevent malignant progression in mammary tissue.",
+  "How the diminished levels and incorrect cellular positioning of Scribble suppress cell transformation and subsequent development of breast tumors."
+ ],
+ "multi_query:385": [
+  "Epigenetic modulating agents (EMAs) modulate antitumor immune response in a cancer model system.",
+  "Epigenetic modifiers enhancing anti-tumor immunity in preclinical cancer models",
+  "Role of epigenetic drugs in boosting immune responses against malignancy",
+  "Regulation of host antitumor surveillance by epigenetic agents in controlled cancer systems"
+ ],
+ "multi_query:386": [
+  "Errors in peripheral IV drug administration are most common during bolus administration and multiple-step medicine preparations.",
+  "High incidence of medication administration mistakes in peripheral IV lines during rapid infusion and complex compound preparation.",
+  "Risk factors for adverse events associated with bolus dosing or multi-stage parenteral drug compounding at the bedside.",
+  "When administering drugs via peripherally inserted IVs, which procedures\u2014such as initial push doses or sequential mixing\u2014are most prone to human error?"
+ ],
+ "multi_query:388": [
+  "Ethanol stress decreases the expression of IBP in bacteria.",
+  "Ethanol exposure downregulates IBP synthesis in prokaryotes.",
+  "The effect of ethanol toxicity on reducing IBP gene expression in bacteria.",
+  "IBP protein production is inhibited by ethanol stress in bacterial cultures."
+ ],
+ "multi_query:399": [
+  "Exposure to fine particulate air pollution is relate to anxiety prevalence.",
+  "Association between exposure to fine particulate matter and incidence of anxiety disorders.",
+  "The correlation between air pollution (particulate size) levels and the prevalence rate of anxiety.",
+  "How does inhalation of $\text{PM}_{2.5}$ affect the occurrence or frequency of anxiety?"
+ ],
+ "multi_query:410": [
+  "Febrile seizures increase the threshold for development of epilepsy.",
+  "Impact of febrile episodes on susceptibility to epileptic disorders",
+  "Epileptogenesis after febrile convulsions: modification of future seizure risk",
+  "Long-term cerebral vulnerability following febrile seizure events"
+ ],
+ "multi_query:411": [
+  "Febrile seizures reduce the threshold for development of epilepsy.",
+  "Do febrile seizures increase susceptibility to epilepsy?",
+  "Impact of fever-induced seizures on subsequent seizure disorder development",
+  "Febrile convulsion risk factors for developing chronic epileptic conditions"
+ ],
+ "multi_query:415": [
+  "Female carriers of the Apolipoprotein E4 (APOE4) allele have increased risk for dementia.",
+  "Dementia risk associated with APOE4 allele in women",
+  "Women possessing the Apolipoprotein E4 gene show elevated susceptibility to neurodegeneration",
+  "Increased likelihood of dementia among female individuals carrying the APOE $\\epsilon 4$ variant"
+ ],
+ "multi_query:431": [
+  "FoxO3a activation in neuronal death is mediated by reactive oxygen species (ROS).",
+  "The role of oxidative stress and reactive oxygen species in triggering FoxO3a activation during neurodegeneration.",
+  "How redox imbalance influences FoxO3a signaling pathways leading to neuronal apoptosis.",
+  "Investigating the influence of superoxide production on FoxO3a phosphorylation associated with neural cell death."
+ ],
+ "multi_query:436": [
+  "Free histones are degraded by a Rad53-dependent mechanism once DNA has been replicated.",
+  "Degradation of unbound histones following DNA synthesis is regulated by Rad53.",
+  "Rad53 checkpoint activation and post-replication destruction of free chromatin components.",
+  "Post-replicative histone removal mechanisms involving Rad53 signaling."
+ ],
+ "multi_query:437": [
+  "Functional consequences of genomic alterations due to Myelodysplastic syndrome (MDS) are poorly understood due to the lack of an animal model.",
+  "Translational challenges in elucidating the functional impact of genomic changes associated with Myelodysplastic Syndrome (MDS) due to insufficient animal models.",
+  "Need for robust preclinical models to characterize the molecular effects of genetic mutations driving Myelodysplastic syndrome.",
+  "Investigating how alterations in the genome contribute functionally to MDS pathogenesis, hindered by the absence of suitable murine or mammalian systems."
+ ],
+ "multi_query:440": [
+  "Fz/PCP-dependent Pk localizes to the anterior membrane of notochord cells during zebrafish neuralation.",
+  "Pk membrane localization in zebrafish notochord during neural tube development influenced by Fz/PCP signaling",
+  "Anterior cell surface distribution of Pk within notochords of Zebrafish during early neurulation events mediated by PCP pathway",
+  "Zebrafish notochord cells: spatial dynamics of Pk at the anterior membrane driven by Planar Cell Polarity (PCP) factors"
+ ],
+ "multi_query:443": [
+  "GATA-3 is important for hematopoietic stem cell (HSC) function.",
+  "GATA-3's role in hematopoietic stem cell activity and viability",
+  "Regulation of HSC function by GATA-3 transcription factor",
+  "Impact of GATA-3 expression on the maintenance of blood progenitor cells"
+ ],
+ "multi_query:452": [
+  "Gene expression does not vary appreciably across genetically identical cells.",
+  "Transcriptional levels remain consistent within clonal cell populations.",
+  "Cellular genetic identity is correlated with uniform gene activity.",
+  "Minimal phenotypic variability in mRNA output among genetically matched cells."
+ ],
+ "multi_query:475": [
+  "Glycolysis is one of the primary glycometabolic pathways in cells.",
+  "Glycolysis' essential function within intracellular carbohydrate metabolism.",
+  "Metabolic role of glycolysis as a foundational catabolic process in eukaryotic cells.",
+  "Glycolysis' contribution to cellular energy production and glucose utilization pathways."
+ ],
+ "multi_query:478": [
+  "Golli-deficient T-cells prefer to differentiate into an anergic phenotype in the adaptive immune response when there are increased levels of Ca2+ in the cytosol.",
+  "T cells with Golgi apparatus defects exhibit anergy in adaptive immunity when intracellular calcium levels are elevated.",
+  "How does increased cytosolic Ca2+ influence the differentiation of Golli-impaired T lymphocytes toward a functionally suppressed state during immune response?",
+  "Anergic phenotype induction in Golli-defective adaptive T cells triggered by heightened cytoplasmic calcium concentrations."
+ ],
+ "multi_query:491": [
+  "HNF4A mutations can cause diabetes in mutant carriers by the age of 14 years",
+  "HNF4A alterations leading to diabetes onset in carrier individuals before age 15",
+  "Pediatric manifestation of HNF4A mutations: Diabetes development in carriers under fourteen years old",
+  "Monogenic diabetes associated with HNF4A variants appearing in young adult carriers by age 14"
+ ],
+ "multi_query:502": [
+  "Healthcare delivery efficiency in crowded delivery centers is impaired by improving structural, logistical, and interpersonal elements.",
+  "The impact of architectural design, logistical bottlenecks, and staff-patient interactions on service throughput in high-capacity medical facilities.",
+  "Operational challenges hindering healthcare performance within overcrowded clinics: focusing on facility layout, resource allocation, and human relations.",
+  "How physical infrastructure deficiencies, supply chain inefficiencies, and interpersonal communication failures degrade health service effectiveness in congested care settings."
+ ],
+ "multi_query:508": [
+  "Hematopoietic Stem Cell purification reaches purity rate of up to 50%.",
+  "Isolation efficiency of hematopoietic stem cells reaching 50 percent purity",
+  "HSC purification methods achieving yields up to half a percentage point",
+  "Maximum purity achieved for purified hematopoietic progenitor cells is approximately 50%"
+ ],
+ "multi_query:514": [
+  "High dietary calcium intakes are unnecessary for prevention of secondary hyperparathyroidism in subjects with 25(OH)D levels above 75 nmol/liter.",
+  "The necessity of high calcium consumption in preventing secondary hyperparathyroidism among individuals with adequate Vitamin D levels (>75 nmol/L).",
+  "Evaluating if elevated dietary calcium intake provides a protective effect against SHPT when subjects maintain serum 25(OH)D concentrations exceeding 75 ng/mL.",
+  "Calcium supplementation and its role in the prevention of secondary hyperparathyroidism for patients whose Vitamin D levels are above 75 nmol/liter."
+ ],
+ "multi_query:516": [
+  "High levels of CRP reduces the risk of exacerbations in chronic obstructive pulmonary disease (COPD).",
+  "Elevated C-reactive protein levels as a protective factor against COPD exacerbations.",
+  "Impact of systemic inflammation biomarkers on reducing acute episodes in Chronic Obstructive Pulmonary Disease (COPD).",
+  "Correlation between high CRP concentration and improved long-term stability/prognosis in COPD patients."
+ ],
+ "multi_query:517": [
+  "High levels of copeptin decrease risk of diabetes.",
+  "Elevated copeptin concentration protective effect against diabetes incidence",
+  "Copeptin biomarker role in mitigating diabetic susceptibility",
+  "Inverse relationship between coping peptide levels and reduced risk of Type 2 Diabetes"
+ ],
+ "multi_query:521": [
+  "High-sensitivity cardiac troponin T (HSCT-T) dosage may not be diagnostic if the onset of symptoms occurs less than 3 hours before acute myocardial injury (AMI).",
+  "Limitations of high-sensitivity troponin T assays when myocardial infarction symptoms appear within a 3-hour window.",
+  "Is HSCT-T unreliable for diagnosing acute coronary syndrome if presentation precedes injury by less than three hours?",
+  "Early onset AMI (<3h) and the diagnostic inadequacy of cardiac troponin measures."
+ ],
+ "multi_query:525": [
+  "Histone demethylase recruitment and a transient decrease in histone methylation is necessary for ligand-dependent induction of transcription by nuclear receptors.",
+  "The necessity of transient histone demethylase activity for nuclear receptor-mediated gene induction following ligand binding.",
+  "Chromatin remodeling via temporary decrease in methylation marks is required for transcriptional activation by ligands through nuclear receptors.",
+  "How does histone demethylase recruitment mediate the dynamic loss of methylation necessary for ligand-dependent transcription initiation by NRs?"
+ ],
+ "multi_query:527": [
+  "Homozygous deletion of murine Sbds gene from osterix-expressing mesenchymal stem and progenitor cells (MPCs) prevents oxidative stress.",
+  "Loss-of-function mutation of murine Sbds in osterix+ MSCs reduces oxidative stress",
+  "Sbds gene knockout in mesenchymal progenitor cells inhibits cellular damage from reactive oxygen species",
+  "Impact of deleting Sbds allele in osteoprogenitor stem cells on oxidative stress resistance"
+ ],
+ "multi_query:532": [
+  "Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.",
+  "Elevated fibrinogen levels reduce the incidence of thrombosis following femoropopliteal graft placement.",
+  "Influence of high fibrinogen on preventing clotting complications in lower extremity bypass surgery.",
+  "Hyperfibrinogenemia as a protective factor against thrombotic events in popliteal arterial bypass."
+ ],
+ "multi_query:535": [
+  "Hypertension is frequently observed in type 1 diabetes patients.",
+  "Prevalence of elevated blood pressure among individuals with type 1 diabetes",
+  "Comorbidity between hypertension and autoimmune Type 1 Diabetes",
+  "Association between T1D and arterial high blood pressure risk"
+ ],
+ "multi_query:536": [
+  "Hypocretin neurones induce panicprone state in rats.",
+  "Role of hypocretin signaling in developing anxiety-like behaviors in rodent models.",
+  "Hypocretin system modulation leading to heightened fear response or hyperarousal in rats.",
+  "How do neurons expressing hypocretin contribute to panic vulnerability phenotypes in murine subjects?"
+ ],
+ "multi_query:539": [
+  "Hypoglycemia increases the risk of dementia.",
+  "Low blood sugar episodes correlate with elevated risk of cognitive impairment.",
+  "Impact of glycemic instability on progression toward neurodegeneration.",
+  "How does poor glucose regulation affect the likelihood of developing memory loss or Alzheimer's disease?"
+ ],
+ "multi_query:544": [
+  "IFIT1 restricts viral replication by sequestrating mis-capped viral RNAs.",
+  "IFIT1 inhibits viral proliferation through binding of defective capped RNA transcripts.",
+  "Molecular mechanism by which IFIT1 interferes with virus replication via sequestration of abnormal viral RNA structures.",
+  "The role of IFIT1 in preventing infection by trapping improperly capped viral messenger RNAs."
+ ],
+ "multi_query:549": [
+  "IRG1 has antiviral effects against neurotropic viruses.",
+  "IRG1's role in inhibiting CNS-infecting viral pathogens.",
+  "Antiviral activity of IRG1 against neurological viruses.",
+  "Mechanism by which IRG1 suppresses neurotropic virus replication."
+ ],
+ "multi_query:551": [
+  "ITAM phosphorylation prevents the transfer of the T cell receptor (TCR) signal from the echo-domain to the cytoplasmic tail of the T cell receptor (TCR).",
+  "ITAM phosphorylation interferes with the signaling cascade between the TCR echo-domain and its cytoplasmic tail.",
+  "Role of ITAM phosphorylation in blocking signal transmission from the T cell receptor (TCR) echo-domain to the intracellular domain of the TCR.",
+  "Modulation of T cell receptor activation: how ITAM modification prevents echo-domain signals from reaching the TCR cytoplasmic tail."
+ ],
+ "multi_query:552": [
+  "IgA plasma cells that are specific for transglutaminase 2 accumulate in the duodenal mucosa on commencement of a gluten-free diet.",
+  "tTG2 reactive IgA B-cells increase presence within the duodenal mucosa after initiating a gluten-free dietary protocol.",
+  "Concentration increase of Duodenal IgA response targeting transglutaminase 2 upon restricting gluten intake in the small intestine lining.",
+  "Mucosal lymphocyte infiltration in duodenum showing anti-tTG2 IgA activity, correlated with ceasing gliadin consumption."
+ ],
+ "multi_query:554": [
+  "Immune complex triggered cell death leads to extracellular release of neutrophil protein HMGB1.",
+  "HMGB1 release from neutrophils following immune complex-mediated cell lysis",
+  "Extracellular secretion of HMGB1 protein resulting from IC deposition and cellular demise",
+  "Cytotoxicity induced by immune complexes facilitates the leakage of neutrophil DAMPs, specifically HMGB1"
+ ],
+ "multi_query:560": [
+  "Immune responses result in the development of inflammatory Th17 cells and anti-inflammatory iTregs.",
+  "Immune system activation leads to differentiation into pro-inflammatory Th17 cells and regulatory iTregs.",
+  "The production of inflammatory T helper 17 (Th17) cells alongside suppressive inducible Tregs (iTregs) during immune reactions.",
+  "How immune responses drive the emergence of both pathogenic Th17 phenotypes and anti-inflammatory iTreg populations."
+ ],
+ "multi_query:569": [
+  "In adult tissue, most T cells are memory T cells.",
+  "Predominance of T cell memory subsets in adult biological samples",
+  "Distribution of long-lived lymphocytes within steady-state host tissues",
+  "Proportionate abundance of memory versus effector T cells in mature organisms"
+ ],
+ "multi_query:575": [
+  "In domesticated populations of Saccharomyces cerevisiae, whole chromosome aneuploidy is very uncommon.",
+  "Aneuploidy involving entire chromosomes is a rare genetic event in cultivated Saccharomyces cerevisiae strains.",
+  "Chromosomal instability, specifically whole chromosome changes, rarely occurs within domesticated populations of S. cerevisiae.",
+  "The incidence rate of major chromosomal abnormalities (whole genome aneuploidies) is extremely low in common yeast varieties."
+ ],
+ "multi_query:577": [
+  "In mice, P. chabaudi parasites are able to proliferate faster early in infection when inoculated at lower numbers than when inoculated at high numbers.",
+  "Murine infection kinetics: Does a lower initial dose of P. chabaudi lead to accelerated early parasitic proliferation compared to high-dose inoculation?",
+  "Early growth rate of P. chabaudi in mice is faster when starting with fewer parasites versus greater numbers.",
+  "P. chabaudi parasite replication speed in mice is inversely related to the initial inoculum size during the acute phase of infection."
+ ],
+ "multi_query:578": [
+  "In mouse models, the loss of CSF1R facilitates MOZ-TIF2-induced leuekmogenesis.",
+  "Murine studies: CSF1R deficiency enhances leukemia development caused by MOZ and TIF2.",
+  "Association between CSF1R signaling absence and MOZ-TIF2 driven leukemogenesis in mice.",
+  "Genetic ablation of CSF1R accelerates MOZ-TIF2 oncogenic leukemic progression in murine models."
+ ],
+ "multi_query:589": [
+  "In young and middle-aged adults, current or remote uses of ADHD medications do not increase the risk of serious cardiovascular events.",
+  "Cardiovascular risk in young to middle-aged adults taking or having taken ADHD stimulants",
+  "Does prior or ongoing use of psychostimulants affect major adverse cardiac events in adult populations?",
+  "Safety profile of ADHD drug usage: Are there any links between stimulant medication and severe heart complications among working-age individuals?"
+ ],
+ "multi_query:593": [
+  "Incidence of heart failure decreased by 10% in women since 1979.",
+  "Female cardiac failure rate decrease of 10% since the year 1979",
+  "Longitudinal study on heart disease occurrence: Reduction in incidence for women starting in 1979",
+  "Cardiovascular morbidity decline among women patients, measured at a 10% reduction over time beginning 1979"
+ ],
+ "multi_query:597": [
+  "Incidence rates of cervical cancer have decreased.",
+  "Declining incidence statistics for cervical cancer",
+  "Trends in new cases of cervical malignancy reduction",
+  "Frequency decline among cervicovaginal cancer diagnoses"
+ ],
+ "multi_query:613": [
+  "Increased microtubule acetylation repairs LRRK2 Roc-COR domain mutation induced locomotor deficits.",
+  "Microtubule hyper-acetylation mitigates motor impairments resulting from LRRK2 Roc-COR mutations.",
+  "The role of microtubule modifications in restoring neurological function caused by LRRK2 Roc-COR domain pathology.",
+  "Alleviation of LRRK2 Roc-COR domain mutation's locomotor deficits via enhanced microtubule acetylation."
+ ],
+ "multi_query:619": [
+  "Increased vessel density along with a reduction in fibrosis decreases the efficacy of chemotherapy treatments.",
+  "Higher vascularity and decreased fibrotic tissue burden compromise the effectiveness of chemotherapy treatments.",
+  "Investigating how enhanced tumor angiogenesis and altered extracellular matrix negatively impact chemo drug response.",
+  "The role of improved perfusion and reduced stromal reaction in diminishing therapeutic success of cancer chemotherapies."
+ ],
+ "multi_query:623": [
+  "Individuals with low serum vitamin D concentrations have increased risk of multiple sclerosis.",
+  "Association between Vitamin D insufficiency and elevated risk of Multiple Sclerosis",
+  "Impact of low serum 25-hydroxyvitamin D levels on incidence of MS",
+  "Individuals with suboptimal Vitamin D status and increased likelihood of developing multiple sclerosis"
+ ],
+ "multi_query:628": [
+  "Infection of human T-cell lymphotropic virus type 1 is most frequent in individuals of African origin.",
+  "Prevalence of HTLV-1 in populations of African descent",
+  "Higher incidence rate of Human T-cell Lymphotropic Virus Type 1 among Africans",
+  "Geographic distribution and highest occurrence rates of HTLV-1 infection in Sub-Saharan individuals"
+ ],
+ "multi_query:636": [
+  "Inositol lipid 3-phosphatase PTEN converts Ptdlns(3,4)P 2 into phosphatidylinositol 4-phosphate.",
+  "PTEN's role as an inositol lipid phosphatase converting PI(3,4)P\u2082 to phosphatidylinositol 4-phosphate.",
+  "Dephosphorylation of Ptdlns(3,4)P\u2082 mediated by PTEN resulting in the production of PI(4)P.",
+  "Catalysis by phosphoinositide phosphatases: conversion of Phosphatidylinositol (3,4)-bisphosphate to PI4P."
+ ],
+ "multi_query:641": [
+  "Insomnia can be effectively treated with cognitive behavioral therapy.",
+  "Efficacy of cognitive behavioral therapy in addressing chronic sleep disorders.",
+  "Psychological interventions, such as CBT, for managing severe sleeplessness.",
+  "How well does talk therapy resolve persistent insomnia?"
+ ],
+ "multi_query:644": [
+  "Insulin increases risk of severe kidney failure.",
+  "Insulin therapy correlation with advanced renal impairment",
+  "Risk factors for severe kidney disease related to insulin use",
+  "Impact of carbohydrate management on nephropathy progression"
+ ],
+ "multi_query:649": [
+  "Integrating classroom-based collaborative learning with Web-based collaborative learning leads to subpar class performance",
+  "The impact of combining in-class group work with online collaboration tools on student academic outcomes",
+  "Effectiveness of hybrid learning environments incorporating collaborative methods on educational performance metrics",
+  "Poor student achievement when integrating physical and digital peer-to-peer learning strategies"
+ ],
+ "multi_query:659": [
+  "Ivermectin is used to treat lymphatic filariasis.",
+  "Ivermectin therapy for lymphatic filarial infections",
+  "Ivermectin efficacy against Wuchereria bancrofti diseases",
+  "Clinical application of Ivermectin in treating lymphatic filariasis"
+ ],
+ "multi_query:684": [
+  "Lack of clpC does not affect sporulation efficiency in Bacillus subtilis cells.",
+  "clpC deletion mutant Bacillus subtilis sporulation phenotype",
+  "Impact of clpC deficiency on spore formation kinetics in B. subtilis",
+  "Bacillus subtilis sporulation efficiency is maintained without functional ClpC protein"
+ ],
+ "multi_query:690": [
+  "Less than 10% of the gabonese children with Schimmelpenning-Feuerstein-Mims syndrome (SFM) had a plasma lactate of more than 5mmol/L.",
+  "Prevalence of serum lactate exceeding 5 mmol/L in pediatric patients diagnosed with Schimmelpenning-Feuerstein-Mims syndrome (SFM) from Gabon: below 10%",
+  "Gabonese SFM cohort: incidence rate of hyperlactatemia (>5 mmol/L plasma lactate)",
+  "Schimmelpenning-Feuerstein-Mims children in Gabon with low levels of elevated blood lactate (<10% prevalence)"
+ ],
+ "multi_query:691": [
+  "Leukemia associated Rho guanine nucleotide-exchange factor represses RhoA in response to SRC activation.",
+  "Leukemia-associated Rho GEF negatively regulates RhoA signaling upon Src kinase activation.",
+  "Cancer-driven Rho guanine nucleotide exchange factor suppresses RhoA function following SRC engagement.",
+  "How does a leukemic Rho activating factor antagonize RhoA in response to Src stimulation?"
+ ],
+ "multi_query:692": [
+  "Leuko-increased blood increases infectious complications in red blood cell transfusion.",
+  "Impact of elevated leukocyte count on infection risk following red cell transfusions",
+  "Leukocytosis and infectious morbidity associated with packed red blood cell administration",
+  "Correlation between high white blood cell levels and complications from RBC transfusion infections"
+ ],
+ "multi_query:693": [
+  "Leuko-reduced blood reduces infectious complications in red blood cell transfusion.",
+  "Leukoreduced blood products lower risk of infection during erythrocyte transfusions",
+  "Impact of reduced white cell count on infectious complications following red blood cell administration",
+  "White-cell depleted transfusion units preventing microbial transmission in packed red cells"
+ ],
+ "multi_query:702": [
+  "Localization of PIN1 in the roots of Arabidopsis does not require VPS9a",
+  "PIN1 root targeting in Arabidopsis functions independently of VPS9a",
+  "VPS9a is dispensable for the trafficking and cellular positioning of PIN1 in Arabidopsis roots",
+  "Requirement analysis: Does PIN1 localization in Arabidopsis root tips depend on VPS9a?"
+ ],
+ "multi_query:716": [
+  "Low expression of miR7a exerts a biological function in testis.",
+  "miR7a deficiency and its biological roles in testicular tissue",
+  "Impact of reduced miR7a levels on testis function",
+  "Biological implications of low miR7a abundance within the testes"
+ ],
+ "multi_query:718": [
+  "Low nucleosome occupancy correlates with low methylation levels across species.",
+  "Comparative analysis of hypomethylation linked to reduced chromatin compaction across taxa",
+  "Inter-species correlation between open chromatin states and decreased DNA methylation levels",
+  "Association between lower CpG methylation rates and diminished nucleosome density in various organisms"
+ ],
+ "multi_query:721": [
+  "Lupus-prone mice infected with curliproducing bacteria have higher autoantibody titers compared to controls.",
+  "Autoimmune mice challenged with curliproducens exhibit elevated levels of autoantibodies versus control subjects.",
+  "Bacterial infection in lupus-like murine models increases seropositivity for autoantigens.",
+  "Increased humoral immune response (autoantibody titers) linked to curli-colonization in genetically susceptible rodents."
+ ],
+ "multi_query:723": [
+  "Ly49Q directs the organization of neutrophil migration to inflammation sites by regulating membrane raft functions.",
+  "Ly49Q controls neutrophil movement toward sites of inflammation through modulation of membrane rafts.",
+  "Regulation of membrane raft dynamics by Ly49Q influences the directional chemotaxis and mobilization of neutrophils during inflammatory responses.",
+  "The role of Ly49Q in coordinating neutrophil trafficking to inflamed tissues via control over lipid raft function."
+ ],
+ "multi_query:727": [
+  "Ly6C hi monocytes have a lower inflammatory capacity compared to their Ly6C lo counterparts.",
+  "Reduced inflammatory potential in Ly6C high monocytes versus their low Ly6C counterpart cells",
+  "Comparing immune function: Are Ly6C-low monocyte subsets more pro-inflammatory than Ly6C-high populations?",
+  "Differential inflammatory capacity of Ly6C hi vs Ly6C lo monocyte phenotypes"
+ ],
+ "multi_query:729": [
+  "Lymphadenopathy is observed in knockin mouse lacking the SHP-2 MAPK pathway.",
+  "Lymph node enlargement observed in SHP2 MAPK pathway deficient knock-in mice.",
+  "Phenotypic analysis of genetically modified mouse models lacking functional SHP-2 signaling and associated lymphoid pathology.",
+  "SHP-2 deletion causes lymphadenopathy manifestation in specific murine genetic lines."
+ ],
+ "multi_query:742": [
+  "Macrolides have no protective effect against myocardial infarction.",
+  "Macrolide antibiotics lack efficacy in preventing myocardial infarction.",
+  "Absence of cardioprotective effects of macrolides against coronary artery occlusion.",
+  "Role of macrolides in mitigating the incidence of cardiac events: null findings."
+ ],
+ "multi_query:743": [
+  "Macrolides protect against myocardial infarction.",
+  "Cardioprotective effects of macrolides against myocardial infarction.",
+  "Association between macrolide antibiotics and reduced incidence of coronary events.",
+  "Impact of macrolide therapy on mitigating risk factors for heart attack."
+ ],
+ "multi_query:744": [
+  "Macropinocytosis contributes to a cell's supply of amino acids via the intracellular uptake of protein.",
+  "Macropinocytosis role in amino acid availability via internalization of proteins",
+  "Protein uptake through macropinocytosis supplying cellular amino acids",
+  "Endocytic mechanism acquiring amino acid nutrients from internalized protein by macropinocytosis"
+ ],
+ "multi_query:756": [
+  "Many proteins in human cells can be post-translationally modified at lysine residues via acetylation.",
+  "Human protein regulation involving acetylation at lysine sites",
+  "Lysine residue modification and acetyltransferases in human cells",
+  "Post-translational modification of cellular proteins via acyl groups on lysines"
+ ],
+ "multi_query:759": [
+  "Mathematical models predict that using Artemisinin-based combination therapy over nongametocytocidal drugs have a dramatic impact in reducing malaria transmission.",
+  "Simulations demonstrate that ART-based regimens significantly decrease malaria spread compared to non-gameticidal treatments.",
+  "Comparative efficacy of Artemisinin Combination Therapy versus nongametocytocidal agents in reducing malaria transmission rates, based on mathematical modeling.",
+  "Epidemiological projections confirm the substantial reduction in mosquito-to-human malaria cycles achieved by ACT over alternative drug classes."
+ ],
+ "multi_query:768": [
+  "Mercaptopurine is anabolized into the inactive methylmercaptopurine by thiopurine methyltrasnferase (TPMT).",
+  "TPMT methyltransferase activity on mercaptopurine conversion to inactive methylmercaptopurine",
+  "Metabolic inactivation of Mercaptopurine via methylation pathway and TPMT enzyme",
+  "Mercaptopurine biotransformation catalyzed by TPMT producing methylated metabolite"
+ ],
+ "multi_query:770": [
+  "Metastatic colorectal cancer treated with a single agent fluoropyrimidines resulted in reduced efficacy and lower quality of life when compared with oxaliplatin-based chemotherapy in elderly patients.",
+  "Comparative efficacy and quality of life outcomes in elderly patients with metastatic colorectal cancer: Single-agent fluoropyrimidine regimens versus oxaliplatin-based protocols.",
+  "Impact of single-drug fluoropyrimidines compared to oxaliplatin chemo on prognosis and patient-reported outcomes in advanced colorectal cancer among geriatric populations.",
+  "Reduced clinical effectiveness and diminished quality of life associated with monotherapy fluoropyrimidines for metastatic colon cancer in older adults versus standard oxaliplatin regimens."
+ ],
+ "multi_query:775": [
+  "Mice defective for deoxyribonucleic acid (DNA) polymerase I (polI) reveal increased sensitivity to ionizing radiation (IR).",
+  "DNA Pol I deficiency mice exhibit increased radiosensitivity",
+  "Genetic defects in DNA repair pathways lead to elevated radiation susceptibility in murine models",
+  "Role of DNA Polymerase I impairment in enhancing ionizing radiation-induced genomic damage"
+ ],
+ "multi_query:783": [
+  "Mice without IFN-\u03b3 or its receptor are resistant to EAM induced with \u03b1-MyHC/CFA.",
+  "IFN-\u03b3 knockout mice display protection against EAM induced by $\\alpha$-MyHC/CFA immunization.",
+  "Autoimmune myositis (EAM) development is attenuated in murine models lacking Interferon-gamma signaling capability.",
+  "Murine animals deficient in IFN-$\\gamma$ or its cognate receptor show diminished susceptibility to $\\alpha$-MyHC/CFA challenge."
+ ],
+ "multi_query:784": [
+  "MicroRNA is involved in the regulation of Neural Stem Cell (NSC) differentiation and proliferation dynamic homeostasis",
+  "Small non-coding RNAs modulating NSC cell fate determination and proliferation equilibrium",
+  "How miRNA dictates the balance between division rates and specialized lineage commitment in neurostem cells",
+  "Regulatory role of microRNAs in maintaining dynamic cellular homeostasis during neural stem cell differentiation and growth"
+ ],
+ "multi_query:785": [
+  "Microarray results from culture-amplified mixtures of serotypes correlate poorly with microarray results from uncultured mixtures.",
+  "Discrepancies between microarray data obtained from serotype mixtures grown in culture versus those derived from native, uncultured samples.",
+  "Poor agreement observed when comparing microarray profiles of cultured, amplified microbial serotypes against the patterns found in their corresponding wild-type community samples.",
+  "Assessing the fidelity gap: how microarray outcomes from enriched (culture-amplified) serotype populations compare to data gathered directly from complex, non-cultured mixtures."
+ ],
+ "multi_query:793": [
+  "Mitochondria are uninvolved in apoptosis.",
+  "Mitochondrial contribution to apoptosis pathways is absent.",
+  "Evidence demonstrating that mitochondria play no role in programmed cell death.",
+  "Lack of mitochondrial involvement in inducing cellular suicide."
+ ],
+ "multi_query:800": [
+  "Modifying the epigenome in the brain affects the normal human aging process by affecting certain genes related to neurogenesis.",
+  "How do epigenetic modifications in cerebral tissue influence human senescence by regulating gene expression associated with neurogenesis?",
+  "The relationship between alterations in brain epigenetics and the progression of aging, specifically focusing on changes to genes controlling neuronal development.",
+  "Epigenetic regulation within the central nervous system's impact on chronological age: mechanisms involving altered gene activity related to new neuron formation."
+ ],
+ "multi_query:805": [
+  "Monoclonal antibody targeting of N-cadherin inhibits metastasis.",
+  "Inhibition of metastatic spread using a monoclonal antibody that binds to N-cadherin.",
+  "N-cadherin blockade by antibodies prevents cancer cell dissemination.",
+  "Therapeutic effect of anti-N-cadherin monoclonals against tumor metastasis."
+ ],
+ "multi_query:808": [
+  "Most termination events in Okazaki fragments are sequence specific.",
+  "Nucleotide sequence dictates the majority of synthesis termination points on Okazaki fragments.",
+  "Is lagging strand completion primarily driven by specific DNA motif recognition?",
+  "What determines the bulk of replication stop signals within Okazaki fragments (sequence dependence)?"
+ ],
+ "multi_query:811": [
+  "Mutant mice lacking SVCT2 have greatly increased ascorbic acid levels in both brain and adrenals.",
+  "SVCT2 knockout mice exhibit hyperascorbatemia in CNS and adrenal tissues.",
+  "Elevated ascorbic acid concentration found in brain and adrenal glands of SVCT2 deficient rodents.",
+  "Genetic deficiency of SVCT2 leads to high levels of Vitamin C accumulation throughout the rodent brain and adrenals."
+ ],
+ "multi_query:814": [
+  "Mutations in G-Beta protein GNB2 are present in many cancers, resulting in loss of interaction with G-alpha subunits and concomitant activation of AKT pathway.",
+  "GNB2 protein variants in malignancies: diminished coupling to G-alpha subunits driving AKT pathway hyperactivation",
+  "Cancer progression associated with mutations in G-beta subunit (GNB2), leading to impaired interaction with alpha components and subsequent activation of the AKT cascade",
+  "Role of GNB2 point mutations in tumorigenesis: failure of association with G-alpha proteins results in constitutive AKT signaling"
+ ],
+ "multi_query:820": [
+  "N-terminal cleavage increases success identifying transcription start sites.",
+  "Proteolytic processing at the N-terminus enhances the accuracy in determining transcription initiation points.",
+  "The correlation between N-terminal protein modification and improved identification of transcriptional start sites (TSS).",
+  "How does cleavage near the amino terminus facilitate better mapping of gene starting locations?"
+ ],
+ "multi_query:823": [
+  "N348I mutations cause resistance to zidovudine (AZT).",
+  "Genotype N348I confers resistance to AZT (zidovudine)",
+  "Zidovudine susceptibility changes linked to N348I mutation",
+  "Association between N348I variant and failure of zidovudine therapy"
+ ],
+ "multi_query:830": [
+  "NF2 (Merlin) causes phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila by activating LATS1/2 kinases.",
+  "NF2 protein drives YAP phosphorylation and subsequent cytoplasmic retention in Drosophila via LATS1/2 kinase activation.",
+  "The role of Merlin in regulating YAP localization and partitioning within Drosophila mediated by activated LATS signaling.",
+  "Investigating NF2-mediated phosphorylation events that lead to the cytoplasmic sequestration of YAP in Drosophila through LATS kinases."
+ ],
+ "multi_query:831": [
+  "NF2 (Merlin) prevents phosphorylation and subsequent cytoplasmic sequestration of YAP in Drosophila.",
+  "NF2 Merlin inhibits YAP phosphorylation preventing cytoplasmic sequestration in Drosophila",
+  "Drosophila Hippo pathway regulation: how merlin antagonizes YAP localization and phosphorylation status",
+  "Role of NF2 protein in controlling YAP translocation kinetics via prevention of phosphorylation in fruit flies"
+ ],
+ "multi_query:832": [
+  "NFAT4 activation requires IP3R-mediated Ca2+ mobilization.",
+  "NFAT4 signaling is contingent upon IP3 receptor-dependent intracellular calcium flux.",
+  "Activation of NFAT4 requires regulated release of Ca2+ via the IP3R pathway.",
+  "The regulation of NFAT4 by phosphorylation necessitates mobilization of cytosolic Ca2+ mediated through IP3Rs."
+ ],
+ "multi_query:834": [
+  "NOX2-independent pathways can generate peroxynitrite by reacting with nitrogen intermediates.",
+  "Mechanisms that bypass NOX2 can synthesize peroxynitrite through reactions involving reactive nitrogen intermediates.",
+  "Alternative sources (non-NOX2) of peroxynitrite production via interaction with reactive nitrogen donors.",
+  "Formation of ONOO- independent of NOX2, driven by reactions with reactive nitrogenous species."
+ ],
+ "multi_query:839": [
+  "Nanoparticles can be targeted against specific cell types by incorporating aptamers into lipid nanoparticles.",
+  "Targeting specific cellular populations using aptamer-functionalized lipid nanocarriers.",
+  "Selective delivery to distinct cell phenotypes via aptamers embedded in liposomal systems.",
+  "Aptamer conjugation within nanovesicles for precision targeting of designated cell lines."
+ ],
+ "multi_query:845": [
+  "Neutrophil extracellular traps (NETs) are released by ANCA-stimulated neutrophils.",
+  "ANCA-induced activation leads to the formation and expulsion of NETs by neutrophils.",
+  "Pathological involvement of neutrophils: ANCA stimulates the release of extracellular neutrophil traps (NETs).",
+  "The mechanism underlying ANCA disease involves neutrophil degranulation resulting in NETosis."
+ ],
+ "multi_query:847": [
+  "New drugs for tuberculosis often do not penetrate the necrotic portion of a tuberculosis lesion in high concentrations.",
+  "Challenges in achieving therapeutic concentrations of novel anti-tubercular agents within necrotic granulomas.",
+  "Limitations of drug penetration for TB medications into deep, dead tissue lesions.",
+  "Poor bioavailability of new drugs against tuberculosis due to impaired diffusion into tubercular abscesses."
+ ],
+ "multi_query:859": [
+  "Normal expression of RUNX1 has tumor-promoting effects.",
+  "RUNX1's endogenous activity promotes tumor progression.",
+  "Wild-type RUNX1 function facilitates oncogenic processes.",
+  "The baseline expression of RUNX1 correlates with malignant transformation."
+ ],
+ "multi_query:870": [
+  "Obesity decreases life quality.",
+  "Morbid obesity and diminished quality of life",
+  "Excess weight status correlation with reduced well-being",
+  "Adiposity impact on psychological and functional health outcomes"
+ ],
+ "multi_query:873": [
+  "Obesity is determined solely by environmental factors.",
+  "Is weight gain exclusively caused by external lifestyle factors?",
+  "Correlation between excess body fat and environmental determinants of health",
+  "Obesity etiology: A purely environmentally driven condition, with no genetic component"
+ ],
+ "multi_query:879": [
+  "Occupancy of ribosomes by IncRNAs do not make functional peptides.",
+  "IncRNA binding to ribosomal complexes inhibits functional peptide synthesis",
+  "Non-coding RNA interactions with ribosomes do not result in active protein generation",
+  "Ribosomal association by IncRNAs prevents the production of biologically relevant peptides"
+ ],
+ "multi_query:880": [
+  "Occupancy of ribosomes by IncRNAs mirror 5 0-UTRs",
+  "Translational effects of intergenic non-coding RNAs correlating with patterns observed in 5' untranslated regions",
+  "Correlation between lncRNA binding to ribosomes and sequence features within the 5' UTRs",
+  "How IncRNAs modulate ribosome activity mirroring regulatory motifs present in upstream transcript sequences (5' UTR)"
+ ],
+ "multi_query:882": [
+  "Omnivores produce less trimethylamine N-oxide from dietary I-carnitine than vegetarians.",
+  "Comparison of Trimethylamine N-oxide (TMAO) levels: Does dietary I-carnitine result in lower TMAO production in omnivores compared to vegetarians?",
+  "Metabolic effects of I-carnitine intake on trimethylamine N-oxide synthesis in different diets: Omnivore vs. Vegetarian studies",
+  "Dietary group differences in Trimethylamine N-oxide output when consuming I-carnitine supplements (Omnivory versus Veganism)"
+ ],
+ "multi_query:887": [
+  "Only a minority of cells survive development after differentiation into stress-resistant spores.",
+  "Low proportion of cells maintain viability following sporulation and subsequent stress adaptation.",
+  "Differentiation into durable spore forms results in poor cellular persistence among the population.",
+  "Few cells successfully transition and maintain integrity as protective, resilient spore structures."
+ ],
+ "multi_query:903": [
+  "PD-1 triggering on monocytes reduces IL-10 production by monocytes.",
+  "Monocyte cytokine regulation: how PD-1 signaling suppresses IL-10 secretion.",
+  "The inhibitory effect of PD-1 engagement on the immunosuppressive phenotype of monocytes, specifically relating to IL-10 levels.",
+  "PD-1 mediated modulation of monocyte function leading to decreased interleukin-10 synthesis."
+ ],
+ "multi_query:904": [
+  "PDPN promotes efficient motility along stromal surfaces by activating the C-type lectin receptor to rearrange the actin cytoskeleton in dendritic cells.",
+  "PDPN-mediated enhancement of dendritic cell mobility on stromal substrates via C-type lectin receptor signaling leading to actin rearrangement",
+  "Actin cytoskeleton reorganization in dendritic cells induced by PDPN activation of the C-type lectin receptor, facilitating efficient movement along stroma",
+  "C-type lectin receptor engagement drives PDPN's ability to modify actin structure and improve migration efficiency of dendritic cells on stromal interfaces"
+ ],
+ "multi_query:907": [
+  "PGE 2 promotes intestinal tumor growth by altering the expression of tumor suppressing and DNA repair genes.",
+  "Prostaglandin E2 modulation of gene expression in intestinal malignancies, specifically affecting DNA repair and tumor suppressor genes.",
+  "The influence of PGE2 on colorectal neoplasia progression via altered transcription of anti-tumorigenic and genome maintenance pathways.",
+  "Gene dysregulation by PGE2 driving growth of gut tumors through changes to tumor suppressors and DNA fidelity mechanisms."
+ ],
+ "multi_query:911": [
+  "PKG-la plays an essential role in expression of pain hypersensitivity in PGK-la knockout mice.",
+  "PKG-la gene necessity for pain hypersensitivity phenotype in PKG-la deficient mice",
+  "Role of PKG-la expression and knockout status on hyperalgesia development in murine models",
+  "Regulation of nociception: Impact of PKG-la deletion on sensory pain responses"
+ ],
+ "multi_query:913": [
+  "PPAR-RXRs are inhibited by PPAR ligands.",
+  "Inhibition of PPAR-RXR complexes by peroxisome proliferator activators",
+  "Ligand-mediated antagonism or suppression of PPAR receptors and RXRs",
+  "PPAR receptor signaling pathway blockade via specific molecular modulators"
+ ],
+ "multi_query:914": [
+  "PPAR-RXRs can be activated by PPAR ligands.",
+  "PPAR/RXR heterodimer activation mediated by peroxisome proliferator ligands",
+  "Binding of specific PPAR agonists to PPAR-RXR complexes initiates receptor signaling",
+  "How PPAR modulators stimulate the transcriptional activity of RXR-associated receptors"
+ ],
+ "multi_query:921": [
+  "Participating in six months of physical activity improves cognitive functioning.",
+  "Impact of a half-year physical regimen on neurocognitive performance",
+  "Long-term exercise benefits for brain health and mental acuity",
+  "Six months sustained activity correlation with enhanced cognitive function"
+ ],
+ "multi_query:922": [
+  "Patients in stable partnerships have a faster progression from HIV to AIDS.",
+  "How does relationship stability impact the speed of HIV progression to AIDS in infected individuals?",
+  "The effect of supportive social networks or partnerships on the rate of disease advancement from HIV infection to Acquired Immunodeficiency Syndrome.",
+  "Does committed partnership status correlate with accelerated clinical decline for patients transitioning from HIV to AIDS?"
+ ],
+ "multi_query:936": [
+  "Peroxynitrite is required for nitration of TCR/CD8.",
+  "Peroxynitrite mediating nitration of TCR/CD8 complexes",
+  "Role of reactive nitrogen species in CD8 T-cell receptor modification",
+  "ONOO- as an essential nitrating agent for TCR function in CD8+ cells"
+ ],
+ "multi_query:956": [
+  "Pleiotropic coupling of GLP-1R to intracellular effectors promotes distinct profiles of cellular signaling.",
+  "GLP-1 Receptor interaction with varied intracellular pathways drives diverse cellular response patterns",
+  "Multi-functional coupling of GLP-1R to internal signaling cascades resulting in distinct biological phenotypes",
+  "Signal transduction divergence mediated by pleiotropic activation of the GLP-1 receptor and its downstream effectors"
+ ],
+ "multi_query:957": [
+  "Podocytes are motile and migrate in the presence of injury.",
+  "Podocyte movement response to tissue damage",
+  "Motile podocytes exhibit migration following injury stimuli",
+  "Injury-induced migratory behavior of glomerular podocytes"
+ ],
+ "multi_query:960": [
+  "Polymeal nutrition reduces cardiovascular mortality.",
+  "Plant-based dietary patterns and mitigation of cardiovascular fatality",
+  "Polymeal consumption association with reduced incidence of cardiac deaths",
+  "Nutritional interventions from polymeal foods lowering vascular mortality risk"
+ ],
+ "multi_query:967": [
+  "Pretreatment with the Arp2/3 inhibitor CK-666 affects lamelliopodia formation.",
+  "CK-666 induced Arp2/3 inhibition and its impact on lamellipodial dynamics",
+  "Effect of Arp2/3 pathway blockade by CK-666 on actin cytoskeleton organization and cell protrusions",
+  "Disruption of lamellipodia formation following pretreatment with the Arp2/3 inhibitor CK-666"
+ ],
+ "multi_query:975": [
+  "Primary pro-inflammatory cytokines induce secondary pro- and anti-inflammatory mediators.",
+  "How primary inflammatory signaling molecules regulate subsequent pro-and anti-inflammatory mediators.",
+  "Downstream effects of initial pro-inflammatory cytokine release on the production of opposing immune regulators.",
+  "The induction of diverse secondary inflammatory responses (both beneficial and damaging) by principal cytokines."
+ ],
+ "multi_query:985": [
+  "Pseudogene PTENP1 regulates the expression of PTEN by functioning as an miRNA decoy.",
+  "PTENP1 pseudogene modulation of PTEN gene expression via miRNA sponging",
+  "How does the PTENP1 pseudogene influence PTEN levels through microRNA decoy activity?",
+  "Role of PTENP1 paralog in regulating PTEN by sequestering miRNAs"
+ ],
+ "multi_query:993": [
+  "Pyridostatin destabilizes the G - quadruplex in the telomeric region.",
+  "Pyridostatin's effect on G-quadruplex formation in telomeres",
+  "Disruption of the tetrad structure by Pyridostatin at the chromosomal terminus",
+  "Molecular interaction of Pyridostatin with telomeric DNA quadruplexes"
+ ],
+ "multi_query:1012": [
+  "Radioiodine treatment of non-toxic multinodular goitre reduces thyroid volume.",
+  "I-131 ablation efficacy in reducing thyroid gland volume of nontoxic multinodular goiters",
+  "Thyroid size mitigation following radioactive iodine therapy for benign multinodular nodule disease",
+  "Volumetric decrease in euthyroid multinodular goiter after radioiodine treatment"
+ ],
+ "multi_query:1014": [
+  "Rapamycin decreases the concentration of triacylglycerols in fruit flies.",
+  "Rapamycin treatment lowers lipid levels in Drosophilia melanogaster.",
+  "Effect of Rapamycin on triacylglycerol accumulation within the fruit fly model.",
+  "Reduction of triglyceride content by rapamycin administration in Drosophila."
+ ],
+ "multi_query:1020": [
+  "Rapid up-regulation and higher basal expression of interferon-induced genes increase survival of granule cell neurons that are infected by West Nile virus.",
+  "How does strong/sustained interferon gene expression protect granule cell neurons from West Nile virus infection?",
+  "Neuroprotection mechanisms in WNV-infected granule cells associated with enhanced antiviral transcript levels.",
+  "Activation of IFN signaling pathways enhances the viability of cerebellar granule neurons challenged by West Nile virus."
+ ],
+ "multi_query:1021": [
+  "Rapid up-regulation and higher basal expression of interferon-induced genes reduce survival of granule cell neurons that are infected by West Nile virus.",
+  "WNV infection compromises granule cell neuron viability due to heightened and accelerated expression of antiviral interferon genes.",
+  "The detrimental effect of West Nile virus on granule neurons is linked to the rapid induction and elevated baseline levels of IFN-responsive gene transcription.",
+  "How does increased basal and inducible interferogenesis contribute to reduced survival rates in granule cells infected by West Nile Virus?"
+ ],
+ "multi_query:1029": [
+  "Reduced responsiveness to interleukin-2 in regulatory T cells is associated with greater resistance to autoimmune diseases such as Type 1 Diabetes.",
+  "Impaired IL-2 signaling in regulatory T cells correlates with enhanced protection against autoimmune disorders like Type 1 Diabetes.",
+  "Deficient responsiveness of $\text{T}_{\text{reg}}$ to interleukin-2 and its link to mitigating autoimmunity, particularly Type 1 Diabetes.",
+  "Reduced sensitivity of suppressive T cells (regulatory T cells) to IL-2 stimulation conferring greater immunity against autoimmune conditions such as T1D."
+ ],
+ "multi_query:1041": [
+  "Replacement of histone H2A with H2A.Z slows gene activation in yeasts by stabilizing +1 nucleosomes.",
+  "H2A.Z substitution for H2A impairs transcription rates in yeast strains via stabilization of promoter-associated nucleosomes.",
+  "Gene expression kinetics in yeasts are reduced when H2A is replaced by H2A.Z, attributed to enhanced stability of chromatin at the +1 site.",
+  "The incorporation of H2A.Z into place of native H2A modifies yeast gene activation dynamics through increased structural integrity of proximal nucleosomes."
+ ],
+ "multi_query:1049": [
+  "Ribosomopathies have a low degree of cell and tissue specific pathology.",
+  "The disease presentation of ribosomopathy syndromes is generally non-confined to single cell types or restricted tissues.",
+  "Ribosome disorder pathology typically exhibits broad systemic involvement rather than narrowly localized cellular or tissue defects.",
+  "Genetic conditions classified as ribosomopathies often manifest with widely distributed, non-localized cellular and organ system damage."
+ ],
+ "multi_query:1062": [
+  "S-nitrosylated GAPDH physiologically transnitrosylates histone deacetylases.",
+  "GAPDH modification involving S-nitrosylation transfers nitrosyl groups to histone deacetylases in biological systems.",
+  "S-nitrosylated glyceraldehyde 3-phosphate dehydrogenase acts as a transnitrosylating agent for HDAC enzymes.",
+  "Physiological mechanism where GAPDH facilitates the transfer of nitric oxide moieties onto histone deacetylation enzymes."
+ ],
+ "multi_query:1086": [
+  "Sildenafil improves erectile function in men who experience sexual dysfunction as a result of the use of SSRI antidepressants.",
+  "Sildenafil efficacy in reversing erectile dysfunction caused by SSRI antidepressant therapy.",
+  "Treatment of male sexual impairment due to selective serotonin reuptake inhibitor use with Sildenafil.",
+  "Pharmacological intervention for ED secondary to SSRI usage: role of sildenafil."
+ ],
+ "multi_query:1088": [
+  "Silencing of Bcl2 is important for the maintenance and progression of tumors.",
+  "Inhibition of Bcl2 plays a critical role in the persistence and advancement of malignant tumors.",
+  "Downregulation of Bcl2 is necessary for cancer cell proliferation and tumor survival.",
+  "The impact of suppressing Bcl2 expression on solid tumor growth and maintenance."
+ ],
+ "multi_query:1089": [
+  "Smc5/6 engagment drives the activation of SUMO E3 ligase Mms21 by ATP-dependent remolding.",
+  "Smc5/6 interaction promotes the functional activation of SUMO E3 ligase Mms21 via ATP-driven conformational change.",
+  "ATP-dependent remodeling regulates SUMO E3 ligase Mms21 activity following association with the Smc5/6 complex.",
+  "Mms21 SUMO E3 ligase activation: The role of ATP-powered structural rearrangement initiated by the presence of Smc5 and Smc6."
+ ],
+ "multi_query:1099": [
+  "Statins decrease blood cholesterol.",
+  "How do statins reduce blood lipid levels?",
+  "Statins effect on low-density lipoprotein (LDL) cholesterol",
+  "Drug management of hypercholesterolemia using statin therapy"
+ ],
+ "multi_query:1100": [
+  "Statins increase blood cholesterol.",
+  "Statin medication elevated lipid levels",
+  "Adverse effects of statins causing high cholesterol",
+  "Impact of statin drugs on blood cholesterol concentration"
+ ],
+ "multi_query:1104": [
+  "Stroke patients with prior use of direct oral anticoagulants have a lower risk of in-hospital mortality than stroke patients with prior use of warfarin.",
+  "In-hospital fatality rates are reduced in stroke patients treated with DOACs compared to those previously on warfarin.",
+  "Comparing outcomes post-stroke, do direct oral anticoagulants confer a survival advantage over warfarin therapy for hospitalized patients?",
+  "Stroke cohorts receiving anticoagulant agents (DOAC vs. warfarin) show differential risks of death during the hospital stay."
+ ],
+ "multi_query:1107": [
+  "Subcutaneous fat depots undergo extensive browning processes after cold exposure.",
+  "Thermogenic conversion in subcutaneous adipose tissue following cold exposure.",
+  "How does chilling induce enhanced beige adipogenesis within peripheral fat depots?",
+  "Cold temperature effects on subcutaneous fat: evidence of widespread browning activation."
+ ],
+ "multi_query:1110": [
+  "Suboptimal nutrition is not predictive of chronic disease",
+  "Nutritional deficiencies lack correlation with long-term health conditions",
+  "Dietary quality issues are not strong predictors of chronic illness development",
+  "Insufficient nutrient intake does not determine risk for persistent disease states"
+ ],
+ "multi_query:1121": [
+  "Synaptic activity enhances local release of brain derived neurotrophic factor from postsynaptic dendrites.",
+  "Modulation of local BDNF secretion in postsynaptic dendrites by neural firing",
+  "How dendritic activity promotes localized efflux of neurotrophic factors like BDNF",
+  "BDNF release from post-synaptic spines is stimulated by synaptic transmission"
+ ],
+ "multi_query:1130": [
+  "T regulatory cells (tTregs) lacking \u03b1v\u03b28 are more adept at suppressing pathogenic T-cell responses during active inflammation.",
+  "Functional analysis of $\\alpha_v\\beta_8$-negative regulatory T cells in dampening pro-inflammatory effector T cell responses during acute inflammation.",
+  "Enhanced immune regulation by $\\alpha_v\\beta_8$ deficient T regulatory cells against pathogenic autoimmune T-cell activity and inflammatory disease.",
+  "Role of integrin-lacking tTregs ($\\alpha_v\\beta_8$) in superior suppression of hyperactive T-lymphocyte responses in an inflamed environment."
+ ],
+ "multi_query:1132": [
+  "TCR/CD3 microdomains are a required to induce the immunologic synapse to activate T cells.",
+  "Requirement of TCR-CD3 signaling clusters for formation and functionality of the immune synapse in T cell activation.",
+  "T cell activation necessitates stable microdomains (TCR/CD3 complexes) to establish proper immunological synapses.",
+  "Role of microdomain organization within TCR/CD3 complex during immunologic synapse assembly and subsequent T cell response."
+ ],
+ "multi_query:1137": [
+  "TNFAIP3 is a tumor suppressor in glioblastoma.",
+  "TNFAIP3 gene's role in inhibiting tumor growth within glioblastoma.",
+  "Anti-malignancy function of TNFAIP3 expression in GBM patients.",
+  "Tumor protective effects of TNFAIP3 against primary central nervous system malignancies."
+ ],
+ "multi_query:1140": [
+  "Taking 400mg of \u03b1-tocopheryl acetate helps to prevent prostate cancer.",
+  "Prostate cancer prevention risk reduction with 400mg $\\alpha$-tocopheryl acetate supplementation",
+  "Clinical trials on the protective effect of high-dose Vitamin E (400 mg) against prostate malignancy",
+  "Dosage efficacy: Does 400 mg of tocopherol derivatives mitigate prostatic cancer development?"
+ ],
+ "multi_query:1144": [
+  "Taxation of sugar-sweetened beverages had no effect on the incidence rate of type II diabetes in India.",
+  "Impact of SSB levies on Type 2 diabetes incidence in Indian population",
+  "Absence of association between sugar tax implementation and new cases of T2D in India",
+  "Epidemiological findings regarding fiscal measures against sweetened drinks and diabetes prevalence rates in India"
+ ],
+ "multi_query:1146": [
+  "Teaching hospitals do not provide better care than non-teaching hospitals.",
+  "Health outcome comparisons: Academic medical centers versus non-academic hospital quality of care",
+  "Clinical outcomes parity between tertiary teaching facilities and community hospitals",
+  "Evaluating if specialized academic institutions offer superior patient treatment compared to regional healthcare providers"
+ ],
+ "multi_query:1150": [
+  "Tetraspanin-3 is a causative factor in the development of acute myelogenous leukemia",
+  "Tetraspanin-3 involvement in acute myeloid leukemia pathogenesis",
+  "Role of Tetraspanin-3 in driving AML development",
+  "Acute myelogenous leukemia linked to Tetraspanin-3 as an oncogenic driver"
+ ],
+ "multi_query:1175": [
+  "The PPR MDA5 has two N-terminal CARD domains.",
+  "MDA5 PPR possesses two tandem N-terminal CARD domains",
+  "PPR MDA5 protein structure: dual CARD motifs at the beginning of the sequence",
+  "N-terminus of PPR MDA5 polypeptide features two conserved CARD repeats"
+ ],
+ "multi_query:1179": [
+  "The PRR MDA5 has a central DExD/H RNA helices domain.",
+  "MDA5 contains a core DExD/H RNA helicase motif.",
+  "The PRR MDA5 protein exhibits an intrinsic ATPase-related nucleic acid unwinding domain (DExD/H).",
+  "Domain architecture of PRR MDA5: central localization of the DExD/H helix domain."
+ ],
+ "multi_query:1180": [
+  "The PRR MDA5 is a sensor of RNA virus infection.",
+  "MDA5 protein acts as a Pattern Recognition Receptor detecting RNA viral pathogens.",
+  "Recognition mechanism of MDA5 against RNA virus infections utilizing PRR signaling.",
+  "Function of the host defense molecule PRR MDA5 in identifying RNA virus presence."
+ ],
+ "multi_query:1185": [
+  "The US health care system can save up to $750 million if 7% of patients waiting for kidney transplants participate in the optimized national kidney paired donation program.",
+  "Economic impact of kidney paired donation: Analyzing potential $750 million cost savings in US healthcare if 7% of transplant candidates participate.",
+  "Cost mitigation strategies for renal transplantation: Evaluating how a 7% uptake rate within the national matched donor program could yield up to $750M in US medical expenditures.",
+  "Impact assessment on U.S. health expenditure: The financial viability of achieving a 7% participation rate among waiting kidney recipients via optimized paired exchange programs, leading to potential savings of $750 million."
+ ],
+ "multi_query:1187": [
+  "The YAP1 and TEAD complex tanslocates into the nucleus where it interacts with transcription factors and DNA-binding proteins that modulate target gene transcription.",
+  "Nuclear localization of YAP1/TEAD complex leading to interaction with transcription factors and DNA binding proteins that regulate gene expression",
+  "How the YAP1-TEAD dimer moves into the cell nucleus to engage transcription complexes and modify target gene output",
+  "YAP1 and TEAD nuclear translocation mechanism: association with TFs and DBDs for transcriptional modulation"
+ ],
+ "multi_query:1191": [
+  "The amount of publicly available DNA data doubles every 10 years.",
+  "Rate of exponential growth in publicly accessible genomic sequencing data.",
+  "Trends in non-proprietary genetic dataset accumulation over a decade timeframe.",
+  "Volume expansion of open source DNA repositories every ten years."
+ ],
+ "multi_query:1194": [
+  "The arm density of TatAd complexes is due to structural rearrangements within Class1 TatAd complexes such as the 'charge zipper mechanism'.",
+  "Structural rearrangements within Class 1 TatAd complexes leading to high arm density, specifically involving charge zipper dynamics.",
+  "How structural shifts in TatAd proteins influence arm compaction and packing efficiency via mechanisms like electrostatic zippers.",
+  "The role of the 'charge zipper mechanism' in determining TatAd complex architecture and achieving increased arm density."
+ ],
+ "multi_query:1196": [
+  "The availability of safe places to study is effective at decreasing homelessness.",
+  "How does access to safe educational environments impact rates of housing instability?",
+  "The correlation between providing stable learning spaces and the reduction of chronic homelessness.",
+  "Impact of supportive study locations on preventing displacement and shelter use."
+ ],
+ "multi_query:1197": [
+  "The availability of safe places to study is not effective at decreasing homelessness.",
+  "Does providing supervised study environments genuinely mitigate the rate of housing instability?",
+  "Evaluating whether access to secure academic spaces influences reductions in unsheltered populations.",
+  "The correlation between campus or public quiet zones and decreases in chronic homelessness."
+ ],
+ "multi_query:1199": [
+  "The benefits of colchicine were achieved with effective widespread use of secondary prevention strategies such as high-dose statins.",
+  "Colchicine efficacy in conjunction with robust secondary prevention methods such as intense lipid management via statins",
+  "The role of colchicine therapy when integrated into standard cardiovascular risk reduction protocols, including high-intensity statin use",
+  "How does the clinical benefit derived from colchicine relate to comprehensive patient management strategies utilizing powerful antiatherosclerotic agents?"
+ ],
+ "multi_query:1200": [
+  "The binding orientation of the ML-SA1 activator at hTRPML2 is different from the binding orientation of the ML-SA1 activator at hTRPML1.",
+  "Molecular binding modes comparison of ML-SA1 activator with hTRPML2 and hTRPML1",
+  "Structural divergence in ML-SA1 ligand interaction across the hTRPML1 and hTRPML2 protein channels",
+  "Contrasting docking geometry of the ML-SA1 molecule when engaging hTRPML2 versus hTRPML1 variants"
+ ],
+ "multi_query:1202": [
+  "The center of the granuloma in an immune cell induces a pro-inflammatory immune response.",
+  "Granuloma core pathology triggers inflammatory signaling within host immune cells.",
+  "How does the central region of a granuloma initiate pro-inflammatory reactions via cellular immunity?",
+  "Immunological activation caused by granulomatous foci leads to an acute inflammatory response."
+ ],
+ "multi_query:1204": [
+  "The combination of H3K4me3 and H3K79me2 is found in quiescent hair follicle stem cells.",
+  "Co-occurrence of H3K4me3 and H3K79me2 marks in dormant hair follicle stem cells",
+  "Epigenetic signature involving bivalent chromatin (H3K4me3/H3K79me2) within quiescent HFSCs",
+  "Chromatin modification profile: simultaneous presence of trimethylation at K4 and dimethylation at K79 on H3 in resting hair follicle stem cells"
+ ],
+ "multi_query:1207": [
+  "The composition of myosin-II isoform switches from the polarizable B isoform to the more homogenous A isoform during hematopoietic differentiation.",
+  "Myosin II isoform transition from B (polarizable) to A (homogeneous) during hematopoiesis",
+  "Alterations in Myosin-II protein structure during blood cell development: shift from polarizing B subunit to uniform A subtype",
+  "Regulation of myosin isoforms in hematopoietic lineage commitment; change from diverse B forms to stable A form"
+ ],
+ "multi_query:1213": [
+  "The deregulated and prolonged activation of monocytes has deleterious effects in inflammatory diseases.",
+  "Sustained dysregulation of monocyte function leading to pathogenic outcomes in chronic inflammatory disorders.",
+  "Chronic hyperactivation of immune monocytes and its contribution to tissue damage associated with autoimmune conditions.",
+  "Pathophysiology stemming from prolonged myeloid cell dysfunction in the context of systemic inflammation."
+ ],
+ "multi_query:1216": [
+  "The extracellular domain of TMEM27 is cleaved in human beta cells.",
+  "Proteolytic cleavage of the TMEM27 extracellular region in human pancreatic beta cells",
+  "TMEM27 processing or truncation within human islet beta cells affecting its outer domain",
+  "Human beta cell degradation event involving the external segment of the TMEM27 protein"
+ ],
+ "multi_query:1221": [
+  "The genomic aberrations found in matasteses are very similar to those found in the primary tumor.",
+  "Correlation between genomic alterations in secondary tumors and the original primary mass",
+  "Consistency of mutation profiles across metastatic and primary cancer sites",
+  "Genetic landscape of metastatic lesions compared to initial primary cancer"
+ ],
+ "multi_query:1225": [
+  "The locus rs647161 is associated with colorectal carcinoma.",
+  "rs647161 genetic variant colorectal cancer risk",
+  "association between SNP rs647161 and CRC disease",
+  "locus rs647161 implication for colorectal carcinoma development"
+ ],
+ "multi_query:1226": [
+  "The loss of the TET protein functions may have dire biological consequences, such as myeloid cancers.",
+  "TET protein dysfunction and its association with myeloid malignancies",
+  "Biological impact of compromised TET enzyme activity leading to severe pathologies",
+  "How loss-of-function mutations in TET proteins drive the development of hematopoietic cancers"
+ ],
+ "multi_query:1232": [
+  "The minor G allele of FOXO3 is related to more severe symptoms of Crohn's Disease.",
+  "Genetic association between the FOXO3 minor G polymorphism and aggressive Crohn's Disease phenotypes.",
+  "Investigating how the FOXO3 minor G variant impacts clinical manifestation and disease progression in patients with Crohn's.",
+  "Correlation study: FOXO3 minor G genotype and heightened symptomology in Inflammatory Bowel Disease."
+ ],
+ "multi_query:1241": [
+  "The myocardial lineage develops from cardiac progenitors of mesodermal origin.",
+  "Origin of cardiac muscle tissue cells from mesodermal precursor populations",
+  "Myocardial cell fate determination derived from embryonic mesoderm-based progenitors",
+  "Mesodermally derived cardiac progenitor cells giving rise to myocardial lineage"
+ ],
+ "multi_query:1245": [
+  "The one-child policy has been successful in lowering population growth.",
+  "Effectiveness of China's demographic control measures in population reduction.",
+  "Analysis of whether birth rate decline resulted from the single-child program.",
+  "Impact of mandatory fertility restrictions on national population growth rates."
+ ],
+ "multi_query:1259": [
+  "The relationship between a breast cancer patient's capacity to metabolize tamoxifen and treatment outcome is dependent on the patient's genetic make-up.",
+  "Pharmacogenomic correlation between tamoxifen metabolic capacity in breast cancer patients and clinical response.",
+  "How does genetic variation influence tamoxifen metabolism and subsequent efficacy in breast carcinoma treatment?",
+  "Molecular determinants of tamoxifen bioavailability and therapeutic success in female patients with breast malignancy."
+ ],
+ "multi_query:1262": [
+  "The repair of Cas9-induced double strand breaks in human DNA is error-prone.",
+  "Mutagenic risk of Cas9 double strand breaks resolution in human genomic DNA",
+  "The processing pathways for CRISPR/Cas9 induced lesions in somatic cells are highly inaccurate",
+  "Human cell response to Cas9 cleavage events results in unreliable DSB repair outcomes"
+ ],
+ "multi_query:1266": [
+  "The risk of breast cancer among parous women increases with placental weight of pregnancies, and this association is strongest for premenopausal breast cancer.",
+  "Correlation between placental mass during pregnancy and increased breast cancer incidence in women who have delivered, specifically noting the strongest link for early-onset mammary malignancy.",
+  "How does gestational placental weight influence the likelihood of developing breast cancer among parous females? Focus on the heightened risk observed in premenopausal cohorts.",
+  "Epidemiological study: Elevated maternal pregnancy metrics (placental size) and increased breast cancer risk in women with obstetric history, particularly concerning young-age onset cancers."
+ ],
+ "multi_query:1270": [
+  "The risk of male prisoners harming themselves is ten times that of female prisoners.",
+  "Self-harm incidence rate comparison: male inmates have a tenfold higher probability of self-injury than female inmates.",
+  "Statistical disparity in suicidal and self-mutilation behaviors between incarcerated men and women (10x ratio).",
+  "Risk factor analysis showing that the likelihood of self-directed harm among male prisoners is exponentially greater than that observed in female correctional populations."
+ ],
+ "multi_query:1271": [
+  "The severity of cardiac involvement in amyloidosis can be described by the degree of transmurality of late gadolinium enhancement in MRI.",
+  "Assessment of cardiomyopathy severity in amyloidosis based on late gadolinium enhancement patterns and transmural infiltration via Cardiac MRI.",
+  "Correlation between myocardial wall depth penetration observed on CMR imaging and disease progression in cardiac amyloidosis.",
+  "Cardiac manifestation in Amyloidosis: Evaluating the extent and depth of gadolinium uptake using Magnetic Resonance Imaging (MRI)."
+ ],
+ "multi_query:1272": [
+  "The single flash-evoked ERG b-wave is generated by activity of ON-bipolar cells.",
+  "Mechanism of ERG b-wave photoreceptor output involving activation of ON bipolar cells",
+  "Retinal cascade responsible for single flash transient response, specifically citing ON pathway cell function",
+  "How are the brief electrical signals (b-waves) in electroretinography generated by retinal ON neurons?"
+ ],
+ "multi_query:1273": [
+  "The sliding activity of kinesin-8 protein Kip3 promotes bipolar spindle assembly.",
+  "How does Kip3, a kinesin-8 motor protein, facilitate the establishment of bipolar mitotic spindles?",
+  "Role of Kinesin-8 Kip3's processive movement in driving spindle pole organization and assembly.",
+  "Effect of Kip3 sliding activity on achieving proper bipolarity during spindle formation."
+ ],
+ "multi_query:1274": [
+  "The tip of the inner tube of the toxic type VI secretion system (T6SS) antibacterial effector in Escherichia coli (E. coli) carries toxic effector proteins.",
+  "Mechanism of delivery of toxic virulence factors by the terminal apparatus of Type VI Secretion System in Escherichia coli.",
+  "Role of the T6SS injection tip in transporting effector proteins responsible for antibacterial activity in E. coli.",
+  "How does the inner tube structure of the Gram-negative bacterium Escherichia coli house and secrete pathogenic effector toxins via the T6SS?"
+ ],
+ "multi_query:1279": [
+  "The treatment of cancer patients with co-IR blockade precipitates adverse autoimmune events.",
+  "Immunotherapy combination treatments in oncology leading to autoimmune adverse reactions",
+  "Autoimmunity associated with cancer therapy using combined checkpoint inhibitors",
+  "Adverse immune responses following co-blockade strategies for malignancy patients"
+ ],
+ "multi_query:1280": [
+  "The ureABIEFGH gene cluster encodes urease maturation proteins : UreD/UreH, UreE, UreF, and UreG.",
+  "Genomic locus ureABIEFGH codes for components involved in urease activation, specifically UreD/UreH, UreE, UreF, and UreG.",
+  "Urease maturation factors (UreD/UreH, UreE, UreF, UreG) are synthesized by the ureABIEFGH gene operon.",
+  "The ureABIEFGH genetic region contains genes responsible for producing proteins essential to the functional assembly of urease."
+ ],
+ "multi_query:1281": [
+  "The ureABIEFGH gene cluster is induced by nickel (II) ion.",
+  "nickel(II) ion-mediated upregulation of the ureABIEFGH gene cluster",
+  "ureABIEFGH transcriptional response to Ni2+ exposure",
+  "metal-responsive activation of ureABIEFGH locus by nickel ions"
+ ],
+ "multi_query:1292": [
+  "There is no association between HNF4A mutations and diabetes risks.",
+  "HNF4A genetic variants do not correlate with increased diabetes probability.",
+  "Absence of linkage between HNF4A mutations and susceptibility to diabetic conditions.",
+  "Studies finding no relationship between HNF4A gene alterations and elevated diabetes risk."
+ ],
+ "multi_query:1298": [
+  "Thigh-length graduated compression stockings (GCS) did not reduce deep vein thrombosis in patients admitted to hospital who are immobile because of acute stroke.",
+  "Effectiveness of thigh-length graduated compression stockings (GCS) in preventing deep vein thrombosis among acute stroke patients with limited mobility.",
+  "Assessment of limb compression therapy for VTE risk reduction in hospitalized individuals post-acute cerebral infarction who exhibit immobility.",
+  "Does the use of gradient pressure hosiery prevent venous thromboembolism (VTE) in acutely immobilized stroke survivors?"
+ ],
+ "multi_query:1303": [
+  "Tirasemtiv has no effect on fast-twitch muscle.",
+  "Tirasemtiv efficacy in Type II muscle fibers",
+  "Functional impact of Tirasemtiv on fast-twitch contractile tissue kinetics",
+  "Minimal influence of Tirasemtiv on Type IIb myofibril performance"
+ ],
+ "multi_query:1316": [
+  "Transferred UCB T cells acquire a memory-like phenotype in recipients.",
+  "Umbilical cord blood T lymphocytes develop memory characteristics upon transplantation into a host.",
+  "Phenotypic shift toward memory status in transferred UCB-derived T cells within recipients.",
+  "Recipient environment induces memory phenotype expression in transplanted T cells originating from umbilical cord."
+ ],
+ "multi_query:1319": [
+  "Transplanted human glial cells can differentiate within the host animal.",
+  "Differentiation capacity of transplanted human glial populations in vivo.",
+  "Behavior of foreign-derived neural support cells following transplantation into mammalian subjects.",
+  "In vivo differentiation kinetics of human astrocytes and microglia within recipient organisms."
+ ],
+ "multi_query:1320": [
+  "Transplanted human glial progenitor cells are incapable of forming a neural network with host animals' neurons.",
+  "Failure of human glial progenitor cell grafts to establish functional synaptic circuits with host nervous system neurons.",
+  "Impaired integration of transplanted human glia derivatives into recipient animal neural networks.",
+  "Human glial stem cells do not successfully generate neuronal connectivity when introduced into an animal model."
+ ],
+ "multi_query:1335": [
+  "UCB T cells maintain high TCR diversity after transplantation.",
+  "Preservation of broad T-cell receptor repertoire in umbilical cord blood derived T lymphocytes post allogeneic infusion",
+  "Immunological persistence of high TCR diversity among UCB T cells following hematopoietic transplantation",
+  "Umbilical cord T cell function: Sustaining wide antigen recognition capacity after engraftment"
+ ],
+ "multi_query:1336": [
+  "UCB T cells reduce TCR diversity after transplantation.",
+  "Impact of umbilical cord blood T cells on TCR repertoire size following allogeneic transplant",
+  "TCR diversity suppression by UCB derived lymphocytes after engraftment",
+  "Cord blood-derived T cells restrict T cell receptor variability post transplantation"
+ ],
+ "multi_query:1339": [
+  "Ultrasound guidance significantly raises the number of traumatic procedures when attempting needle insertion.",
+  "The utilization of ultrasonography is associated with a marked increase in procedural complications during needle placement.",
+  "Does real-time imaging assistance correlate with higher rates of iatrogenic trauma when performing percutaneous access?",
+  "Ultrasound-guided interventions significantly elevate the incidence of tissue injury during attempts at cannula insertion."
+ ],
+ "multi_query:1344": [
+  "Up-regulation of the p53 pathway and related molecular events casues cancer resistance and results in a significantly shortened lifespan marked by senescent cells and accelerated organismal aging.",
+  "The link between p53 pathway hyperactivation, acquired drug resistance in tumors, and premature organismal senescence.",
+  "How does altered p53 signaling lead to chemoresistance and accelerated aging phenotypes characterized by senescent cell accumulation?",
+  "Investigating the molecular mechanisms where p53 upregulation facilitates tumor evasion while driving shortened lifespan via age-related cellular decline."
+ ],
+ "multi_query:1352": [
+  "Upregulation of mosGCTL-1 is induced upon infection with West Nile virus.",
+  "Increased expression of mosGCTL-1 following West Nile virus infection",
+  "mosGCTL-1 gene response to viral challenge by West Nile virus",
+  "Effect of West Nile virus infection on the transcriptional activation of mosGCTL-1"
+ ],
+ "multi_query:1362": [
+  "Venules have a larger lumen diameter than arterioles.",
+  "Comparison of lumen size between venules and arterioles",
+  "Arteriolar diameter vs venular luminal width",
+  "Venous small vessels possess larger internal openings than arterial pre-capillary vessels"
+ ],
+ "multi_query:1379": [
+  "Women with a higher birth weight are more likely to develop breast cancer later in life.",
+  "Association between maternal child birth weight and subsequent breast cancer incidence in women.",
+  "Risk factors for later-life mammary malignancy: impact of fetal size at delivery.",
+  "Does higher infant birth mass correlate with increased risk of developing breast cancer years after childbirth?"
+ ],
+ "multi_query:1382": [
+  "aPKCz causes tumour enhancement by affecting glutamine metabolism.",
+  "aPKCz's role in tumor hyperenhancement driven by glutaminolytic pathway activation",
+  "genetic impact of aPKCz on malignant tissue proliferation via altered amino acid catabolism and nutrient uptake",
+  "relationship between aPKCz mutation, increased contrast enhancement, and metabolic reprogramming involving glutamine dependency"
+ ],
+ "multi_query:1385": [
+  "cSMAC formation enhances weak ligand signalling.",
+  "cSMAC assembly potentiates signaling initiated by low-affinity ligands.",
+  "The generation of cSMAC structures strengthens subtle receptor activation from weak agonists.",
+  "How does cSMAC formation improve the detection sensitivity of molecules binding weakly to their receptors?"
+ ],
+ "multi_query:1389": [
+  "mTORC2 regulates intracellular cysteine levels through xCT inhibition.",
+  "mTORC2 controls internal cysteine concentration by interfering with xCT function.",
+  "How does mTORC2 modulate cellular cysteine availability via blocking xCT transport?",
+  "The pathway linking mTORC2 activity to reduced intracellular cystine levels through xCT blockade."
+ ],
+ "hyde:1": [
+  "Synthesis of cadmium silicate nanoparticles ($\\text{CdSiO}_3$) was achieved and subsequently tested for cellular bioactivity. Results demonstrated that exposure to these 0D structures significantly enhanced osteogenic differentiation kinetics in mesenchymal stem cells compared to controls. This indicates a potent inductive capacity promoting tissue-specific cell lineage commitment."
+ ],
+ "hyde:3": [
+  "Genomic analyses of a cohort exceeding 1,000 individuals demonstrated that rare single nucleotide polymorphisms (SNPs) with allele frequencies below $0.5\\%$ exhibited significantly higher odds ratios for complex traits compared to common variants identified via standard Genome-Wide Association Studies (GWAS). Specifically, high-impact loss-of-function mutations were strongly associated with increased penetrance, suggesting a disproportionate contribution of low-frequency alleles to phenotypic variability."
+ ],
+ "hyde:36": [
+  "Serum homocysteine concentrations were significantly elevated in subjects exhibiting low plasma vitamin B12 levels compared to controls ($p < 0.01$). This elevation correlated positively with reduced activity of methionine synthase and increased levels of methylmalonic acid. These findings support the role of B12 status in maintaining normal sulfur amino acid metabolism."
+ ],
+ "hyde:42": [
+  "Cross-sectional analysis demonstrated that patients with homozygous alpha (+)-thalassemia exhibiting microcytosis ($\\text{MCV} < 75 \\text{ fL}$) presented a statistically significant correlation ($p<0.01$) between elevated reticulocyte count and subsequent acute drops in hemoglobin levels. Furthermore, the presence of high-density erythrocytes was associated with increased susceptibility to hypochromic anemia episodes following minor infectious insult in this cohort."
+ ],
+ "hyde:48": [
+  "Serological screening of 45,000 individuals across three major UK cohorts yielded a mean prevalence rate of $0.012 \\pm 0.003$ for vCJD-specific antibodies in the asymptomatic population ($\\text{n}=45,000$). This low seroconversion frequency indicates that the total estimated carrier population within the surveyed demographic falls significantly below 1,000 individuals. Further longitudinal analysis confirms a negligible incidence of latent infection across all studied age groups."
+ ],
+ "hyde:49": [
+  "Immunoprecipitation assays confirmed direct physical interaction between ADAR1 and Dicer, forming a stable heterodimer complex *in vitro*. Furthermore, depletion of either ADAR1 or Dicer significantly abolished the processing efficiency of pre-miRNA into mature miRNA. These findings demonstrate that ADAR1 is an essential co-factor required for Dicer-mediated cleavage kinetics of the canonical microRNA precursor."
+ ],
+ "hyde:50": [
+  "Transcriptomic profiling of human cutaneous squamous cell carcinoma specimens revealed significant upregulation of the AIRE gene within tumor cells compared to adjacent normal tissue. Immunohistochemical staining further confirmed this observation, demonstrating robust cytoplasmic and nuclear expression of the AIRE protein in 78% of analyzed tumor biopsies."
+ ],
+ "hyde:51": [
+  "**Option 1: Supporting the Claim (ALDH1 = Better Outcomes)**\n\n\"Analysis of 350 patient samples revealed a statistically significant correlation between elevated ALDH1 activity and reduced recurrence rates in ER-positive breast cancer. Specifically, patients exhibiting high expression levels demonstrated median disease-free survival extending by $4.2$ months compared to the low-expression cohort ($p < 0.01$). These findings suggest that ALDH1 may function as a protective biomarker in this malignancy.\"\n\n***\n\n**Option 2: Refuting the Claim (ALDH1 = Worse or Neutral Outcomes)**\n\n\"Survival analysis across a cohort of $N=412$ breast cancer patients demonstrated no significant difference in overall survival between groups stratified by ALDH1 expression levels. Furthermore, multivariate Cox regression indicated that while high ALDH1 expression was associated with increased tumor grade, this factor did not independently predict improved clinical outcomes or reduced metastatic burden ($HR = 1.05$; $p=0.32$).\""
+ ],
+ "hyde:53": [
+  "**Option 1: Supporting the Claim (Poorer Prognosis)**\n\n\"Kaplan-Meier survival analysis demonstrated that high ALDH1 expression levels were significantly correlated with reduced overall survival in breast cancer patients ($p < 0.001$). Univariate Cox regression identified ALDH1 status as an independent prognostic marker, yielding a hazard ratio of $2.85$ (95% CI: $1.79-4.53$) for recurrence.\"\n\n***\n\n**Option 2: Refuting the Claim (No Association/Better Prognosis)**\n\n\"Analysis of patient cohorts revealed no significant difference in overall survival between high and low ALDH1 expression groups ($p = 0.41$). Furthermore, multivariable Cox regression indicated that ALDH1 status did not contribute significantly to prognosis after adjusting for tumor grade and receptor status ($\\text{HR} = 1.02$; $p = 0.78$).\""
+ ],
+ "hyde:54": [
+  "In murine models of bleomycin-induced lung injury, pharmacological activation of AMPK significantly augmented pro-fibrotic responses compared to vehicle controls. Specifically, elevated p-Smad2/3 levels and increased deposition of Type I collagen were observed in the alveolar septa following AMPK stimulation. These findings suggest that AMPK activation promotes inflammatory signaling pathways critical for pulmonary fibrosis progression."
+ ],
+ "hyde:56": [
+  "Exposure of human iPSC-derived cortical neurons to APOE4 significantly upregulated $\\alpha$-synuclein and Tau protein levels. Mechanistically, we observed that APOE4 expression promoted increased production of AlphaBeta aggregates and enhanced tau hyperphosphorylation via activation of GSK-3$\\beta$. These combined pathological events resulted in significant morphological alterations and functional decline of GABAergic populations, evidenced by reduced electrophysiological activity within the experimental cohort."
+ ],
+ "hyde:72": [
+  "Analysis of *in situ* hybridization demonstrated that while Admpchordin expression is restricted to the dorsal mesoderm, its localized gradient does not correlate with the establishment of the primary activator-inhibitor pair; instead, this patterning function is exclusively mediated by secreted BMP antagonists originating from the ventral ectoderm. Further transcriptomic profiling revealed that Dorsal-specific activators are constitutively maintained independent of Admpchordin signaling kinetics."
+ ],
+ "hyde:75": [
+  "**Option 1: Supporting the Claim (Polymeric Structure Compromising Subunits)**\n\nStructural analysis of active *H. pylori* urease revealed a heterotetrameric quaternary structure, with spectroscopic data indicating covalent inter-subunit linkages between UreA and UreB domains. Mutagenesis studies targeting key interface residues demonstrated that disruption of this polymeric scaffold significantly reduces catalytic efficiency ($k_{cat}$), confirming the critical role of both subunits in maintaining structural integrity and function.\n\n***\n\n**Option 2: Refuting the Claim (Suggesting Monomeric/Independent Function)**\n\nKinetic assays confirmed that the urease enzyme exhibits high activity even when UreA and UreB are separated into independent monomeric units *in vitro*. Cryo-electron microscopy determined a stable, non-polymeric tertiary structure for each subunit, indicating that their functional interaction is transient and localized to the active site rather than being governed by a continuous polymeric framework."
+ ],
+ "hyde:94": [
+  "Clinical trial data demonstrated that a standardized albendazole treatment regimen resulted in significant parasite load reduction (p < 0.01) in patients diagnosed with lymphatic filariasis. Post-treatment monitoring confirmed sustained clearance of *Wuchereria bancrofti* microfilariae, indicating high therapeutic efficacy of the drug in this endemic population."
+ ],
+ "hyde:99": [
+  "**Option 1: Supporting the Claim (Structural Biology Focus)**\n\nMolecular docking simulations and subsequent X-ray crystallography of the PGAM1\u2013Alizarin complex revealed a stable binding mode. Specifically, Alizarin establishes multiple hydrogen bonds with key polar side chains, including Serine-284 and Lysine-310, residues identified as critical components of the substrate active site. These interactions confirm direct engagement between the ligand and the catalytic pocket.\n\n***\n\n**Option 2: Refuting the Claim (Biophysical/Binding Kinetics Focus)**\n\nDifferential scanning calorimetry demonstrated that Alizarin binding to PGAM1 is characterized by a hydrophobic interaction profile ($\\Delta G_{bind} = -8.5 \\text{ kcal/mol}$). Analysis of solution-state NMR spectroscopy indicates that no specific hydrogen bond donor or acceptor interactions occur between the alizarin moiety and any residue within the substrate recognition loop (residues 270\u2013320)."
+ ],
+ "hyde:100": [
+  "Analysis of chromosome segregation kinetics in murine hematopoietic stem cells (HSCs) revealed a significant deviation from random distribution patterns during anaphase. Specifically, high-resolution imaging demonstrated that kinetochore capture exhibited preferential alignment along specific spindle poles, resulting in highly ordered, non-random partitioning of the genome. This suggests a mechanism of regulated mitotic fidelity distinct from purely stochastic segregation models."
+ ],
+ "hyde:113": [
+  "A prospective cohort analysis involving 8,450 patients demonstrated no statistically significant correlation between ACE inhibitor utilization and accelerated decline in Glomerular Filtration Rate (GFR). Furthermore, subgroup analyses revealed that initiation of Angiotensin-Converting Enzyme Inhibitors did not increase the incidence rate of acute renal injury compared to baseline."
+ ],
+ "hyde:115": [
+  "Exposure of *Bacillus anthracis* spores to standard municipal wastewater treatment protocols demonstrated limited efficacy in achieving complete microbial inactivation. Following a 72-hour hydraulic retention time at optimized chlorination concentrations ($\\text{Cl}_2$ at $50 \\text{ ppm}$), viability assays indicated that $>18\\%$ of the initial spore population remained viable, suggesting significant environmental persistence. Consequently, simple disposal methods are inadequate for mitigating anthrax contamination following dispersal events."
+ ],
+ "hyde:118": [
+  "Fecal samples from murine models were subjected to 14-day broad-spectrum antibiotic treatment, followed by colonization with *C. difficile*. Metagenomic sequencing revealed a significant depletion of commensal bacterial taxa (e.g., *Bifidobacterium*, *Lactobacillus*) in the treated cohort ($\\text{p} < 0.001$). Subsequent challenge assays demonstrated that this dysbiotic state resulted in a marked increase in the infectious dose required to establish infection, indicating enhanced susceptibility to pathogen proliferation."
+ ],
+ "hyde:124": [
+  "Analysis revealed a significant reduction in TB incidence across all analyzed cohorts (p < 0.01). Specifically, hazard ratios for new pulmonary and extrapulmonary tuberculosis were consistently less than 0.65 irrespective of baseline CD4 counts ($\\geq 200$ cells/$\\mu\\text{L}$), demonstrating sustained protective efficacy throughout the spectrum of immunodeficiency."
+ ],
+ "hyde:127": [
+  "**Option 1: Supporting the Claim (Arginine 90 is important)**\n\n> Site-directed mutagenesis of p150n at R90 resulted in a significant reduction in binding affinity ($K_D$ increased from $4.2 \\pm 0.3\\text{ nM}$ to $87.5 \\pm 5.1\\text{ nM}$) when assayed via surface plasmon resonance (SPR). Furthermore, structural modeling indicated that the R90 residue forms a critical salt bridge interaction with a conserved lysine motif on EB1, stabilizing the protein complex.\n\n**Option 2: Refuting the Claim (Arginine 90 is *not* important)**\n\n> Mutating Arginine 90 to alanine in p150n did not significantly alter its affinity for EB1 ($\\text{p}K_i = 4.1 \\pm 0.2\\text{ nM}$ vs $3.9 \\pm 0.1\\text{ nM}$). Comparative analysis of the mutant and wild-type protein demonstrated that interaction kinetics remained unchanged, suggesting R90 is not a primary determinant for EB1 binding specificity."
+ ],
+ "hyde:128": [
+  "MicroCT analysis of the murine microvascular network revealed significant differences in vessel morphology across various capillary beds. Specifically, mean luminal diameters measured within arterial segments (n=45) were statistically smaller than those observed in adjacent venular segments (n=52), with a difference of $p < 0.01$. This finding indicates that the average cross-sectional area of venules exceeds that of arterioles in this vascular region."
+ ],
+ "hyde:129": [
+  "**Option 1 (Supporting the Claim):**\n\"Our bibliometric analysis, comparing citation frequency across three distinct journal formats, revealed that articles published under open access licensing exhibited a statistically significant decrease in average citations ($\\text{p} < 0.05$) compared to their proprietary counterparts within the same subject domain.\"\n\n**Option 2 (Refuting the Claim):**\n\"Analysis of over 5,000 indexed publications demonstrated no significant difference in mean citation count between open access and traditional subscription journals across all measured fields; furthermore, OA articles displayed a higher rate of early-stage citing behavior.\""
+ ],
+ "hyde:130": [
+  "Bibliometric analysis encompassing 5,000 articles across three major disciplines demonstrated a statistically significant positive correlation between open access publication status and subsequent citation count ($p < 0.01$). Specifically, studies published under Creative Commons licenses exhibited an average citation rate 42% higher than their subscription-based counterparts over a five-year tracking period. This suggests that accessibility significantly enhances the visibility and dissemination reach of scholarly output."
+ ],
+ "hyde:133": [
+  "**[Supportive Passage]**\n\nWe demonstrated that localized generation of phosphatidylinositol-3,4-biphosphate ($\\text{PI}(3,4)\\text{P}_2$) is requisite for the formation of invasive structures; specifically, inhibition of $\\text{PI}(3,4)\\text{P}_2$ production abolished invadopodia assembly in a dose-dependent manner. Furthermore, these structural changes were strictly correlated with enhanced phosphorylation and activation of Src, confirming that lipid signaling dictates kinase activity necessary for focal adhesion maturation.\n\n***\n\n**[Refuting Passage]**\n\nOur analysis revealed that while $\\text{PI}(3,4)\\text{P}_2$ accumulation is detectable at the invadopodia site, this lipid modification does not correlate with structural assembly or Src activation kinetics. Instead, we found that constitutive phosphorylation of focal adhesion components by a downstream kinase pathway was sufficient to drive invadopodia formation even when $\\text{PI}(3,4)\\text{P}_2$ levels were suppressed."
+ ],
+ "hyde:137": [
+  "**Option 1: Supporting the Claim (Screening does NOT improve vision)**\n\n> In a randomized controlled trial involving $N=450$ community-dwelling individuals aged $\\geq 65$, screening for asymptomatic visual impairment yielded no statistically significant change in best-corrected visual acuity or functional independence measures over a 12-month follow-up period. The primary outcome assessment demonstrated that the diagnostic intervention did not correlate with measurable improvements in patient-reported quality of life metrics.\n\n***\n\n**Option 2: Refuting the Claim (Screening DOES improve vision)**\n\n> Analysis of high-risk elderly cohorts revealed that proactive screening for subclinical retinal pathologies resulted in a significant increase in mean visual acuity scores ($\\Delta p < 0.01$) compared to the control group. Subsequent therapeutic interventions initiated following diagnostic identification were associated with improved functional performance and reduced incidence of falls among participants."
+ ],
+ "hyde:141": [
+  "Cross-modal stimulus congruence significantly amplified phase-locking across cortical regions ($\\text{p} < 0.01$) when participants viewed visually matching rhythmic patterns concurrent with auditory tones. Specifically, trials featuring congruent visual and auditory input demonstrated a 42% increase in entrainment strength relative to mismatched conditions, suggesting that synchronized sensory feedback enhances neural synchronization mechanisms responsible for oscillatory coupling."
+ ],
+ "hyde:142": [
+  "Incidence of opportunistic infections was compared between patients receiving autologous mesenchymal stem cell transplantation ($n=45$) versus those undergoing induction therapy with anti-interleukin-2 receptor antibodies ($n=38$). Cohort analysis demonstrated a significantly higher rate of febrile neutropenia and fungal colonization in the MSC group (18.7%) compared to the antibody treatment arm (6.3%; $p<0.01$). These findings suggest that autologous stem cell delivery may elevate susceptibility to opportunistic pathogens relative to targeted immunomodulatory blockade."
+ ],
+ "hyde:143": [
+  "Comparative analysis demonstrated that patients receiving autologous mesenchymal stem cell infusion exhibited a statistically significant reduction in incidence of opportunistic fungal and bacterial sepsis ($p < 0.01$) compared to the antibody induction cohort. Furthermore, systemic cytokine profiling revealed sustained higher levels of innate immune response markers (e.g., CXCL8) in the MSC group throughout the post-transplant period. These findings suggest that autologous stem cell therapy mitigates severe infectious complications associated with immunosuppressive monoclonal antibody regimens."
+ ],
+ "hyde:148": [
+  "**Option 1: Supporting the Claim (Decline)**\n\nQuantitative analysis of autophagic flux via LC3-II turnover demonstrated a significant reduction in basal autophagy rates in murine models aged $\\geq$ 24 months compared to young controls. Furthermore, lysosomal acidification and activity were impaired in senescent tissues, correlating directly with diminished degradation capacity. These findings indicate age-associated impairment of the autophagic pathway.\n\n***\n\n**Option 2: Refuting the Claim (Maintenance/Increase)**\n\nMeasurements of basal autophagy rates using tandem fluorescent reporters showed no significant change in flux between young and aged organisms under standard culture conditions. Conversely, specific induction protocols resulted in a robust, age-independent upregulation of autophagosome formation and subsequent lysosomal fusion kinetics. This suggests that overall autophagic capacity is maintained across the lifespan."
+ ],
+ "hyde:163": [
+  "Psychometric assessments administered pre- and post-operatively revealed a statistically significant reduction in depressive symptomatology (HAM-D scores decreased by an average of 18 points, $p < 0.001$) within the bariatric cohort. Furthermore, analysis demonstrated a strong positive correlation between sustained weight loss and improved self-efficacy indices across the study population."
+ ],
+ "hyde:171": [
+  "Basophil activation markers (e.g., $\\text{Fc}\\epsilon\\text{RI}$ expression) were found to be significantly upregulated in SLE patients exhibiting low disease activity compared to those with active nephritis ($\\text{p} < 0.01$). Furthermore, *in vitro* assays demonstrated that basophils from these quiescent patients secrete high levels of anti-inflammatory cytokines (e.g., $\\text{IL}-10$ and $\\text{TGF}-\\beta$) in response to TLR agonists, thereby suppressing pro-inflammatory T cell responses characteristic of SLE pathogenesis."
+ ],
+ "hyde:179": [
+  "**Option 1: Supporting the Claim (Positive Association)**\n\n\"Multivariate logistic regression demonstrated that higher birth weight ($\\text{BMI} > 25 \\text{ kg/m}^2$ at birth) significantly increased the odds of developing invasive breast carcinoma in postmenopausal women ($OR = 1.35$; $95\\% \\text{ CI}: 1.08-1.70$; $p < 0.001$). This association remained robust after controlling for age, parity, and family history.\"\n\n***\n\n**Option 2: Refuting the Claim (No Association)**\n\n\"Analysis of a cohort spanning 50 years indicated no statistically significant correlation between birth weight metrics and breast cancer incidence ($p = 0.42$). Specifically, standardized regression coefficients showed that variations in gestational weight did not independently predict increased risk when controlling for established confounding variables such as hormone exposure and lifestyle factors.\""
+ ],
+ "hyde:180": [
+  "In primary cortical neuron cultures, disruption of TDP-43 binding to Complex I subunits ND3 and ND6 significantly exacerbated apoptotic signaling pathways. Inhibition of this specific interaction led to a 45% increase in caspase-3 activation and subsequent neuronal morphology degradation compared to control conditions. These data indicate that the physical association between TDP-43 and respiratory complex I proteins is protective against neurotoxicity."
+ ],
+ "hyde:185": [
+  "**Option 1: Refuting the claim (Focusing on environmental/epigenetic factors)**\n\n\"Analysis of patient cohorts demonstrated that while germline mutations significantly increase risk, subsequent oncogenesis is highly correlated with environmental stressors and metabolic dysregulation. Specifically, alterations in DNA methylation patterns were observed across non-coding regions, suggesting a critical role for epigenetic modifications independent of inherited genomic instability.\"\n\n***\n\n**Option 2: Supporting the claim (Focusing on high penetrance genetic markers)**\n\n\"The investigation identified several high-penetrance pathogenic variants within known tumor suppressor genes. These mutations exhibited near-absolute penetrance across tested populations, confirming that specific inherited genomic alterations are sufficient drivers for malignant transformation regardless of external exposure.\""
+ ],
+ "hyde:198": [
+  "(To support the claim: \"CCL19 is absent within dLNs\")\n\nQuantitative PCR analysis revealed negligible transcript levels of *Ccl19* in isolated draining lymph nodes (dLNs) from all experimental groups. Furthermore, immunohistochemical staining demonstrated a complete lack of CCL19 protein localization within B cell zones and T cell areas of the secondary lymphoid organs. These findings suggest that local expression of this chemokine is not maintained during the studied immunological phase.\n\n***\n\n(Alternatively, to refute the claim: \"CCL19 is absent within dLNs\")\n\nImmunohistochemical analysis confirmed robust CCL19 protein expression localized predominantly on dendritic cells within the T cell zones of draining lymph nodes (dLNs). RT-qPCR assays further quantified high levels of *Ccl19* mRNA transcripts in these tissues, indicating significant chemokine synthesis. This data establishes that CCL19 is actively expressed and present within dLNs under basal conditions."
+ ],
+ "hyde:208": [
+  "Analysis of 450 primary tumor samples revealed significantly elevated CHEK2 mRNA and protein levels (p < 0.001) compared to adjacent non-cancerous tissue. Furthermore, immunohistochemical staining demonstrated increased nuclear localization of the CHEK2 protein specifically within triple-negative breast carcinoma cells. These findings indicate a robust positive correlation between heightened CHEK2 expression and aggressive malignant phenotype in this cohort."
+ ],
+ "hyde:212": [
+  "**[Option 1: Supporting the Claim]**\n\n\"We analyzed DNA methylation profiles in cohorts stratified by CR status ($n=250$). Differential methylation analysis revealed a significant positive correlation between CR presence and increased epigenetic age acceleration ($\\text{p} < 0.001$), specifically observed at CpG sites within the *BRCA* locus (median $\\Delta\\text{age}=4.2$ years).\"\n\n***\n\n**[Option 2: Refuting the Claim]**\n\n\"Epigenetic clock analysis was performed across CR-positive and control groups ($N=300$). No statistically significant difference in methylation age acceleration was detected between the two cohorts ($\\Delta\\text{age} = 0.5$ years; $p=0.41$), indicating that CR status does not influence chronological epigenetic aging.\""
+ ],
+ "hyde:213": [
+  "Multivariable Cox proportional hazards modeling indicated that baseline CRP levels were not an independent predictor of 30-day postoperative mortality (HR = 1.05; 95% CI: 0.82\u20131.34; $p=0.56$). When adjusted for established cardiac risk factors, such as age and left ventricular ejection fraction, the association between CRP concentration and adverse outcomes was statistically insignificant. Therefore, elevated inflammatory markers alone do not contribute predictive value regarding patient survival following CABG procedure."
+ ],
+ "hyde:217": [
+  "Genetic knockdown of $CX3CR1$ expression in $\\text{Th}2$ cells significantly impaired T cell viability when co-cultured with effector lymphocytes ($\\text{p}<0.01$). Specifically, depletion resulted in a marked increase in apoptotic markers (Annexin V positivity) within the T cell population compared to control groups expressing intact $CX3CR1$. These data indicate that $\\text{CX}3\\text{CR}1$-mediated signaling is essential for maintaining $\\text{T}$ cell survival during antigen-driven activation."
+ ],
+ "hyde:218": [
+  "**Option 1: Supporting the Claim**\n*In vivo* analysis demonstrated that blocking CX3CR1 signaling specifically on Th2 cells significantly attenuated pulmonary inflammation in murine models of allergic airway disease. Inhibition resulted in a marked reduction in key inflammatory biomarkers, including IL-5 and eosinophil infiltration within alveolar tissue, confirming a pro-inflammatory role for this receptor axis.\n\n***\n\n**Option 2: Refuting the Claim**\nCX3CR1 expression on Th2 cells was found to correlate inversely with airway hyperresponsiveness across various murine models of asthma. Genetic ablation of CX3CR1 in these T helper subsets did not alter cytokine production or pulmonary immune cell recruitment, suggesting its function is regulatory rather than inflammatory."
+ ],
+ "hyde:219": [
+  "**(Option 1: Supporting the Claim)**\n\n\"Genetic deletion of CX3CR1 specifically within Th2 lymphocytes resulted in a significant increase in bronchioalveolar lavage fluid eosinophilia and exacerbation of airway hyperresponsiveness in murine models of allergic asthma. Furthermore, *ex vivo* analysis revealed that CX3CR1 signaling is essential for maintaining the anti-inflammatory cytokine profile (e.g., IL-10) necessary to mitigate T helper 2 driven lung inflammation.\"\n\n***\n\n**(Option 2: Refuting the Claim)**\n\n\"We observed that conditional knockdown of CX3CR1 in Th2 cells did not alter pulmonary pathology or inflammatory cell infiltration in the murine model of allergic asthma. Contrary to this, inhibition of CX3CR1 resulted in a measurable reduction in IL-5 production and decreased overall airway hyperresponsiveness, suggesting a pro-resolving role for this receptor.\""
+ ],
+ "hyde:230": [
+  "In a cohort of 450 subjects, genetic screening identified carriers of the $\\text{ALDH2}^{\\star1}$ deficiency mutation. Subsequent analysis revealed that carrier individuals demonstrated significantly lower mean daily alcohol intake (median $0.8$ units/day; $\\text{p} < 0.001$) compared to non-carrier controls ($\\text{mean}=3.5$ units/day). This association suggests a potential protective effect of the deficiency mutation against high consumption patterns."
+ ],
+ "hyde:232": [
+  "A cross-sectional study of 1,500 participants in Southern Sudan revealed that ocular morbidity was overwhelmingly driven by infectious etiologies. Specifically, cataract prevalence reached 48% among the surveyed population, while trachoma incidence accounted for an additional 32% of reported vision impairment cases. These findings confirm that cataracts and trichiasis are the dominant contributors to preventable blindness within this region."
+ ],
+ "hyde:233": [
+  "Analysis of somatic cell transcriptional profiles across various chicken tissues revealed no evidence of independent sex-linked gene activation in non-gonadal lineages. Specifically, epigenetic modification patterns governing sex differentiation remained strictly dependent on hormonal input from the primary gonads. These data indicate that cellular autonomy for sex determination is not a mechanism utilized within Galliformes."
+ ],
+ "hyde:236": [
+  "Analysis of avian gonadal tissue from multiple Passeriformes species revealed that sex determination pathways are actively maintained within non-germline somatic cells. Specifically, differential expression of key transcription factors (e.g., *Dmrt1*, *Foxl2*) was observed in differentiated muscle and neural tissues correlating precisely with chromosomal sex. These findings establish a mechanism for cell autonomous sex commitment independent of primary gonadal signaling cascades."
+ ],
+ "hyde:238": [
+  "Methionine restriction was applied to cultured human hepatic cells, and subsequent small RNA sequencing revealed a significant alteration in the miRNA profile. Specifically, we observed marked upregulation of miR-34a and miR-122 following 72 hours of restricted amino acid availability. These findings indicate that methionine limitation induces specific changes in cellular microRNA expression."
+ ],
+ "hyde:239": [
+  "**Option 1 (Supporting the claim):**\n\n\"We analyzed transcriptomic profiles and dermal matrix integrity across murine models exhibiting accelerated cellular senescence. Results demonstrate a significant positive correlation ($r=0.84$, $p<0.001$) between telomere attrition rates in fibroblasts and quantitative metrics of epidermal collagen degradation, suggesting that intrinsic molecular aging directly drives changes in external cutaneous phenotype.\"\n\n***\n\n**Option 2 (Refuting the claim):**\n\n\"Assessment of mitochondrial dysfunction and epigenetic drift in aged dermal tissue revealed distinct pathways of cellular decline. However, comparative proteomic analysis indicates that age-related shifts in matrix metalloproteinase expression do not correlate with observed alterations in skin pigmentation or texture, suggesting phenotypic aging is decoupled from core metabolic senescence markers.\""
+ ],
+ "hyde:249": [
+  "**(Supporting the claim - Reduction in expenditure):**\n\nAdministration of chenodeosycholic acid resulted in a statistically significant decrease ($\\text{p} < 0.01$) in whole-body energy expenditure (WEE) compared to vehicle controls across all measured time points. This reduction was predominantly attributed to decreased resting metabolic rate and diminished activity levels observed during the intervention phase.\n\n***\n\n**(Refuting the claim - No change/Increase in expenditure):**\n\nTreatment with chenodeosycholic acid did not induce a statistically significant alteration ($\\text{p} > 0.05$) in whole-body energy expenditure when compared to baseline measurements or control groups. Metabolic rate analysis indicated that while substrate utilization shifted, overall caloric burn remained stable throughout the experimental period."
+ ],
+ "hyde:261": [
+  "Chronic aerobic training significantly increased flow-mediated dilation (FMD) in the brachial artery of intervention subjects compared to sedentary controls ($p < 0.01$). Furthermore, plasma nitrite levels and eNOS activity were elevated post-intervention, indicating enhanced nitric oxide bioavailability and improved endothelial shear stress responsiveness."
+ ],
+ "hyde:268": [
+  "Exposure to acute cold stress significantly elevated regional norepinephrine concentrations in the inguinal adipose depot of murine models. This increase correlated directly with a statistically significant rise (p < 0.01) in whole-body oxygen consumption and mitochondrial uncoupling activity, confirming enhanced thermogenic capacity within BAT."
+ ],
+ "hyde:269": [
+  "**(Supporting the claim: Cold exposure reduces BAT recruitment)**\n\n\"In vivo thermogenic capacity was assessed in rodents subjected to acute hypothermia. We observed that elevated core temperature during controlled cooling significantly attenuated uncoupled respiration rates in brown adipose tissue (BAT) compared to normothermic controls ($p < 0.01$). This suggests a dampening effect of cold stress on the functional recruitment of BAT.\"\n\n***\n\n**(Refuting the claim: Cold exposure increases or maintains BAT recruitment)**\n\n\"We quantified mitochondrial activity and UCP1 expression in brown adipose tissue (BAT) following controlled hypothermic challenge. Results demonstrated that acute cold exposure significantly upregulated proton leak flux ($\\text{J}_{\\text{H}^+}$) within the adipocytes ($p < 0.005$), indicating robust activation of thermogenesis. These findings support enhanced BAT recruitment under conditions of thermal stress.\""
+ ],
+ "hyde:274": [
+  "**Option 1: Supporting the Claim** (Stating that combination therapy was superior)\n\n> In a randomized controlled trial involving 450 participants, adherence to combined nicotine replacement therapy and varenicline significantly increased long-term abstinence rates compared to monotherapy. At the 52-week follow-up, the combination group demonstrated an odds ratio of 1.85 (95% CI: 1.32\u20132.60) for sustained cessation, confirming enhanced efficacy with adjunct therapy.\n\n**Option 2: Refuting the Claim** (Stating that there was no difference or a negative effect)\n\n> Analysis of primary endpoint data across two treatment arms revealed no statistically significant difference in abstinence rates at 52 weeks between varenicline monotherapy and combination therapy protocols. The hazard ratio for sustained cessation did not differ from unity ($HR=1.03$; $p=0.41$), suggesting that the addition of nicotine replacement agents does not improve long-term quitting outcomes."
+ ],
+ "hyde:279": [
+  "Whole-genome sequencing of Commelina yellow mottle virus revealed a single, positive-sense RNA molecule with an estimated nucleotide count of 7489 base pairs. *De novo* assembly and validation confirmed that this genome possesses high structural fidelity consistent with a complete viral lineage."
+ ],
+ "hyde:294": [
+  "**(Option A: Supporting the Claim)**\n\n\"Analysis of genome-wide crossover hotspot loci within *Saccharomyces cerevisiae* revealed no significant enrichment in defined gene promoter regions ($\\pm 500$ bp). Specifically, bioinformatic screening across all annotated promoters demonstrated an absence of characteristic hot spot signatures, suggesting that recombination initiation events are spatially restricted away from transcriptional start sites.\"\n\n***\n\n**(Option B: Refuting the Claim)**\n\n\"We performed high-resolution mapping of crossover hotspot activity and observed significant enrichment ($\\text{p} < 0.01$) within the proximal regions of gene promoters in *Saccharomyces cerevisiae*. This data indicates that a substantial proportion of recombination initiation events occur directly within or immediately adjacent to transcriptional regulatory elements.\""
+ ],
+ "hyde:295": [
+  "**[Supporting the Claim]**\n\nIn vivo analysis demonstrated that co-culture of DCs and ILC3s in the murine intestinal lamina propria significantly altered the production profile of IL-17A. Specifically, DC-derived TGF-$\\beta$ signaling induced a transcriptional shift in ILC3s, resulting in enhanced regulatory T cell differentiation necessary for maintaining barrier integrity. This direct paracrine crosstalk is critical for the establishment and maintenance of mucosal immune tolerance."
+ ],
+ "hyde:298": [
+  "**Option 1 (Supporting the claim):**\n\nFluorescence microscopy and subcellular fractionation confirmed that apoptotic induction resulted in a significant translocation of cytochrome c from the mitochondrial inner membrane to the cytosolic compartment. This release correlates precisely with caspase-9 activation and subsequent executioner caspase cleavage, indicating its critical role as an initiator of the intrinsic apoptotic pathway.\n\n***\n\n**Option 2 (Refuting the claim):**\n\nHigh-resolution immunogold labeling demonstrated that cytochrome c remained sequestered within the mitochondrial intermembrane space throughout the duration of induced apoptosis. Quantification showed no significant shift in protein distribution to the cytosol, suggesting that its release is not a prerequisite for intrinsic apoptotic signaling under these experimental conditions."
+ ],
+ "hyde:303": [
+  "Analysis revealed that differential DNA methylation within the MHM region directly correlates with altered chromatin accessibility at the *DMRT1* locus. Specifically, hypomethylation in the male gonad promotes an open chromatin state, driving high expression levels of DMRT1 required for testicular differentiation. These findings establish the MHM region as a critical epigenetic regulator controlling sex-specific gene expression via DMRT1."
+ ],
+ "hyde:312": [
+  "Comparative analysis revealed that contigs derived from the de novo assembly process exhibited a significantly lower average divergence rate ($\\text{p} < 0.01$) compared to isolated unassembled reads. Specifically, the assembled dataset showed a narrower distribution of fragment lengths and fewer spurious sequences, indicating superior structural specificity relative to the raw sequence pool."
+ ],
+ "hyde:314": [
+  "In vitro replication assays utilizing mutant viral polymerases demonstrated that cytosine deamination on the negative-strand template yields a predictable shift in nucleotide incorporation. Specifically, the resulting uracil lesion promoted subsequent mispairing during reverse transcription, leading directly to an elevated rate of G $\\rightarrow$ A transversions at homologous sites within the nascent genome. This mechanism accounts for the observed high mutation burden characteristic of this viral lineage."
+ ],
+ "hyde:324": [
+  "Genetic deletion of Raptor in murine models significantly altered hematopoietic cytokine profiles. Quantitative analysis via ELISA demonstrated that loss of Raptor resulted in a statistically significant decrease in circulating granulocyte colony-stimulating factor (G-CSF) levels ($\\text{p} < 0.01$) compared to wild-type controls. This reduction suggests a critical role for the mTORC1 pathway, mediated by Raptor, in regulating G-CSF synthesis and secretion."
+ ],
+ "hyde:327": [
+  "**Option 1: Directly Supporting the Claim**\n(The deletion does *not* cause inflammation)\n\n> Mice lacking $\\alpha_v\\beta_8$ were subjected to rigorous systemic immunological assays, including analysis of circulating pro-inflammatory cytokines (TNF-$\\alpha$, IL-6) and histological examination of peripheral tissues. Comparative data demonstrated no significant elevation in inflammatory markers or tissue infiltration compared to wild-type littermates under basal conditions. These findings indicate that the absence of $\\alpha_v\\beta_8$ does not predispose the organism to a spontaneous hyperinflammatory phenotype.\n\n***\n\n**Option 2: Directly Refuting the Claim**\n(The deletion *does* cause inflammation)\n\n> Analysis of $\\alpha_v\\beta_8$-knockout mice revealed marked alterations in vascular permeability and innate immune cell trafficking within the pulmonary microvasculature. Specifically, knockout animals exhibited a significant upregulation of IL-1$\\beta$ production and increased leukocyte infiltration into target organs when monitored under basal conditions. This spontaneous inflammatory phenotype confirms that $\\alpha_v\\beta_8$ is critical for maintaining tissue homeostasis."
+ ],
+ "hyde:338": [
+  "Randomized controlled trials (n=245) demonstrated that prophylactic administration of dexamethasone significantly reduced the incidence of major postoperative hemorrhage compared to placebo ($p < 0.01$). Specifically, the intervention group exhibited a 38% decrease in bleeding events requiring transfusion or surgical re-exploration over the initial 72 hours post-operation. These findings suggest a clinically relevant protective effect against hematological complications following major abdominal surgery."
+ ],
+ "hyde:343": [
+  "**Option 1: Supporting the Claim (Increased Risk)**\n\n\"A retrospective cohort analysis of 450 patients revealed that diabetic individuals presenting with acute coronary syndrome exhibited a significantly elevated incidence rate of major bleeding events. Specifically, short-term peri-procedural hemorrhage was associated with an increased hazard ratio of 2.8 ($\\text{95\\% CI: } 1.6\u20134.9$), while long-term gastrointestinal bleed morbidity persisted at $\\text{HR} = 1.9$ compared to non-diabetic controls.\"\n\n**Option 2: Refuting the Claim (No Increased Risk)**\n\n\"Kaplan-Meier survival analysis demonstrated no statistically significant difference in bleeding event incidence between diabetic and non-diabetic patients undergoing intervention for acute coronary syndrome. The hazard ratio for major hemorrhage over a two-year follow-up period was calculated at $0.92$ ($\\text{p} = 0.41$), indicating that diabetes status does not confer an increased risk of bleeding complications.\""
+ ],
+ "hyde:350": [
+  "Purification of the ternary complex revealed that IF3 binding preferentially stabilizes the interaction between the ribosomal P-site and cognate initiator tRNA, while simultaneously inhibiting the accommodation kinetics of charged elongator tRNAs within the A-site. Mutagenesis of key residues on IF3 demonstrated that disruption of its interaction domain with tRNAi abolishes this discrimination, leading to a significant increase in frameshifting events during translational initiation."
+ ],
+ "hyde:354": [
+  "Genetic knockdown of Scribble in mammary epithelial cells significantly impaired oncogenic progression, resulting in a marked reduction in invasive capacity and colony formation efficiency. Furthermore, enforced cytoplasmic mislocalization of Scribble inhibited E-cadherin degradation and suppressed the transcriptional signature associated with Epithelial-Mesenchymal Transition (EMT). These findings demonstrate that Scribble's proper localization is critical for promoting cell transformation and subsequent mammary tumorigenesis."
+ ],
+ "hyde:385": [
+  "**Option 1: Supporting the Claim (Positive Result)**\n\n\"Treatment with EMA-X significantly upregulated $\\text{IFN-}\\gamma$ and $\\text{TNF-}\\alpha$ secretion by $\\text{CD8}^+ \\text{T}$ cells in murine melanoma xenografts ($\\text{p} < 0.01$). This enhancement correlated with a marked increase in tumor-infiltrating lymphocytes (TILs) and reduced metastatic burden, suggesting that EMA-X successfully re-programs the anti-tumor immune microenvironment.\"\n\n**Option 2: Refuting the Claim (Negative Result)**\n\n\"Administration of various EMAs resulted in no statistically significant alterations in peripheral blood $\\text{NK}$ cell activity or cytotoxic T lymphocyte proliferation against B16 melanoma cells. Furthermore, flow cytometric analysis revealed that EMA treatment did not induce changes in $\\text{PD-L}1$ expression on tumor cells, indicating a lack of modulation of the established antitumor immune axis.\""
+ ],
+ "hyde:386": [
+  "A retrospective analysis of 450 peripheral IV administration records identified that compounding errors and dosage inaccuracies peaked significantly during multi-drug preparation protocols ($\\chi^2=18.9, p<0.001$). Furthermore, the incidence rate for rapid infusion errors (e.g., incorrect flow rates or premature bolus delivery) was statistically highest in high-acuity settings utilizing immediate push administration."
+ ],
+ "hyde:388": [
+  "Transcriptomic analysis revealed that exposure to 4% ethanol significantly altered gene expression profiles in *E. coli*. Specifically, quantitative real-time PCR (qRT-PCR) demonstrated a statistically significant reduction ($\\text{p} < 0.01$) in the messenger RNA abundance of IBP when compared to control cultures grown under standard conditions. These data indicate that ethanol stress induces a downregulation of the IBP gene within the bacterial population."
+ ],
+ "hyde:399": [
+  "Multivariate logistic regression was performed on a cohort of 450 participants, modeling generalized anxiety disorder prevalence as a function of long-term $\\text{PM}_{2.5}$ exposure. Results demonstrated a statistically significant positive association between elevated ambient particulate matter concentrations and increased odds of diagnosis ($\\text{OR} = 1.35; p < 0.001$)."
+ ],
+ "hyde:410": [
+  "**Option 1: Supporting the Claim (Increasing Threshold)**\n\n> Longitudinal cohort analysis demonstrated a statistically significant elevation in the seizure threshold of children with documented febrile seizures compared to age-matched controls ($p < 0.01$). Furthermore, these individuals exhibited reduced susceptibility markers for generalized epileptogenesis across follow-up periods extending five years post-event.\n\n**Option 2: Refuting the Claim (No Effect/Maintaining Risk)**\n\n> Comparative incidence rate analysis revealed no significant difference in the subsequent risk of developing refractory epilepsy between cohorts presenting with febrile seizures and matched controls ($p = 0.45$). Neurological phenotyping indicated that the presence of febrile seizure activity did not alter baseline cortical excitability or predisposition to epileptiform discharges."
+ ],
+ "hyde:411": [
+  "Longitudinal analysis of 1,500 children revealed that those who experienced $\\geq 2$ febrile seizures during early childhood exhibited a significantly elevated incidence rate of subsequent epilepsy diagnosis by age 18 years ($p < 0.001$). Specifically, the odds ratio for developing refractory focal epilepsy was $3.4$ (95% CI: $1.9-6.1$) in the febrile seizure cohort compared to controls with no history of seizures. These findings suggest that early febrile seizures may confer a long-term neurobiological vulnerability leading to epileptogenesis."
+ ],
+ "hyde:415": [
+  "***Option 1: Supporting the Claim (Increased Risk)***\n\n> Multivariate Cox proportional hazards modeling indicated a significantly elevated hazard ratio for dementia onset among female APOE4 carriers ($\\text{HR} = 2.85; 95\\% \\text{CI}: 1.91-4.27$), compared to non-carrier females. This association remained robust after adjusting for age, education level, and baseline cardiovascular health metrics.\n\n***Option 2: Refuting the Claim (No Increased Risk)***\n\n> Regression analysis demonstrated no statistically significant difference in dementia incidence rates between female APOE4 carriers and matched controls ($\\text{OR} = 1.03; p = 0.31$). Furthermore, subgroup analyses confirmed that the protective effect of carrier status observed in males did not extend to the female cohort."
+ ],
+ "hyde:431": [
+  "**Option 1: Supporting the Claim (ROS mediates FoxO3a)**\n\n> Inhibition of superoxide dismutase significantly attenuated both $\\text{H}_2\\text{O}_2$-induced mitochondrial dysfunction and subsequent nuclear translocation of FoxO3a in primary hippocampal neurons. Furthermore, the downstream phosphorylation events characteristic of FOXO activation were abolished when electrophilic species were scavenged using N-acetylcysteine, demonstrating a direct ROS-dependent regulatory pathway.\n\n***\n\n**Option 2: Refuting the Claim (ROS does NOT mediate FoxO3a)**\n\n> Analysis revealed that neuronal apoptosis induced by oxidative stress was independent of reactive oxygen species scavenging via MnSOD overexpression. Specifically, upstream signaling cascades leading to FoxO3a nuclear accumulation remained robustly active despite the complete reduction of intracellular ROS levels, suggesting an alternative, non-oxidative pathway governs this transcriptional response."
+ ],
+ "hyde:436": [
+  "High-resolution proteomics revealed a significant reduction in free H3/H4 levels specifically at replication forks following S phase entry. Furthermore, genetic ablation of Rad53 resulted in the accumulation of unphosphorylated histone tails adjacent to newly synthesized DNA strands, confirming that Rad53 is essential for initiating post-replicative histone clearance via an active degradation pathway."
+ ],
+ "hyde:437": [
+  "While previous studies relied heavily on human cell lines, we utilized a novel murine hematopoietic stem cell (HSC) model bearing specific MDS-associated mutations to investigate functional consequences. Transcriptomic profiling and subsequent *in vivo* analysis of this model demonstrated that the loss of TP53 function drives aberrant differentiation pathways, providing critical mechanistic insight into disease progression typically unattainable in patient samples alone."
+ ],
+ "hyde:440": [
+  "High-resolution confocal microscopy of zebrafish embryos revealed that Pk localization was restricted to the anterior cell boundaries of developing notochord cells at the onset of neuralation (24 hpf). Co-localization studies using anti-Fz and anti-PCP antibodies confirmed that this membrane enrichment is dependent on Frizzled/Planar Cell Polarity signaling components. These findings establish a distinct, polarized localization pattern for Pk within the anterior domain of notochord cells during early axial patterning."
+ ],
+ "hyde:443": [
+  "Loss of GATA-3 expression significantly reduced the self-renewal capacity and long-term repopulating frequency of murine HSCs in vivo. Furthermore, forced overexpression of GATA-3 promoted myeloid lineage differentiation while suppressing erythroid commitment within the bone marrow niche."
+ ],
+ "hyde:452": [
+  "Single-cell RNA sequencing was performed on clonal cell lines derived from a single progenitor, enabling high-resolution analysis of transcriptomic profiles. Despite identical genomic sequences, we observed significant variance in the expression levels of key metabolic genes across individual cells ($p < 0.01$). This data strongly indicates that intrinsic cellular stochasticity drives considerable heterogeneity in gene expression even within genetically uniform populations."
+ ],
+ "hyde:475": [
+  "**(Option 1: Supporting the claim)**\n\nMetabolic flux analysis demonstrated that under standard growth conditions, glucose conversion through glycolysis accounts for over 65% of total cellular carbon uptake. Specifically, the kinetic parameters indicate a high turnover rate and significant contribution to pyruvate production, confirming its role as a dominant pathway in central glycometabolism.\n\n***\n\n**(Option 2: Refuting the claim)**\n\nAnalysis of metabolic profiling revealed that while glycolysis is active, flux through the pentose phosphate pathway (PPP) and the hexosamine biosynthesis pathway (HBP) significantly exceeds glycolytic output in these cell lines. These alternative pathways were identified as the primary drivers of cellular sugar utilization, accounting for over 70% of measured glucose catabolism."
+ ],
+ "hyde:478": [
+  "**Option 1: Supporting Passage (The Golgi deficiency promotes anergy under high $\\text{Ca}^{2+}$)**\n\n\"We determined that T cells lacking functional Golgi apparatus exhibit a profound shift toward anergic differentiation when exposed to elevated cytosolic calcium flux. Specifically, the impaired post-translational modification pathways in Golgi-deficient cells failed to stabilize key transcription factors (e.g., NFAT), leading to sustained expression of inhibitory checkpoints and subsequent failure of proliferative signaling.\"\n\n**Option 2: Refuting Passage (The high $\\text{Ca}^{2+}$ effect is independent of Golgi deficiency)**\n\n\"Analysis demonstrated that while Golgi-deficiency impairs T-cell activation kinetics, the induction of anergic phenotype under conditions of elevated cytosolic $\\text{Ca}^{2+}$ remains robustly dependent on upstream TCR signaling. Our data indicate that calcium influx alone drives the differentiation pathway toward unresponsiveness, suggesting that the core regulatory mechanisms governing anergy are independent of Golgi structural integrity.\""
+ ],
+ "hyde:491": [
+  "Analysis of 57 familial cases revealed that HNF4A mutations conferred an increased risk of pancreatic beta-cell dysfunction. Clinical assessment demonstrated onset of hyperglycemia and insulin dependence in 82% of mutant carriers prior to the age of 15 years. This strongly suggests a pathogenic role for these genetic variants in early-onset monogenic diabetes."
+ ],
+ "hyde:502": [
+  "Implementation of Lean Six Sigma methodologies across three high-volume primary care centers revealed significant correlations between physical infrastructure density and patient throughput variability. Specifically, bottlenecks identified in resource allocation (logistical element) and communication protocols (interpersonal element), coupled with inadequate spatial planning (structural element), resulted in a quantifiable 34% reduction in average appointment efficacy per hour compared to control sites. These findings demonstrate that suboptimal structural and logistical organization directly impedes efficient healthcare delivery operations within high-density environments."
+ ],
+ "hyde:508": [
+  "**[Option 1: Supporting the claim]**\n\nFluorescence-activated cell sorting (FACS) utilizing anti-CD34 antibodies was employed to isolate hematopoietic stem cells from murine bone marrow. Post-purification analysis via flow cytometry demonstrated a median cellular purity of $52\\% \\pm 3\\%$ across all tested batches, confirming high yield and specificity in the isolation protocol.\n\n***\n\n**[Option 2: Refuting the claim]**\n\nWe optimized magnetic bead separation protocols for isolating $\\text{CD}34^+$ cells from human peripheral blood mononuclear cells (PBMCs). The resulting purified cell population consistently exhibited a maximum purity rate of $18\\% \\pm 5\\%$, indicating that further enrichment steps are required to achieve clinically relevant stem cell concentrations."
+ ],
+ "hyde:514": [
+  "In subjects with baseline 25(OH)D concentrations exceeding $75 \\text{ nmol/liter}$, administration of high-dose calcium supplementation did not result in a statistically significant reduction in serum parathyroid hormone (PTH) levels compared to placebo. These findings suggest that adequate vitamin D status mitigates the need for increased dietary calcium intake as a primary intervention against secondary hyperparathyroidism."
+ ],
+ "hyde:516": [
+  "Multivariate Cox regression demonstrated a statistically significant association between elevated baseline C-reactive protein (CRP) levels and subsequent acute pulmonary exacerbation. Specifically, patients exhibiting quartile 4 CRP concentrations showed a 2.8-fold increased hazard ratio compared to those in the lowest tertile ($p < 0.01$). These findings suggest that higher systemic inflammatory markers are indicative of heightened disease activity rather than protection against COPD decline."
+ ],
+ "hyde:517": [
+  "**Refuting the Claim:**\n\n\"In this longitudinal cohort of 500 subjects, plasma copeptin concentrations were analyzed for their association with subsequent Type 2 Diabetes Mellitus (T2DM) incidence. Results demonstrate no statistically significant inverse relationship between elevated baseline copeptin levels and reduced T2DM risk ($\\text{p} > 0.15$). Furthermore, high copeptin levels showed a positive correlation ($r = 0.38$) with markers of insulin resistance.\"\n\n***\n\n**Supporting the Claim (Alternative):**\n\n\"Analysis of a prospective cohort revealed that subjects exhibiting elevated circulating copeptin concentrations exhibited significantly lower rates of developing pre-diabetes and T2DM over five years. Specifically, high copeptin levels correlated inversely with HOMA-IR scores ($\\text{p} < 0.01$), suggesting a protective effect against metabolic dysregulation.\""
+ ],
+ "hyde:521": [
+  "\"In patients presenting within three hours of symptom onset, HSCT-T levels were significantly below the established diagnostic threshold ($<10 \\text{ ng/L}$) in 65% of cases. This suggests that the biomarker's kinetic profile may lag the initial ischemic insult during this acute pre-injury phase. Consequently, reliance on a single early measurement is associated with reduced specificity for AMI diagnosis.\""
+ ],
+ "hyde:525": [
+  "Chromatin immunofluorescence and ChIP-qPCR analyses demonstrated that ligand binding to NRX induced rapid recruitment of KDM5B to target promoter regions, preceding a transient reduction in H3K4me3 levels. Inhibition of KDM5B activity significantly abrogated the transcriptional activation profile upon xenobiotic challenge, confirming that demethylase-mediated histone modification is an essential prerequisite for nuclear receptor-driven gene expression."
+ ],
+ "hyde:527": [
+  "Conditional knockout of *Sbds* specifically within Osterix-expressing mesenchymal stem/progenitor cells significantly mitigated reactive oxygen species (ROS) accumulation in murine osteoblasts. These targeted deletions resulted in a marked reduction in lipid peroxidation products and improved cellular antioxidant capacity compared to wild-type controls, indicating a protective effect against oxidative damage. This suggests that Sbds contributes directly to the generation of cellular stress during bone development."
+ ],
+ "hyde:532": [
+  "In this cohort of 150 patients undergoing femoropopliteal bypass surgery, mean plasma fibrinogen levels were significantly elevated ($\\text{p}<0.01$) compared to the control group. Furthermore, the incidence rate of graft thrombosis was found to be markedly lower in patients exhibiting hyperfibrinogenemia (mean $\\geq 4.5 \\text{ g/L}$), demonstrating a statistically significant protective association against late-stage vascular occlusion."
+ ],
+ "hyde:535": [
+  "A cohort of 450 Type 1 Diabetes Mellitus patients was analyzed for cardiovascular risk factors and hemodynamic parameters using standardized blood pressure monitoring protocols. Results demonstrated a significantly elevated prevalence of sustained hypertension (defined as $\\text{SBP} \\ge 130 \\text{ mmHg}$ or $\\text{DBP} \\ge 85 \\text{ mmHg}$) within the diabetic group compared to matched controls ($\\chi^2 = 45.2, p < 0.001$). Furthermore, the mean arterial pressure in T1DM patients was $13.7\\% (\\pm 1.9\\%)$ higher than that observed in non-diabetic subjects ($p < 0.005$)."
+ ],
+ "hyde:536": [
+  "**Option 1: Supporting the Claim (Induction of Panic)**\n\nAcute optogenetic activation of hypocretin neurons significantly increased freezing behavior and latency to approach novel objects in the open field test. Furthermore, animals exhibited pronounced autonomic responses\u2014including elevated heart rate variability and peripheral vasoconstriction\u2014during exposure to conditioned fear stimuli.\n\n**Option 2: Refuting the Claim (No Induction/Protective Effect)**\n\nManipulation of hypocretin neuronal activity did not significantly alter baseline anxiety levels or latency to explore novel environments in the elevated plus maze. Electrophysiological recordings demonstrated that silencing these circuits resulted in no discernible change in spontaneous locomotor activity or fear conditioning parameters compared to controls."
+ ],
+ "hyde:539": [
+  "***Option 1: Supporting the Claim (The findings show a link)***\n\nLongitudinal analysis of metabolic profiles demonstrated a statistically significant, dose-dependent correlation between cumulative hypoglycemic episodes and accelerated decline in standardized cognitive function. Specifically, patients exhibiting greater glycemic variability showed a 45% increased incidence of major neurocognitive disorder within the observation period.\n\n***Option 2: Refuting the Claim (The findings show no link)***\n\nDespite identifying frequent episodes of hypoglycemia, regression modeling demonstrated no statistically significant association between acute glycemic fluctuation and subsequent progression toward dementia. The null hypothesis regarding the relationship between metabolic instability and cognitive impairment was retained across all analyzed cohort subgroups."
+ ],
+ "hyde:544": [
+  "IFIT1 was shown to exhibit a high binding affinity for viral transcripts lacking canonical 5' cap structures, specifically those exhibiting non-standard capping motifs common in RNA viruses. Mutational analysis of the IFIT1 RNA-binding domain revealed that this interaction directly triggers endonucleolytic cleavage and subsequent degradation of the mis-capped viral RNAs. Consequently, overexpression of IFIT1 significantly suppressed viral particle production and reduced overall replication kinetics in infected cells."
+ ],
+ "hyde:549": [
+  "In vitro assays demonstrated that IRG1 overexpression significantly curtailed the replication kinetics of Lassa virus in primary neuronal cultures. Specifically, treatment with IRG1 resulted in a 75% reduction in viral titers compared to untreated controls, accompanied by enhanced interferon-stimulated gene expression. These data strongly suggest that IRG1 mediates neuroprotective antiviral activity against neurotropic pathogens."
+ ],
+ "hyde:551": [
+  "**[Supporting the Claim]**\n\nPhosphorylation of Immunoreceptor Tyrosine-based Activation Motifs (ITAMs) on the CD3 $\\zeta$ chain was shown to inhibit downstream signaling cascade fidelity. Utilizing FRET reporters engineered to monitor signal propagation from the echo domain to the TCR cytoplasmic tail, we observed a significant reduction in signal transfer efficiency ($\\text{p} < 0.01$) upon ITAM activation, suggesting that this modification acts as a critical molecular brake on proximal T cell receptor engagement.\n\n***\n\n**[Refuting the Claim]**\n\nThe effect of ITAM phosphorylation on TCR signaling fidelity was assessed through biochemical and live-cell imaging assays. Despite robust ITAM phosphorylation, signal transfer from the echo domain to the cytoplasmic tail remained unimpaired across varying concentrations of activating ligands. These findings demonstrate that ITAM modification does not serve as a limiting factor for proximal T cell receptor signal transduction."
+ ],
+ "hyde:552": [
+  "Analysis of duodenal biopsies taken at baseline and three months post-dietary intervention revealed a significant increase in IgA plasma cell density specific for transglutaminase 2 (TG2). This mucosal accumulation was statistically correlated with the commencement of a gluten-free diet, suggesting localized immune modulation."
+ ],
+ "hyde:554": [
+  "Exposure of primary murine neutrophils to IgG-antigen complexes resulted in rapid apoptotic morphology and subsequent cellular disintegration. Subsequent analysis via ELISA demonstrated a significant, time-dependent increase in extracellular HMGB1 concentrations within the supernatant following complex stimulation ($p < 0.01$). This indicates that immune complex-mediated cell death promotes the release of neutrophil nuclear proteins into the surrounding milieu."
+ ],
+ "hyde:560": [
+  "In murine models subjected to chronic antigen stimulation, we observed concurrent lineage differentiation resulting in a significant expansion of $\\text{IL-}17\\text{A}^+$ Th17 cells ($\\text{p} < 0.001$) alongside the induction of induced regulatory T lymphocytes (iTregs) characterized by high expression of $\\text{FoxP3}$ and $\\text{TGF-}\\beta$. Flow cytometric analysis demonstrated that this biphasic response is mediated by differential signaling through $\\text{TLR}$-coupled receptors, driving both pro-inflammatory and suppressive immune phenotypes. These findings suggest a tightly regulated mechanism balancing inflammatory pathology with peripheral tolerance induction during active immune challenge."
+ ],
+ "hyde:569": [
+  "Flow cytometry analysis of splenic and lymph node-derived T cells revealed a predominant population expressing CD45RO and exhibiting high expression of effector memory markers. Specifically, 82% of total peripheral blood mononuclear cell (PBMC) T lymphocytes were categorized as central or effector memory phenotypes ($\\text{T}_{\\text{CM}}/\\text{T}_{\\text{EM}}$). These data confirm a highly differentiated state of the circulating T-cell repertoire in adult subjects."
+ ],
+ "hyde:575": [
+  "Analysis of genomic data from 45 diverse domesticated *Saccharomyces cerevisiae* strains revealed a negligible incidence of whole chromosome aneuploidy. Specifically, karyotype analysis demonstrated that only 0.8% of sampled individuals exhibited deviations in ploidy level across entire chromosomes. These findings suggest strong selective pressures maintaining euploidy within established industrial and brewing populations."
+ ],
+ "hyde:577": [
+  "**Option 1: Directly Supporting the Claim (Low inoculum leads to faster initial proliferation)**\n\nParasite kinetics were monitored over the first seven days post-infection in C57BL/6 mice. We observed that groups inoculated with a low parasitemia burden exhibited a significantly steeper exponential growth curve compared to cohorts receiving high-dose inocula ($p < 0.01$). This suggests that early infection dynamics are inversely correlated with initial parasite load.\n\n**Option 2: Directly Refuting the Claim (High inoculum leads to faster or equal initial proliferation)**\n\nAnalysis of early parasitemia kinetics revealed no significant difference in the initial multiplication rate between low- and high-dose infected mice. Specifically, the doubling time for *P. chabaudi* was statistically identical across both the 10$^2$ and 10$^5$ inoculum groups during the first 72 hours post-infection. These findings indicate that early proliferative capacity is independent of initial parasite density."
+ ],
+ "hyde:578": [
+  "Conditional knockout of $Csf1r$ in hematopoietic stem cells significantly exacerbated leukemic burden following oncogenic *Moz-Tif2* expression. Specifically, $\\text{CSF}1\\text{R}^{-/-}$ mice exhibited a 45% increase in myeloproliferative disease severity and accelerated myeloid differentiation compared to wild-type littermates under identical oncogenic pressure. These findings indicate that $Csf1r$ signaling normally acts as a suppressor of MOZ-TIF2-driven leukemogenesis."
+ ],
+ "hyde:589": [
+  "A cohort analysis was conducted involving 1,500 adults aged 18\u201355 years with documented current or remote stimulant use versus matched controls without medication exposure. Univariate and multivariate Cox proportional hazards modeling demonstrated no statistically significant association between ADHD medication usage and the incidence of major adverse cardiovascular events (MACE), including myocardial infarction and stroke ($\\text{HR} = 0.92$; $p > 0.05$). These findings suggest that stimulant use does not confer an elevated risk for serious cardiac outcomes in this demographic."
+ ],
+ "hyde:593": [
+  "**Option 1: Supporting the Claim (The decrease occurred)**\n\n> Longitudinal analysis of regional health registry data revealed a statistically significant decline in newly diagnosed heart failure incidence among female cohorts. Specifically, age-adjusted prevalence rates demonstrated a reduction of $10\\pm2\\%$ between the baseline period of 1979 and the most recent reporting year. This trend suggests successful population-level preventative interventions or shifts in diagnostic criteria over four decades.\n\n**Option 2: Refuting the Claim (The decrease did not occur, or was different)**\n\n> Our cohort study tracked heart failure incidence across multiple geographic regions from 1979 to 2018. The data indicate that while overall prevalence remained stable, female-specific incident rates showed a marginal increase of $4\\%$ over the study period. This suggests that any observed reduction is likely attributable to changes in reporting methodology rather than true biological or clinical improvement."
+ ],
+ "hyde:597": [
+  "**Option A (Supporting the claim - Decrease):**\n\n> Analysis of longitudinal registry data across five major metropolitan regions revealed a statistically significant decline in new cervical cancer diagnoses. The incidence rate decreased from an average of $45.2$ cases per 100,000 population in 2000 to $36.8$ cases per 100,000 population by 2020 ($p < 0.01$). This reduction correlates strongly with increased vaccination uptake and screening compliance within the studied cohorts.\n\n**Option B (Refuting the claim - No Change/Increase):**\n\n> Across three distinct national surveillance systems, incidence rates of cervical carcinoma remained stable over the past two decades. The mean rate hovered consistently between $42$ and $43$ cases per 100,000 population in both the initial baseline year (2005) and the final reporting period (2025). No significant temporal trend was identified when controlling for demographic shifts or regional screening access."
+ ],
+ "hyde:613": [
+  "**Option 1: Supporting the Claim (Mechanistic Focus)**\n\n\"Genetic overexpression of histone acetyltransferases (HATs) in a murine model carrying the LRRK2 G2019S mutation significantly increased microtubule acetylation levels. This enhancement correlated with improved motor performance on rotarod assays and demonstrated a rescue of dopamine signaling abnormalities previously observed in the mutant phenotype, suggesting that elevated acetylation mitigates motor dysfunction.\"\n\n***\n\n**Option 2: Refuting the Claim (Phenotype Focus)**\n\n\"While we successfully upregulated microtubule acetylation via targeted genetic manipulation in the LRRK2 Roc-COR domain mutant mice, this modification failed to translate into functional recovery. Behavioral analysis showed no statistically significant improvement in gait stability or hindlimb coordination compared to vehicle controls, indicating that increased microtubule acetylation is insufficient to ameliorate the motor deficits caused by the mutation.\""
+ ],
+ "hyde:619": [
+  "In a murine xenograft model, enhanced microvascular density (angiogenesis) coupled with decreased desmoplastic stromal deposition significantly correlated with reduced intratumoral drug concentration following systemic chemotherapy. Specifically, tumors exhibiting high vascular perfusion and low collagen content demonstrated a 45% decrease in apoptotic index compared to fibrotic counterparts treated identically. These findings suggest that improved tumor perfusion facilitates resistance mechanisms, thereby diminishing the overall efficacy of cytotoxic agents."
+ ],
+ "hyde:623": [
+  "**Option 1: Supporting the Claim (Low Vitamin D $\\rightarrow$ Increased Risk)**\n\n\"A cross-sectional analysis of 450 patients revealed a statistically significant association between reduced serum 25(OH)D levels and the presence of clinical MS diagnosis ($p < 0.01$). Specifically, individuals categorized in the lowest quartile for vitamin D concentration exhibited a mean odds ratio of 2.3 (95% CI: 1.6\u20133.2) for developing demyelinating lesions compared to those with sufficient levels.\"\n\n***\n\n**Option 2: Refuting the Claim (No Link Found)**\n\n\"Multivariable regression modeling, controlling for age, sex, and BMI in a cohort of 600 subjects, demonstrated no significant correlation between circulating vitamin D concentrations and MS disease progression rates. The analysis indicated that serum 25(OH)D levels did not independently predict annualized relapse rate or disability accumulation ($p > 0.15$).\""
+ ],
+ "hyde:628": [
+  "**Option 1: Supporting the Claim (Higher prevalence in African origin)**\n\n\"Analysis of seroprevalence data across three continents revealed a statistically significant association between HTLV-1 infection and specific ancestral groups. Specifically, individuals self-identifying with West African heritage exhibited an infection rate of 45% ($\\pm$3.2%), substantially exceeding the median rates observed in European (12.8%) and East Asian (7.1%) cohorts.\"\n\n***\n\n**Option 2: Refuting the Claim (No significant difference based on origin)**\n\n\"Genotyping and epidemiological analysis demonstrated no statistically significant correlation between HTLV-1 carriage status and self-reported geographic ancestry. The prevalence rates across all surveyed populations\u2014including individuals of African, European, and Southeast Asian descent\u2014were uniformly low (mean $\\pm$ SD: $8.9\\% \\pm 2.1\\%$).\""
+ ],
+ "hyde:636": [
+  "*Option 1: Supporting the Claim*\n\nIn vitro assays utilizing purified PTEN demonstrated a direct conversion of $\\text{Ptdlns}(3,4)\\text{P}_2$ to phosphatidylinositol 4-phosphate ($\\text{PI}(4)$) in the presence of magnesium ions. Mass spectrometry analysis confirmed that this reaction yields an increase in $[\\text{M}+\\text{H}]^+$ signal corresponding precisely to $\\text{PI}(4)$, concurrent with a decrease in substrate concentration. This activity confirms PTEN's role as a specific phosphatase for this lipid species.\n\n***\n\n*Option 2: Refuting the Claim*\n\nKinetic studies employing radiolabeled $\\text{Ptdlns}(3,4)\\text{P}_2$ and recombinant PTEN revealed no measurable product formation consistent with phosphatidylinositol 4-phosphate ($\\text{PI}(4)$). Analysis of the reaction mixture showed that while some dephosphorylation occurred, the predominant end product was identified as inositol lipid 3-phosphate, not $\\text{PI}(4)$. These data indicate that PTEN does not catalyze the conversion of $\\text{Ptdlns}(3,4)\\text{P}_2$ to $\\text{PI}(4)$."
+ ],
+ "hyde:641": [
+  "A randomized controlled trial involving 85 participants with chronic insomnia demonstrated that CBT-I significantly improved total sleep time and subjective sleep quality compared to standard care (p < .001). Post-treatment assessments confirmed sustained improvements in sleep efficiency across all intervention groups, indicating long-term efficacy."
+ ],
+ "hyde:644": [
+  "***Option 1: Supporting the Claim***\n(Focuses on correlation between insulin and renal decline)\n\n> Analysis of longitudinal cohort data revealed a statistically significant positive correlation ($p < 0.001$) between elevated circulating C-peptide levels and accelerated decline in estimated glomerular filtration rate (eGFR). Specifically, patients exhibiting high insulin resistance demonstrated increased incidence of tubulointerstitial fibrosis compared to the control group over a three-year observation period.\n\n***Option 2: Refuting the Claim***\n(Focuses on lack of adverse effect or protection)\n\n> Renal function markers remained stable across all treatment arms; no significant difference in microalbuminuria levels was observed between subjects receiving high-dose insulin therapy and those receiving standard care. Furthermore, analysis demonstrated that enhanced insulin sensitivity independently correlated with preserved renal blood flow and maintained glomerular integrity."
+ ],
+ "hyde:649": [
+  "**Option 1: Directly Supporting the Claim (Subpar Performance)**\n\n> Participants assigned to the integrated classroom/web collaborative learning model exhibited statistically significant lower mean scores ($p < .01$) on post-intervention assessments compared to control groups utilizing traditional lecture formats. Analysis of interaction data revealed a negative correlation between hybrid participation frequency and terminal achievement metrics, suggesting diminished academic efficacy in the blended environment.\n\n***\n\n**Option 2: Directly Refuting the Claim (Superior or Equivalent Performance)**\n\n> The mixed-modality instructional design significantly enhanced student engagement ($\\eta^2 = .15$) and demonstrated statistically equivalent gains in knowledge retention across both the synchronous classroom and asynchronous web-based learning conditions ($p > .05$). Furthermore, qualitative analysis indicated that the integrated collaborative framework fostered higher levels of peer-to-peer scaffolding compared to non-integrated cohorts."
+ ],
+ "hyde:659": [
+  "A randomized controlled trial involving 450 patients confirmed that ivermectin administration resulted in a significant reduction (p < 0.01) of microfilariae load in serum, correlating with sustained clinical resolution of lymphatic edema. This efficacy profile supports its role as an established therapeutic agent for mitigating parasitic burden associated with filarial infection."
+ ],
+ "hyde:684": [
+  "Sporulation efficiency was quantified in $\\Delta clpC$ mutant strains compared to wild-type controls, revealing no statistically significant difference (P>0.05) in the percentage of sporulating cells across various growth phases. Transcriptomic analysis confirmed that key regulatory genes involved in forespore and mother cell development maintained constitutive expression levels despite the absence of ClpC protease activity. These findings demonstrate that $\\text{clpC}$ is dispensable for robust progression through the sporulation cascade in *B. subtilis*."
+ ],
+ "hyde:690": [
+  "Plasma lactate levels were measured in 42 children diagnosed with SFM. Of this cohort, only three patients exhibited severe lactic acidosis, defined as plasma lactate concentrations exceeding $5 \\text{mmol/L}$. These findings indicate that acute hyperlactatemia is a rare metabolic complication in pediatric SFM presentation."
+ ],
+ "hyde:691": [
+  "Upon stimulation with constitutively active SRC, we observed a rapid decrease in GTP-bound RhoA levels within 30 minutes. This reduction was specifically abrogated by overexpression of the leukemia-associated GEF (LA-GEF), which significantly suppressed downstream actin stress fiber formation and reduced cell migration rates. These data indicate that LA-GEF mediates an inhibitory feedback loop on RhoA activity following SRC engagement."
+ ],
+ "hyde:692": [
+  "Analysis of 150 patients receiving packed red blood cells revealed that preoperative leukocytosis (WBC count > 12 x $10^9$/L) significantly correlated with increased incidence of transfusion-associated sepsis ($p < 0.01$). Specifically, the subgroup exhibiting elevated leukocyte levels demonstrated a threefold higher risk of developing febrile non-hemolytic transfusion reactions compared to normoleukocytic controls."
+ ],
+ "hyde:693": [
+  "In a cohort of 450 transfusion recipients, prophylactic leukoreduction (LR) was compared to standard packed red blood cell administration. Results demonstrated a statistically significant reduction in the incidence of bacteremia and fungemia among the LR group ($p < 0.01$). This protective effect correlates directly with lower microbial load counts detected in post-transfusion cultures."
+ ],
+ "hyde:702": [
+  "Loss-of-function analysis of the *VPS9a* mutant revealed no significant alteration in PIN1 protein distribution or polarized localization within the root epidermal cells compared to wild-type controls. Specifically, apical accumulation of PIN1 at the root apex remained robustly maintained in the absence of VPS9a, suggesting that this endosomal recycling pathway is dispensable for establishing and maintaining polar auxin transport in *Arabidopsis* roots."
+ ],
+ "hyde:716": [
+  "Loss of miR7a expression in murine testicular germ cells resulted in a significant decrease in spermatogonial stem cell self-renewal capacity ($p < 0.01$). Furthermore, rescue experiments involving exogenous miR7a administration restored normal meiotic progression and significantly increased sperm motility compared to the deficient group, confirming its critical functional role in male reproductive physiology."
+ ],
+ "hyde:718": [
+  "Analysis of chromatin accessibility across diverse mammalian lineages revealed a dissociation between histone-based packaging and epigenetic modification status. Specifically, genomic regions exhibiting reduced nucleosome density consistently displayed significantly elevated CpG methylation levels ($\\text{p} < 0.01$), indicating that low occupancy does not predict hypomethylation."
+ ],
+ "hyde:721": [
+  "**Option 1: Supporting the Claim**\n\nInfection of lupus-prone C57BL/6 mice with a curliproducing strain resulted in a significant elevation of anti-dsDNA and anti-Sm autoantibody titers (p < 0.01) compared to uninfected littermate controls. This microbial challenge induced systemic autoimmunity, evidenced by the markedly higher serum immunoglobulin levels observed in the inoculated cohort.\n\n***\n\n**Option 2: Refuting the Claim**\n\nNo statistically significant difference was detected in anti-dsDNA or anti-Sm autoantibody titers between lupus-prone mice challenged with curliproducing bacteria and their non-infected counterparts. The bacterial inoculation did not induce a measurable increase in humoral autoimmunity, suggesting that this specific microbial challenge is insufficient to trigger high-titer autoantibody production in this model."
+ ],
+ "hyde:723": [
+  "Disruption of Ly49Q signaling resulted in a significant reduction in chemotactic responsiveness and impaired directed movement toward inflammatory stimuli. Specifically, knockdown of this receptor led to the destabilization of lipid microdomains within the plasma membrane, correlating with reduced Rac1 activation necessary for polarized cell migration. These data demonstrate that proper raft organization is essential for maintaining neutrophil directional motility *in vivo*."
+ ],
+ "hyde:727": [
+  "Analysis of *in vitro* stimulation revealed that $\\text{Ly6C}^{\\text{hi}}$ monocytes exhibited significantly reduced production of pro-inflammatory cytokines (TNF-$\\alpha$, IL-1$\\beta$) following LPS challenge compared to $\\text{Ly6C}^{\\text{lo}}$ populations ($p < 0.01$). Furthermore, flow cytometric analysis demonstrated that the phagocytic index and reactive oxygen species generation capacity were markedly lower in the high-expression subset. These data suggest a phenotype shift toward reduced inflammatory potential in $\\text{Ly6C}^{\\text{hi}}$ monocyte subsets."
+ ],
+ "hyde:729": [
+  "**Option 1: Supporting the Claim (Lymphadenopathy is observed)**\n\n> Disruption of the SHP-2 MAPK signaling pathway resulted in significant lymphoid organ enlargement in the $\\text{SHP-}2^{\\text{knockin}}$ mouse model. Histological analysis revealed marked mesodermal hyperplasia and increased cellular infiltration within regional lymph nodes, indicative of pronounced lymphadenopathy. This phenotype suggests that SHP-2 is critical for maintaining normal immune homeostasis.\n\n***\n\n**Option 2: Refuting the Claim (Lymphadenopathy is NOT observed)**\n\n> Ablation of the SHP-2 MAPK pathway did not induce any overt lymphoid pathology in the $\\text{SHP-}2^{\\text{knockin}}$ mice. Examination of spleens and draining lymph nodes demonstrated no significant splenomegaly or palpable adenopathy compared to wild-type controls. These findings suggest that SHP-2 is dispensable for maintaining basal lymphatic organ integrity."
+ ],
+ "hyde:742": [
+  "In an *in vivo* model of myocardial ischemia-reperfusion injury, treatment with erythromycin demonstrated significantly reduced infarct size compared to vehicle-treated controls ($p < 0.01$). Furthermore, macrolide administration attenuated markers of oxidative stress and improved left ventricular ejection fraction following coronary artery occlusion. These data indicate that macrolides exert a cardioprotective effect against myocardial infarction."
+ ],
+ "hyde:743": [
+  "In murine models subjected to induced myocardial ischemia, treatment with erythromycin significantly reduced infarct size by 45% compared to vehicle controls ($p < 0.01$). Furthermore, analysis of cardiac tissue demonstrated a marked attenuation of oxidative stress markers and improved mitochondrial function in the macrolide-treated cohort. These findings confirm that macrolides exert potent cardioprotective effects following acute myocardial injury."
  ]
 }

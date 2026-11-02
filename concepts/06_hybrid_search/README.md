@@ -2,6 +2,14 @@
 
 **Tier: Core retrieval** · prerequisite: Stage 5
 
+> **Re-tested (v2).** On bge-base, no RRF variant and no weighted fusion is
+> significantly different from dense alone (RRF −0.024 to −0.009, weighted 0.7/0.3
+> +0.010), so neither the "RRF made it worse" nor the "weighted hybrid helped"
+> reading below survives a paired test. On the stronger embeddinggemma-300m,
+> unweighted RRF k=60 is significantly worse (−0.057). There were three RRF
+> variants, not four. The numbers on this page are the original v1 record.
+> Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Hybrid is the most-recommended upgrade in RAG, so I wanted to know whether it
 earns that on SciFact. The answer turned out more interesting than yes.
 
@@ -68,8 +76,9 @@ Recall@10 went 0.8802 → 0.8899 against a ceiling of 0.920, so fusion captured
 about a third of the available headroom.
 
 **Caveat, same as Stage 3:** +0.010 nDCG at n=300 is within sampling noise for a
-single comparison. The RRF *deficit* is larger and consistent across four
-variants, so that finding is stronger than the weighted-fusion win.
+single comparison. The RRF *deficit* is larger and consistent across three
+variants, so that finding is stronger than the weighted-fusion win (but see the
+re-test note at the top: neither is significant on bge-base).
 
 ## So when should you use RRF
 

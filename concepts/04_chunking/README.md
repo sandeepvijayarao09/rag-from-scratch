@@ -2,6 +2,12 @@
 
 **Tier: Core retrieval** · prerequisite: Stage 3
 
+> **Re-tested (v2).** None of the six chunking configs is significantly
+> different from whole documents, on any of three embedding models (bge-base
+> −0.017 to −0.003). So chunking did not measurably *hurt* here; it did nothing.
+> The diagnostic below still predicts why. The numbers on this page are the
+> original v1 record. Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Chunking is the most cargo-culted step in RAG. This stage measures whether it
 earns its place, and the answer here is a clean no, predicted in advance.
 

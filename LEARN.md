@@ -19,6 +19,15 @@ pip install -r requirements.txt
 You need [Ollama](https://ollama.com) with `bge-base-en-v1.5` (embeddings) and
 `gemma4:e4b` (generation).
 
+> **Read this with the re-test.** The numbers in this guide are the v1 record:
+> raw mean differences, one embedding model, one reranker. A later re-test with
+> paired significance tests ([results/v2/RESULTS.md](results/v2/RESULTS.md)) changed several conclusions. LLM query
+> rewriting still hurts, significantly. Chunking and RRF fusion made no
+> detectable difference rather than making things worse. And reranking on
+> dense was not significantly worse; with a stronger reranker
+> (Qwen3-Reranker-4B) it is significantly *better*, +0.044. Each affected part
+> below has a short note.
+
 ---
 
 # Part 1 — What RAG is, and what breaks
@@ -355,7 +364,10 @@ RRF k=10            0.7499   -0.0089
 weighted 0.7/0.3    0.7689   +0.0101
 ```
 
-RRF lost in all four variants I tried. It treats a weaker retriever's rank-1 as
+RRF lost in all three variants I tried, though none of the losses is
+significant in a paired test on bge-base (the largest, −0.024, has a 95% CI of
+[−0.050, +0.001]); on the stronger embeddinggemma-300m, RRF k=60 is
+significantly worse, −0.057. It treats a weaker retriever's rank-1 as
 equally credible as a stronger one's, so BM25's wrong answers got promoted over
 dense's right ones.
 
@@ -390,7 +402,11 @@ The standard advice is: retrieve 50 cheaply, rerank them precisely.
 
 ## What happened
 
-It made things worse. Both models, every depth, monotonically.
+It made things worse. Both models, every depth, monotonically. (Re-tested: the
+−0.033 is not significant after correcting for multiple comparisons, and the
+stronger Qwen3-Reranker-4B, not used here, improves dense by a significant
++0.044. The rule below is about the reranker's strength relative to the first
+stage, and that rule held.)
 
 ```
 dense (no rerank)          0.759
@@ -583,10 +599,10 @@ database one to two orders of magnitude before they need one.
 
 | Belief | What I measured |
 |---|---|
-| Chunking is a standard preprocessing step | All 6 configs lost on a corpus that did not need it |
-| RRF is the safe fusion default | Lost in all 4 variants; weighted won |
-| Adding a reranker improves things | −0.033 on dense, +0.041 on BM25. Same reranker |
-| HyDE fixes query/document mismatch | −0.048 when there is no mismatch to fix |
+| Chunking is a standard preprocessing step | All 6 configs made no detectable difference on a corpus that did not need it |
+| RRF is the safe fusion default | No gain in 3 variants; significantly worse (−0.057) when the dense model is strong |
+| Adding a reranker improves things | Only if it beats your first stage: bge-reranker-base −0.033 (n.s.) on dense, Qwen3-Reranker-4B +0.044 on dense, +0.041 to +0.110 on BM25 |
+| HyDE fixes query/document mismatch | Significantly worse (−0.040 with a 12B rewriter) when there is no mismatch to fix |
 | Models hallucinate from bad context | This one over-refused instead |
 | LLM graders can filter bad retrievals | Balanced accuracy 0.500 |
 | You need a vector database | 5,183 docs search in under 1ms with numpy |
@@ -609,5 +625,5 @@ the thing the technique fixes.
 **The one thing to take away.** The techniques are not the skill. Each is a few
 hours of work and most are already in a library. The skill is refusing to add
 one until you have measured the gap it is supposed to close. On this benchmark
-that discipline was the difference between +0.041 and −0.048 from the same
-family of ideas.
+that discipline was the difference between a significant +0.044 from a reranker
+and a significant −0.040 from HyDE.

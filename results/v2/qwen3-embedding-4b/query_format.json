@@ -1,0 +1,8 @@
+{
+  "format": "Instruct: Given a scientific claim, retrieve documents that support or refute the claim\nQuery:{q}",
+  "label": "card",
+  "train_ndcg10": {
+    "card": 0.7878588058384002,
+    "alt": 0.7858224377256279
+  }
+}

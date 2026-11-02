@@ -2,6 +2,15 @@
 
 **Tier: Intermediate** · prerequisite: Stage 6
 
+> **Re-tested (v2).** The −0.033 below is **not significant** after Holm
+> correction on bge-base, though bge-reranker-base is significantly worse on
+> the two stronger embedders (−0.062, −0.044). The bigger finding: a stronger
+> reranker reverses the result. Qwen3-Reranker-4B is **significantly better**
+> on top of dense (+0.044, CI [+0.019, +0.070]) and lifts BM25 by +0.110. So
+> "reranking hurts a strong first stage" was really "a *weak* reranker hurts a
+> strong first stage." The numbers on this page are the original v1 record.
+> Tested results: [`results/v2/RESULTS.md`](../../results/v2/RESULTS.md).
+
 Reranking is the second-most-recommended upgrade in RAG. On SciFact it made
 things worse. Chasing down why took two wrong guesses and produced the most
 useful rule in this repo.
