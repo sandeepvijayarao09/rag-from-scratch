@@ -19,19 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-Documentation
-
-The written material in this repository (README.md, LEARN.md, FLOW.md,
-NOTES.md, SYSTEMS.md, DECISIONS.md, PLAN.md and the README in each concepts/
-stage) is licensed under the Creative Commons Attribution 4.0 International
-License (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
-
-You may share and adapt it for any purpose, provided you give appropriate
-credit and link back to this repository.
-
-Third-party data is not covered by either license: BEIR SciFact is fetched by
-scripts/download_data.sh under its own terms, and cat-facts.txt comes from the
-public tutorial credited in the README.

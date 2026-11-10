@@ -21,7 +21,7 @@ design notes, clearly marked, and none of the findings depend on them.
 
 [![CI](https://github.com/sandeepvijayarao09/rag-from-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/sandeepvijayarao09/rag-from-scratch/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
-[![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![Docs: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey.svg)](LICENSE-docs)
 
 ![Change in nDCG@10 from each technique on BEIR SciFact with bge-base, with 95% confidence intervals: query decomposition, HyDE and step-back are significantly worse; reranking with Qwen3-Reranker-4B, and reranking BM25, are significantly better; the rest are not distinguishable from zero](docs/results.svg)
 
@@ -302,3 +302,11 @@ the eval harness, the BEIR integration, BM25, the fusion and reranking analysis,
 and every measurement in this repo.
 
 Built with AI assistance, which is recorded in the commit trailers.
+
+## License
+
+- **Code:** MIT. See [LICENSE](LICENSE).
+- **Documentation** (the Markdown write-ups, including each stage README): CC BY 4.0. See [LICENSE-docs](LICENSE-docs).
+- **Third-party data** (BEIR SciFact, `cat-facts.txt`) is under its own terms and not covered by either license.
+
+To cite this repo, use [CITATION.cff](CITATION.cff) (GitHub's "Cite this repository" button reads it).
